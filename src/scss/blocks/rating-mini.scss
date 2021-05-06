@@ -1,13 +1,13 @@
 .rating-mini {
 	position: relative;
 	display: inline-block;
-	padding: 8px 0;
 	font-size: 0;
+	line-height: 0;
 }
 .rating-mini__item {
 	cursor: pointer;
 	padding: 0;
-	font-size: 1.2rem;
+	font-size: 2.2rem;
 	line-height: 1;
 	color: lightgrey;
 }
@@ -15,7 +15,7 @@
 	content: '★';
 }
 .rating-mini__item--active {
-	color: #D26E4B;
+	color: gold;
 }
 
 .rating-mini__value{
@@ -24,7 +24,7 @@
 	left: 50%;
   margin-right: -50%;
   transform: translate(-50%, 0);
-	top: -32px;
+	top: -22px;
 	padding: 10px 5px;
 	font-size: 1rem;
 	background-color: #000;

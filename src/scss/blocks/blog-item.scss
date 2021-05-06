@@ -45,12 +45,6 @@
     font-weight: 700;
     @include colorOnHover;
   }
-  &__excerpt{
-    margin-bottom: 13px;
-    font-size: 1.4rem;
-    color: rgb(102, 102, 102);
-    line-height: 1.3;
-  }
   &__read-more{
     display: block;
     padding: 7px 15px;

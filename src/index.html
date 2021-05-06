@@ -1,1352 +1,1138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css" integrity="sha512-nIm/JGUwrzblLex/meoxJSPdAKQOe2bLhnrZ81g5Jbh519z8GFJIWu87WAhBH+RAyGbM4+U3S2h+kL5JoV6/wA==" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">  
-  <link rel="stylesheet" href="css/style.min.css">
-  <link rel="shortcut icon" href="../img/decor/favicon.png" type="image/png" />
-  <title>Магазин</title>
-</head>
-<body>
-  <div class="wrapper">
-    <header class="header">
-      <div class="container-fluid container--header">
-        <div class="header__menu-icon-wrap">
-          <span class="header__menu-icon">
-          </span>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css" integrity="sha512-nIm/JGUwrzblLex/meoxJSPdAKQOe2bLhnrZ81g5Jbh519z8GFJIWu87WAhBH+RAyGbM4+U3S2h+kL5JoV6/wA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="shortcut icon" href="../img/decor/favicon.png" type="image/png" />
+    <title>Магазин</title>
+  </head>
+  <body class="">
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__inner-wrap">
+          <div class="header__top">
+            <div class="container container--header-top">
+              <div class="row align-items-center">
+                <div class="header__top-left col-lg-2 col-md-4 col-sm-4 col-4">
+                  <div class="logo">
+                    <a href="index.html"><img src="../img/decor/logo.png" alt="logotype"></a>
+                  </div>
+                </div>
+                <div class="col-lg-10 col-md-6 col-sm-6 col-6">
+                  <div class="header__middle">
+                    <div class="header__search-container">
+                      <form action="#" class="header__form">
+                        <div class="header__select-block">
+                          <select class="header__select-category" name="select" id="categori1">
+                            <option selected value="1">All Categories</option>
+                            <option value="2">Accessories</option>
+                            <option value="3">Accessories & More</option>
+                            <option value="4">Butters & Eggs</option>
+                            <option value="5">Camera & Video </option>
+                            <option value="6">Mornitors</option>
+                            <option value="7">Tablets</option>
+                            <option value="8">Laptops</option>
+                          </select>
+                        </div>
+                        <div class="header__search-box">
+                          <input placeholder="Search product..." type="text" class="header__search-field">
+                          <button type="submit" class="header__search-submit-btn">Search</button> 
+                        </div>
+                      </form>
+                    </div>
+                    <div class="header__cart-area">
+                      <div class="mini-cart">
+                        <span class="mini-cart__header">
+                          <i class="mini-cart__header-basket-icon fas fa-cart-arrow-down"></i>
+                          <span class="mini-cart__header-price">1200р
+                            <i class="fal fa-angle-down"></i>
+                          </span>
+                          <span class="mini-cart__count">2</span>
+                        </span>
+                        <div class="mini-cart__content">
+                          <div class="mobile-nav-overlay mobile-nav-under-cart"></div>
+                          
+                          <div class="mini-cart__inner">
+                            <div class="mini-cart__content-wrap">
+                              <div class="mini-cart__content-header">
+                                <div class="mini-cart__content-header-text">
+                                  <h3>Корзина</h3>
+                                </div>
+                                <div class="mini-cart__icon-close-wrap">
+                                  <span class="mini-cart__icon-close">
+                                  </span>
+                                </div>
+                              </div>
+                              <div class="mini-cart__item">
+                                <div class="mini-cart__item-img">
+                                  <a href="product.html" class="mini-cart__item-link" href="#"><img src="img/content/products/product.jpg" alt=""></a>
+                                </div>
+                                <div class="mini-cart__item-info">
+                                  <a class="mini-cart__item-name" href="product.html">Литой диск</a>
+                                  <p>Количество: <span>1</span> </p>
+                                  <span class="mini-cart__item-price"> 1200р</span>
+                                </div>
+                                <div class="mini-cart__item-remove-btn">
+                                  <span><i class="far fa-times-circle"></i></span>
+                                </div>
+                              </div>
+                              <div class="mini-cart__item">
+                                <div class="mini-cart__item-img">
+                                  <a href="product.html" class="mini-cart__item-link" href="#"><img src="img/content/products/product.jpg" alt=""></a>
+                                </div>
+                                <div class="mini-cart__item-info">
+                                  <a class="mini-cart__item-name" href="product.html">Литой диск</a>
+                                  <p>Количество: <span>1</span> </p>
+                                  <span class="mini-cart__item-price"> 1200р</span>
+                                </div>
+                                <div class="mini-cart__item-remove-btn">
+                                  <span><i class="far fa-times-circle"></i></span>
+                                </div>
+                              </div>
+                              <div class="mini-cart__summary">
+                                <div class="mini-cart__total">
+                                  <span class="mini-cart__total-name">Итого:</span>
+                                  <span class="mini-cart__total-price">1200р</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="mini-cart__footer">
+                              <div class="mini-cart__submit">
+                                <a class="mini-cart__submit-link active" href="checkout.html">Оформить заказ</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <span class="header__menu-open-btn">
+                  <i class="fal fa-bars"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="header__bottom">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-lg-7">
+                  <div class="header__nav-wrap">
+                    <div class="nav">
+                      <ul class="nav__list">
+                        <li class="nav__item">
+                          <a href="index.html" class="nav__link nav__link--active">главная</a>
+                        </li>
+                        <li class="nav__item">
+                          <a href="shop.html" class="nav__link nav__link--subtitle">шины</a>
+                          <ul class="nav__sub1-list">
+                            <li class="nav__sub1-item">
+                              <a href="category-page.html" class="nav__link--sub-nav">Шины летние</a>
+                            </li>
+                            <li class="nav__sub1-item">
+                              <a href="category-page.html" class="nav__link--sub-nav">Шины зимние</a>
+                            </li>
+                            <li class="nav__sub1-item">
+                              <a href="category-page.html" class="nav__link--sub-nav">Шины всесезонные</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav__item">
+                          <a href="shop.html" class="nav__link nav__link--subtitle">Диски</a>
+                          <ul class="nav__sub1-list">
+                            <li class="nav__sub1-item">
+                              <a href="category-page.html" class="nav__link--sub-nav">Диски литые</a>
+                            </li>
+                            <li class="nav__sub1-item">
+                              <a href="category-page.html" class="nav__link--sub-nav">Диски штампованные</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav__item">
+                          <a href="about-us.html" class="nav__link">о нас</a>
+                        </li>
+                        <li class="nav__item">
+                          <a href="contacts-us.html" class="nav__link">контакты</a>
+                        </li>
+                        <li class="nav__item">
+                          <a href="blog.html" class="nav__link">блог</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="header__nav-wrap">
-          <a href="index.html" class="logo">
-            <img src="../img/decor/logo.png" alt="logotype">
-          </a>
-          <div class="header__nav-block">
-            <div class="header__nav-wrap">
-              <div class="nav">
-                <ul class="nav__list">
-                  <li class="nav__item">
-                    <a href="index.html" class="nav__link nav__link--active">главная</a>
+      </header>
+      <main class="main">
+        <section class="main-slider__outer">
+          <div class="container">
+            <div class="row">
+              <section class="main-slider col-lg-9 col-md-12">
+                <div class="main-slider__list">
+                  <div class="main-slider__item bg-src" data-bg-src="../img/content/slider/slider6.jpg">
+                    <div class="main-slider__item-inner">
+                      <div class="main-slider__item-content">
+                        <h3 class="main-slider__item-title">Заголовок первого слайда</h3>
+                        <p class="main-slider__item-description">
+                          Далеко-далеко за словесными горами в стране гласных и согласных 
+                        </p>
+                        <a href="shop.html" class="main-slider__action-link">В каталог
+                          <span><i class="fas fa-chevron-double-right"></i></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main-slider__item bg-src" data-bg-src="../img/content/slider/slider7.jpg">
+                    <div class="main-slider__item-inner">
+                      <div class="main-slider__item-content">
+                        <h3 class="main-slider__item-title">Заголовок второго слайда</h3>
+                        <p class="main-slider__item-description">
+                          Далеко-далеко за словесными горами в стране гласных и согласных  
+                        </p>
+                        <a href="shop.html" class="main-slider__action-link">В каталог
+                          <span><i class="fas fa-chevron-double-right"></i></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main-slider__item bg-src" data-bg-src="../img/content/slider/slider8.jpg">
+                    <div class="main-slider__item-inner">
+                      <div class="main-slider__item-content">
+                        <h3 class="main-slider__item-title">Заголовок третьего слайда</h3>
+                        <p class="main-slider__item-description">
+                          Далеко-далеко за словесными горами в стране гласных и согласных 
+                        </p>
+                        <a href="shop.html" class="main-slider__action-link">В каталог
+                          <span><i class="fas fa-chevron-double-right"></i></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <div class="main-products col-lg-3 col-md-12">
+                <div class="main-products__list">
+                  <div class="main-products__item">
+                    <a href="shop.html" class="main-products__item-content">
+                      <div class="main-products__item-img-wrap bg-src" data-bg-src="../img/content/banners/banner__1.jpg">
+                      </div>
+                      <div class="main-products__item-info">
+                        <h3 class="main-products__item-title">
+                          Шины
+                        </h3>
+                        <p class="main-products__item-description">
+                          Широкий ассортимент шин по доступным ценам
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="main-products__item">
+                    <a href="shop.html" class="main-products__item-content">
+                      <div class="main-products__item-img-wrap bg-src" data-bg-src="../img/content/banners/banner__3.jpg">
+                      </div>
+                      <div class="main-products__item-info">
+                        <h3 class="main-products__item-title">
+                          Литые диски
+                        </h3>
+                        <p class="main-products__item-description">
+                          Широкий ассортимент автомобильных дисков по доступным ценам
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row advantages">
+              <div class="col-sm-12 advantages__list">
+                <div class="advantages__item">
+                  <div class="advantages__item-content">
+                    <img src="../img/decor/shipping/shipping6.png" alt="advantage" class="advantages__item-img">
+                    <div class="advantages__item-info">
+                      <h5 class="advantages__item-title">Бесплатная доставка</h5>
+                      <div class="advantages__item-description">Для заказов свыше 2000р</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="advantages__item">
+                  <div class="advantages__item-content">
+                    <img src="../img/decor/shipping/shipping7.png" alt="advantage" class="advantages__item-img">
+                    <div class="advantages__item-info">
+                      <h5 class="advantages__item-title">Бесплатная доставка</h5>
+                      <div class="advantages__item-description">Для заказов свыше 2000р</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="advantages__item">
+                  <div class="advantages__item-content">
+                    <img src="../img/decor/shipping/shipping8.png" alt="advantage" class="advantages__item-img">
+                    <div class="advantages__item-info">
+                      <h5 class="advantages__item-title">Бесплатная доставка</h5>
+                      <div class="advantages__item-description">Для заказов свыше 2000р</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="categories">
+          <div class="container">
+            <div class="categories__list">
+              <a href="category-page.html" class="categories__item">
+                <div class="categories__item-media">
+                  <div class="categories__item-img-wrap">
+                    <img src="../img/content/categories/category1.jpeg" alt="category">
+                  </div>
+                </div>
+                <h3 class="categories__item-title">
+                  <span>летние шины</span>
+                </h3>
+              </a>
+              <a href="category-page.html" class="categories__item">
+                <div class="categories__item-media">
+                  <div class="categories__item-img-wrap">
+                    <img src="../img/content/categories/category2.jpeg" alt="category">
+                  </div>
+                </div>
+                <h3 class="categories__item-title">
+                  <span>зимние шины</span>
+                </h3>
+              </a>
+              <a href="category-page.html" class="categories__item">
+                <div class="categories__item-media">
+                  <div class="categories__item-img-wrap">
+                    <img src="../img/content/categories/category3.jpeg" alt="category">
+                  </div>
+                </div>
+                <h3 class="categories__item-title">
+                  <span>всесезонные шины</span>
+                </h3>
+              </a>
+              <a href="category-page.html" class="categories__item">
+                <div class="categories__item-media">
+                  <div class="categories__item-img-wrap">
+                    <img src="../img/content/categories/category4.jpeg" alt="category">
+                  </div>
+                </div>
+                <h3 class="categories__item-title">
+                  <span>литые диски</span>
+                </h3>
+              </a>
+              <a href="category-page.html" class="categories__item">
+                <div class="categories__item-media">
+                  <div class="categories__item-img-wrap">
+                    <img src="../img/content/categories/category5.jpeg" alt="category">
+                  </div>
+                </div>
+                <h3 class="categories__item-title">
+                  <span>штампованные диски</span>
+                </h3>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="products-overview">
+          <div class="container">
+            <div class="section-title">
+              <h2 class="section-title__text section-title__text--bestsellers">
+                <strong>наши</strong> товары
+              </h2>
+              <p class="section-title__description">
+                Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Всеми буквоград переписывается решила lorem если запятых своего, приставка о текста первую.
+              </p>
+            </div>
+            <div class="products-list">
+              <div class="products-list__parts-wrap">
+                <ul class="products-list__parts-nav">
+                  <li class="products-list__part-nav-item">
+                    <a href="index.html" class="products-list__part-nav-link products-list__part-nav-link--active" data-tab-id="products-list__part-bestsellers">бестселлеры</a>
                   </li>
-                  <li class="nav__item">
-                    <a href="shop.html" class="nav__link nav__link--subtitle">каталог</a>
-                    <ul class="nav__sub1-list">
-                      <li class="nav__sub1-item">
-                        <a href="category-page.html" class="nav__link nav__link--sub-nav">Cухие строительные смеси</a>
-                      </li>
-                      <li class="nav__sub1-item">
-                        <a href="category-page.html" class="nav__link nav__link--sub-nav">Лакокрасочные материалы</a>
-                      </li>
-                      <li class="nav__sub1-item">
-                        <a href="category-page.html" class="nav__link nav__link--sub-nav">Звукозоляция</a>
-                      </li>
-                      <li class="nav__sub1-item">
-                        <a href="category-page.html" class="nav__link nav__link--sub-nav">Напольные покрытия</a>
-                      </li>
-                      <li class="nav__sub1-item">
-                        <a href="category-page.html" class="nav__link nav__link--sub-nav">Металлопрокат</a>
-                      </li>
-                      <li class="nav__sub1-item">
-                        <a href="category-page.html" class="nav__link nav__link--sub-nav">Изоляционные материалы</a>
-                      </li>
-                      <li class="nav__sub1-item">
-                        <a href="category-page.html" class="nav__link nav__link--sub-nav">Декоративные панели</a>
-                      </li>
-                    </ul>
+                  <li class="products-list__part-nav-item">
+                    <a href="index.html" class="products-list__part-nav-link" data-tab-id="products-list__part-new">новинки</a>
                   </li>
-                  <li class="nav__item">
-                    <a href="about-us.html" class="nav__link">о нас</a>
-                  </li>
-                  <li class="nav__item">
-                    <a href="contacts-us.html" class="nav__link">контакты</a>
-                  </li>
-                  <li class="nav__item">
-                    <a href="blog.html" class="nav__link">блог</a>
+                  <li class="products-list__part-nav-item">
+                    <a href="index.html" class="products-list__part-nav-link" data-tab-id="products-list__part-rates">рейтинговые</a>
                   </li>
                 </ul>
+                <div class="products-list__parts-list">
+                  <div class="products-list__part-item products-list__part-item--active" id="products-list__part-bestsellers">
+                    <div class="products-list__inner">
+                      <article class="product-card product-card--new product-card--sale">
+                        <div class="product-card__img-wrap">
+                          <a href="product.html" class="product-card__link"></a>
+                          <div class="product-card__marks">
+                            <div class="product-card__marks-group">
+                              <span class="product-card__new-mark">новинка</span>
+                              <span class="product-card__sale-mark">27% скидка</span>
+                            </div>
+                          </div>
+                          <span class="product-card__quick-view">
+                            <i class="fas fa-eye"></i>
+                          </span>
+                          <img src="../img/content/products/product1.jpeg" alt="product" class="product-card__img">
+                        </div>
+                        <div class="product-card__content">
+                          <a href="category-page.html" class="product-card__category">Всесезонные шины</a>
+                          <a href="product.html" class="product-card__title excerpt-catalog-cart-title">
+                            Всесезонная шина Goodyear Vector 4Seasons
+                          </a>
+                          <div class="product-card__rating">
+                            <div class="product-card__stars-block">
+                              <div class="rating-mini">
+                                <span class="rating-mini__value">
+                                  3.03
+                                </span>
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item"></span>	
+                                <span class="rating-mini__item"></span>	
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-card__price">
+                            <del class="product-card__last-price">
+                              7200 р
+                            </del>
+                            <ins class="product-card__current-price">
+                              6000 р
+                            </ins>
+                          </div>
+                          <div class="product-card__popup">
+                            <a href="#" class="product-card__add-to-cart">
+                              в корзину
+                            </a>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="product-card product-card--new">
+                        <div class="product-card__img-wrap">
+                          <a href="product.html" class="product-card__link"></a>
+                          <div class="product-card__marks">
+                            <div class="product-card__marks-group">
+                              <span class="product-card__new-mark">новинка</span>
+                              <span class="product-card__sale-mark">27% скидка</span>
+                            </div>
+                          </div>
+                          <span class="product-card__quick-view">
+                            <i class="fas fa-eye"></i>
+                          </span>
+                          <img src="../img/content/products/product3.jpeg" alt="product" class="product-card__img">
+                        </div>
+                        <div class="product-card__content">
+                          <a href="category-page.html" class="product-card__category">Зимние шины</a>
+                          <a href="product.html" class="product-card__title excerpt-catalog-cart-title">
+                            Зимняя шина Nokian Nordman RS2 185/65R15 92R
+                          </a>
+                          <div class="product-card__rating">
+                            <div class="product-card__stars-block">
+                              <div class="rating-mini">
+                                <span class="rating-mini__value">
+                                  4.95
+                                </span>
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-card__price">
+                            <del class="product-card__last-price">
+                              6350 р
+                            </del>
+                            <ins class="product-card__current-price">
+                              5580 р
+                            </ins>
+                          </div>
+                          <div class="product-card__popup">
+                            <a href="#" class="product-card__add-to-cart">
+                              в корзину
+                            </a>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="product-card product-card--sale">
+                        <div class="product-card__img-wrap">
+                          <a href="product.html" class="product-card__link"></a>
+                          <div class="product-card__marks">
+                            <div class="product-card__marks-group">
+                              <span class="product-card__new-mark">новинка</span>
+                              <span class="product-card__sale-mark">33% скидка</span>
+                            </div>
+                          </div>
+                          <span class="product-card__quick-view">
+                            <i class="fas fa-eye"></i>
+                          </span>
+                          <img src="../img/content/products/product11.jpeg" alt="product" class="product-card__img">
+                        </div>
+                        <div class="product-card__content">
+                          <a href="category-page.html" class="product-card__category">Литые диски</a>
+                          <a href="product.html" class="product-card__title excerpt-catalog-cart-title">
+                            Литой диск iFree Слайдер 14x5.5" 4x108мм DIA 63.3мм ET 43мм HighWay
+                          </a>
+                          <div class="product-card__rating">
+                            <div class="product-card__stars-block">
+                              <div class="rating-mini">
+                                <span class="rating-mini__value">
+                                  4.45
+                                </span>
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item"></span>	
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-card__price">
+                            <del class="product-card__last-price">
+                              5850 р
+                            </del>
+                            <ins class="product-card__current-price">
+                              4200 р
+                            </ins>
+                          </div>
+                          <div class="product-card__popup">
+                            <a href="#" class="product-card__add-to-cart">
+                              в корзину
+                            </a>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="product-card">
+                        <div class="product-card__img-wrap">
+                          <a href="product.html" class="product-card__link"></a>
+                          <div class="product-card__marks">
+                            <div class="product-card__marks-group">
+                              <span class="product-card__new-mark">новинка</span>
+                              <span class="product-card__sale-mark">33% скидка</span>
+                            </div>
+                          </div>
+                          <span class="product-card__quick-view">
+                            <i class="fas fa-eye"></i>
+                          </span>
+                          <img src="../img/content/products/product2.jpeg" alt="product" class="product-card__img">
+                        </div>
+                        <div class="product-card__content">
+                          <a href="category-page.html" class="product-card__category">Летние шины</a>
+                          <a href="product.html" class="product-card__title excerpt-catalog-cart-title">
+                            Летняя шина Cordiant Sport 3 195/65R15 91V
+                          </a>
+                          <div class="product-card__rating">
+                            <div class="product-card__stars-block">
+                              <div class="rating-mini">
+                                <span class="rating-mini__value">
+                                  4.45
+                                </span>
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item"></span>	
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-card__price">
+                            <del class="product-card__last-price">
+                              5850 р
+                            </del>
+                            <ins class="product-card__current-price">
+                              4200 р
+                            </ins>
+                          </div>
+                          <div class="product-card__popup">
+                            <a href="#" class="product-card__add-to-cart">
+                              в корзину
+                            </a>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="product-card product-card--sale">
+                        <div class="product-card__img-wrap">
+                          <a href="product.html" class="product-card__link"></a>
+                          <div class="product-card__marks">
+                            <div class="product-card__marks-group">
+                              <span class="product-card__new-mark">новинка</span>
+                              <span class="product-card__sale-mark">45% скидка</span>
+                            </div>
+                          </div>
+                          <span class="product-card__quick-view">
+                            <i class="fas fa-eye"></i>
+                          </span>
+                          <img src="../img/content/products/product12.jpeg" alt="product" class="product-card__img">
+                        </div>
+                        <div class="product-card__content">
+                          <a href="category-page.html" class="product-card__category">Штампованные диски</a>
+                          <a href="product.html" class="product-card__title excerpt-catalog-cart-title">
+                            Штампованный диск Magnetto 14016 AM 14x5" 5x100мм DIA 57.1мм ET 35мм Black
+                          </a>
+                          <div class="product-card__rating">
+                            <div class="product-card__stars-block">
+                              <div class="rating-mini">
+                                <span class="rating-mini__value">
+                                  4.45
+                                </span>
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item"></span>	
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-card__price">
+                            <del class="product-card__last-price">
+                              4000 р
+                            </del>
+                            <ins class="product-card__current-price">
+                              7590 р
+                            </ins>
+                          </div>
+                          <div class="product-card__popup">
+                            <a href="#" class="product-card__add-to-cart">
+                              в корзину
+                            </a>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                  <div class="products-list__part-item " id="products-list__part-new">
+                    <div class="products-list__inner">
+                      <article class="product-card product-card--new">
+                        <div class="product-card__img-wrap">
+                          <a href="product.html" class="product-card__link"></a>
+                          <div class="product-card__marks">
+                            <div class="product-card__marks-group">
+                              <span class="product-card__new-mark">новинка</span>
+                              <span class="product-card__sale-mark">33% скидка</span>
+                            </div>
+                          </div>
+                          <span class="product-card__quick-view">
+                            <i class="fas fa-eye"></i>
+                          </span>
+                          <img src="../img/content/products/product11.jpeg" alt="product" class="product-card__img">
+                        </div>
+                        <div class="product-card__content">
+                          <a href="category-page.html" class="product-card__category">Литые диски</a>
+                          <a href="product.html" class="product-card__title excerpt-catalog-cart-title">
+                            Литой диск iFree Слайдер 14x5.5" 4x108мм DIA 63.3мм ET 43мм HighWay
+                          </a>
+                          <div class="product-card__rating">
+                            <div class="product-card__stars-block">
+                              <div class="rating-mini">
+                                <span class="rating-mini__value">
+                                  4.45
+                                </span>
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item"></span>	
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-card__price">
+                            <del class="product-card__last-price">
+                              5850 р
+                            </del>
+                            <ins class="product-card__current-price">
+                              4200 р
+                            </ins>
+                          </div>
+                          <div class="product-card__popup">
+                            <a href="#" class="product-card__add-to-cart">
+                              в корзину
+                            </a>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="product-card product-card--new">
+                        <div class="product-card__img-wrap">
+                          <a href="product.html" class="product-card__link"></a>
+                          <div class="product-card__marks">
+                            <div class="product-card__marks-group">
+                              <span class="product-card__new-mark">новинка</span>
+                              <span class="product-card__sale-mark">33% скидка</span>
+                            </div>
+                          </div>
+                          <span class="product-card__quick-view">
+                            <i class="fas fa-eye"></i>
+                          </span>
+                          <img src="../img/content/products/product2.jpeg" alt="product" class="product-card__img">
+                        </div>
+                        <div class="product-card__content">
+                          <a href="category-page.html" class="product-card__category">Летние шины</a>
+                          <a href="product.html" class="product-card__title excerpt-catalog-cart-title">
+                            Летняя шина Cordiant Sport 3 195/65R15 91V
+                          </a>
+                          <div class="product-card__rating">
+                            <div class="product-card__stars-block">
+                              <div class="rating-mini">
+                                <span class="rating-mini__value">
+                                  4.45
+                                </span>
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item"></span>	
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-card__price">
+                            <del class="product-card__last-price">
+                              5850 р
+                            </del>
+                            <ins class="product-card__current-price">
+                              4200 р
+                            </ins>
+                          </div>
+                          <div class="product-card__popup">
+                            <a href="#" class="product-card__add-to-cart">
+                              в корзину
+                            </a>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="product-card product-card--new">
+                        <div class="product-card__img-wrap">
+                          <a href="product.html" class="product-card__link"></a>
+                          <div class="product-card__marks">
+                            <div class="product-card__marks-group">
+                              <span class="product-card__new-mark">новинка</span>
+                              <span class="product-card__sale-mark">45% скидка</span>
+                            </div>
+                          </div>
+                          <span class="product-card__quick-view">
+                            <i class="fas fa-eye"></i>
+                          </span>
+                          <img src="../img/content/products/product12.jpeg" alt="product" class="product-card__img">
+                        </div>
+                        <div class="product-card__content">
+                          <a href="category-page.html" class="product-card__category">Штампованные диски</a>
+                          <a href="product.html" class="product-card__title excerpt-catalog-cart-title">
+                            Штампованный диск Magnetto 14016 AM 14x5" 5x100мм DIA 57.1мм ET 35мм Black
+                          </a>
+                          <div class="product-card__rating">
+                            <div class="product-card__stars-block">
+                              <div class="rating-mini">
+                                <span class="rating-mini__value">
+                                  4.45
+                                </span>
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item"></span>	
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-card__price">
+                            <del class="product-card__last-price">
+                              4000 р
+                            </del>
+                            <ins class="product-card__current-price">
+                              7590 р
+                            </ins>
+                          </div>
+                          <div class="product-card__popup">
+                            <a href="#" class="product-card__add-to-cart">
+                              в корзину
+                            </a>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="product-card product-card--new">
+                        <div class="product-card__img-wrap">
+                          <a href="product.html" class="product-card__link"></a>
+                          <div class="product-card__marks">
+                            <div class="product-card__marks-group">
+                              <span class="product-card__new-mark">новинка</span>
+                              <span class="product-card__sale-mark">27% скидка</span>
+                            </div>
+                          </div>
+                          <span class="product-card__quick-view">
+                            <i class="fas fa-eye"></i>
+                          </span>
+                          <img src="../img/content/products/product1.jpeg" alt="product" class="product-card__img">
+                        </div>
+                        <div class="product-card__content">
+                          <a href="category-page.html" class="product-card__category">Всесезонные шины</a>
+                          <a href="product.html" class="product-card__title excerpt-catalog-cart-title">
+                            Всесезонная шина Goodyear Vector 4Seasons
+                          </a>
+                          <div class="product-card__rating">
+                            <div class="product-card__stars-block">
+                              <div class="rating-mini">
+                                <span class="rating-mini__value">
+                                  3.03
+                                </span>
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item"></span>	
+                                <span class="rating-mini__item"></span>	
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-card__price">
+                            <del class="product-card__last-price">
+                              7200 р
+                            </del>
+                            <ins class="product-card__current-price">
+                              6000 р
+                            </ins>
+                          </div>
+                          <div class="product-card__popup">
+                            <a href="#" class="product-card__add-to-cart">
+                              в корзину
+                            </a>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="product-card product-card--new">
+                        <div class="product-card__img-wrap">
+                          <a href="product.html" class="product-card__link"></a>
+                          <div class="product-card__marks">
+                            <div class="product-card__marks-group">
+                              <span class="product-card__new-mark">новинка</span>
+                              <span class="product-card__sale-mark">27% скидка</span>
+                            </div>
+                          </div>
+                          <span class="product-card__quick-view">
+                            <i class="fas fa-eye"></i>
+                          </span>
+                          <img src="../img/content/products/product3.jpeg" alt="product" class="product-card__img">
+                        </div>
+                        <div class="product-card__content">
+                          <a href="category-page.html" class="product-card__category">Зимние шины</a>
+                          <a href="product.html" class="product-card__title excerpt-catalog-cart-title">
+                            Зимняя шина Nokian Nordman RS2 185/65R15 92R
+                          </a>
+                          <div class="product-card__rating">
+                            <div class="product-card__stars-block">
+                              <div class="rating-mini">
+                                <span class="rating-mini__value">
+                                  4.95
+                                </span>
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-card__price">
+                            <del class="product-card__last-price">
+                              6350 р
+                            </del>
+                            <ins class="product-card__current-price">
+                              5580 р
+                            </ins>
+                          </div>
+                          <div class="product-card__popup">
+                            <a href="#" class="product-card__add-to-cart">
+                              в корзину
+                            </a>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                  <div class="products-list__part-item" id="products-list__part-rates">
+                    <div class="products-list__inner">
+                      <article class="product-card product-card--sale">
+                        <div class="product-card__img-wrap">
+                          <a href="product.html" class="product-card__link"></a>
+                          <div class="product-card__marks">
+                            <div class="product-card__marks-group">
+                              <span class="product-card__new-mark">новинка</span>
+                              <span class="product-card__sale-mark">27% скидка</span>
+                            </div>
+                          </div>
+                          <span class="product-card__quick-view">
+                            <i class="fas fa-eye"></i>
+                          </span>
+                          <img src="../img/content/products/product1.jpeg" alt="product" class="product-card__img">
+                        </div>
+                        <div class="product-card__content">
+                          <a href="category-page.html" class="product-card__category">Всесезонные шины</a>
+                          <a href="product.html" class="product-card__title excerpt-catalog-cart-title">
+                            Всесезонная шина Goodyear Vector 4Seasons
+                          </a>
+                          <div class="product-card__rating">
+                            <div class="product-card__stars-block">
+                              <div class="rating-mini">
+                                <span class="rating-mini__value">
+                                  3.03
+                                </span>
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item"></span>	
+                                <span class="rating-mini__item"></span>	
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-card__price">
+                            <del class="product-card__last-price">
+                              7200 р
+                            </del>
+                            <ins class="product-card__current-price">
+                              6000 р
+                            </ins>
+                          </div>
+                          <div class="product-card__popup">
+                            <a href="#" class="product-card__add-to-cart">
+                              в корзину
+                            </a>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="product-card product-card--sale">
+                        <div class="product-card__img-wrap">
+                          <a href="product.html" class="product-card__link"></a>
+                          <div class="product-card__marks">
+                            <div class="product-card__marks-group">
+                              <span class="product-card__new-mark">новинка</span>
+                              <span class="product-card__sale-mark">27% скидка</span>
+                            </div>
+                          </div>
+                          <span class="product-card__quick-view">
+                            <i class="fas fa-eye"></i>
+                          </span>
+                          <img src="../img/content/products/product3.jpeg" alt="product" class="product-card__img">
+                        </div>
+                        <div class="product-card__content">
+                          <a href="category-page.html" class="product-card__category">Зимние шины</a>
+                          <a href="product.html" class="product-card__title excerpt-catalog-cart-title">
+                            Зимняя шина Nokian Nordman RS2 185/65R15 92R
+                          </a>
+                          <div class="product-card__rating">
+                            <div class="product-card__stars-block">
+                              <div class="rating-mini">
+                                <span class="rating-mini__value">
+                                  4.95
+                                </span>
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-card__price">
+                            <del class="product-card__last-price">
+                              6350 р
+                            </del>
+                            <ins class="product-card__current-price">
+                              5580 р
+                            </ins>
+                          </div>
+                          <div class="product-card__popup">
+                            <a href="#" class="product-card__add-to-cart">
+                              в корзину
+                            </a>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="product-card product-card--sale">
+                        <div class="product-card__img-wrap">
+                          <a href="product.html" class="product-card__link"></a>
+                          <div class="product-card__marks">
+                            <div class="product-card__marks-group">
+                              <span class="product-card__new-mark">новинка</span>
+                              <span class="product-card__sale-mark">45% скидка</span>
+                            </div>
+                          </div>
+                          <span class="product-card__quick-view">
+                            <i class="fas fa-eye"></i>
+                          </span>
+                          <img src="../img/content/products/product12.jpeg" alt="product" class="product-card__img">
+                        </div>
+                        <div class="product-card__content">
+                          <a href="category-page.html" class="product-card__category">Штампованные диски</a>
+                          <a href="product.html" class="product-card__title excerpt-catalog-cart-title">
+                            Штампованный диск Magnetto 14016 AM 14x5" 5x100мм DIA 57.1мм ET 35мм Black
+                          </a>
+                          <div class="product-card__rating">
+                            <div class="product-card__stars-block">
+                              <div class="rating-mini">
+                                <span class="rating-mini__value">
+                                  4.45
+                                </span>
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item"></span>	
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-card__price">
+                            <del class="product-card__last-price">
+                              4000 р
+                            </del>
+                            <ins class="product-card__current-price">
+                              7590 р
+                            </ins>
+                          </div>
+                          <div class="product-card__popup">
+                            <a href="#" class="product-card__add-to-cart">
+                              в корзину
+                            </a>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="product-card product-card--sale">
+                        <div class="product-card__img-wrap">
+                          <a href="product.html" class="product-card__link"></a>
+                          <div class="product-card__marks">
+                            <div class="product-card__marks-group">
+                              <span class="product-card__new-mark">новинка</span>
+                              <span class="product-card__sale-mark">33% скидка</span>
+                            </div>
+                          </div>
+                          <span class="product-card__quick-view">
+                            <i class="fas fa-eye"></i>
+                          </span>
+                          <img src="../img/content/products/product11.jpeg" alt="product" class="product-card__img">
+                        </div>
+                        <div class="product-card__content">
+                          <a href="category-page.html" class="product-card__category">Литые диски</a>
+                          <a href="product.html" class="product-card__title excerpt-catalog-cart-title">
+                            Литой диск iFree Слайдер 14x5.5" 4x108мм DIA 63.3мм ET 43мм HighWay
+                          </a>
+                          <div class="product-card__rating">
+                            <div class="product-card__stars-block">
+                              <div class="rating-mini">
+                                <span class="rating-mini__value">
+                                  4.45
+                                </span>
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item"></span>	
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-card__price">
+                            <del class="product-card__last-price">
+                              5850 р
+                            </del>
+                            <ins class="product-card__current-price">
+                              4200 р
+                            </ins>
+                          </div>
+                          <div class="product-card__popup">
+                            <a href="#" class="product-card__add-to-cart">
+                              в корзину
+                            </a>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="product-card product-card--sale">
+                        <div class="product-card__img-wrap">
+                          <a href="product.html" class="product-card__link"></a>
+                          <div class="product-card__marks">
+                            <div class="product-card__marks-group">
+                              <span class="product-card__new-mark">новинка</span>
+                              <span class="product-card__sale-mark">33% скидка</span>
+                            </div>
+                          </div>
+                          <span class="product-card__quick-view">
+                            <i class="fas fa-eye"></i>
+                          </span>
+                          <img src="../img/content/products/product2.jpeg" alt="product" class="product-card__img">
+                        </div>
+                        <div class="product-card__content">
+                          <a href="category-page.html" class="product-card__category">Летние шины</a>
+                          <a href="product.html" class="product-card__title excerpt-catalog-cart-title">
+                            Летняя шина Cordiant Sport 3 195/65R15 91V
+                          </a>
+                          <div class="product-card__rating">
+                            <div class="product-card__stars-block">
+                              <div class="rating-mini">
+                                <span class="rating-mini__value">
+                                  4.45
+                                </span>
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item rating-mini__item--active"></span>	
+                                <span class="rating-mini__item"></span>	
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-card__price">
+                            <del class="product-card__last-price">
+                              5850 р
+                            </del>
+                            <ins class="product-card__current-price">
+                              4200 р
+                            </ins>
+                          </div>
+                          <div class="product-card__popup">
+                            <a href="#" class="product-card__add-to-cart">
+                              в корзину
+                            </a>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="header__srch-wdg">
-                <div class="header__srch-wdg-wrap">
-                  <span class="header__srch-icon">
-                    <?xml version="1.0" ?><svg height="21px" version="1.1" viewBox="0 0 32 32" width="21px" xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns:xlink="http://www.w3.org/1999/xlink"><title/><desc/><defs/><g fill="none" fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1"><g class="header__srch-icon-image"  id="icon-111-search"><path d="M19.4271164,20.4271164 C18.0372495,21.4174803 16.3366522,22 14.5,22 C9.80557939,22 6,18.1944206 6,13.5 C6,8.80557939 9.80557939,5 14.5,5 C19.1944206,5 23,8.80557939 23,13.5 C23,15.8472103 22.0486052,17.9722103 20.5104077,19.5104077 L26.5077736,25.5077736 C26.782828,25.782828 26.7761424,26.2238576 26.5,26.5 C26.2219324,26.7780676 25.7796227,26.7796227 25.5077736,26.5077736 L19.4271164,20.4271164 L19.4271164,20.4271164 Z M14.5,21 C18.6421358,21 22,17.6421358 22,13.5 C22,9.35786417 18.6421358,6 14.5,6 C10.3578642,6 7,9.35786417 7,13.5 C7,17.6421358 10.3578642,21 14.5,21 L14.5,21 Z" id="search"/></g></g></svg>
+            </div>
+          </div>
+        </section>
+        <section class="discounts">
+          <div class="container">
+            <div class="section-title section-title--horizontal">
+              <h2 class="section-title__text">
+                <strong>Большие </strong>скидки
+              </h2>
+              <p class="section-title__description">
+                Проводится ликвидация склада
+              </p>
+            </div>
+            <div class="discounts__content">
+              <article class="product-card product-card--sale product-card--big">
+                <div class="product-card__img-wrap bg-src" data-bg-src="../img/content/products/product1.jpeg">
+                  <a href="product.html" class="product-card__link"></a>
+                  <div class="product-card__marks">
+                    <div class="product-card__marks-group">
+                      <span class="product-card__new-mark">новинка</span>
+                      <span class="product-card__sale-mark">45% скидка</span>
+                    </div>
+                  </div>
+                  <span class="product-card__quick-view">
+                    <i class="fas fa-eye"></i>
                   </span>
                 </div>
-                <div class="header__srch-wdg-inner">
-                  <form action="#" class="header__srch-form">
-                    <input type="text" placeholder="Поиск..." class="header__srch-input">
-                    <button class="header__srch-btn" type="submit">
-                      <i class="fas fa-search"></i>
-                    </button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="header__personal-wdg">
-          <a href="#" class="header__account-link">
-            <i class="fas fa-user"></i>
-            <span class="header__account-link-text">login</span>
-          </a>
-          <div class="header__cart-dropdown">
-            <a href="#" class="header__cart-dropdown-header">
-              <span class="header__cart-dropdown-name">корзина /</span>
-              <span class="header__cart-dropdown-price">850 р</span>
-              <span class="header__cart-dropdown-total-count">2</span>
-            </a>
-            <div class="cart">
-              <div class="cart__content-header">
-                <span class="cart__total-header-counts">2 товара</span>
-                <a href="cart.html" class="cart__total-header-counts">корзина</a>
-              </div>
-              <div class="cart__items-list">
-                <div class="cart__item">
-                  <div class="cart__item-descr">
-                    <h5 class="cart__item-name">Шпатлевка полимерная финишная KNAUF Rotband Pasta Profi белая 18 кг</h5>
-                    <div class="cart__item-price-block">
-                      <span class="cart__item-count">1</span>
-                      <i class="fa fa-times" aria-hidden="true"></i>
-                      <span class="cart__item-price">1800 р</span>
-                    </div>
-                  </div>
-                  <figure>
-                    <img src="../img/content/thumb-products/product30.jpg" alt="item" class="cart__item-image">
-                    <button class="cart__item-drop"></button>
-                  </figure>
-                </div>
-                <div class="cart__item">
-                  <div class="cart__item-descr">
-                    <h5 class="cart__item-name">Шпатлевка гипсовая старт-финиш CERESIT CT 126 белая 20 кг</h5>
-                    <div class="cart__item-price-block">
-                      <span class="cart__item-count">1</span>
-                      <i class="fa fa-times" aria-hidden="true"></i>
-                      <span class="cart__item-price">1700 р</span>
-                    </div>
-                  </div>
-                  <figure>
-                    <img src="../img/content/thumb-products/product31.jpg" alt="item" class="cart__item-image">
-                    <button class="cart__item-drop"></button>
-                  </figure>
-                </div>
-              </div>
-              <div class="cart__total">
-                <span class="cart__total-name">Итого:</span>
-                <span class="cart__total-value">3700 р</span>
-              </div>
-              <a href="cart.html" class="action action--cart">оформить</a>
-            </div>
-          </div>          
-        </div>
-      </div>
-    </header>
-    <main class="main">
-      <section class="promo-slider">
-        <div class="promo-slider__wrap">
-          <div class="promo-slider__item bg-src" data-bg-src="../img/content/main-slider/header-slide3.jpg">
-            <div class="container-fluid container--promo-slide">
-              <div class="promo-slider__item-content">
-                <h2 class="promo-slider__item-title promo-slider__item-title--1">
-                  Широкий ассортимент сухих смесей для любых задач
-                </h2>
-                <p class="promo-slider__item-descr promo-slider__item-descr--1">
-                  В нашем магазине вы сможете приобрести строительные сухие смеси по ценам от производителя
-                </p>
-                <a href="shop.html" class="action action--promoslide">В каталог &#10142;</a>
-              </div>
-            </div>
-          </div>
-          <div class="promo-slider__item bg-src" data-bg-src="../img/content/main-slider/header-slide4с.jpg">
-            <div class="container-fluid container--promo-slide">
-              <div class="promo-slider__item-content">
-                <h2 class="promo-slider__item-title promo-slider__item-title--2">
-                  Напольные покрытия
-                </h2>
-                <p class="promo-slider__item-descr promo-slider__item-descr--2">
-                  Предлагаем огромный и актуальный ассортимент напольных покрытий по разумным ценам.
-                </p>
-                <a href="shop.html" class="action action--promoslide">В каталог &#10142;</a>
-              </div>
-            </div>
-          </div>
-          <div class="promo-slider__item bg-src" data-bg-src="../img/content/main-slider/header-slide6с.jpeg">
-            <div class="container-fluid container--promo-slide">
-              <div class="promo-slider__item-content">
-                <h2 class="promo-slider__item-title promo-slider__item-title--3">
-                  Ликвидация старого металла по сниженным ценам!
-                </h2>
-                <p class="promo-slider__item-descr promo-slider__item-descr--3">
-                  - Профильные трубы</br>
-                  - Стальные трубы (водогазопроводные, - электросварные и оцинкованные)</br>
-                </p>
-                <a href="shop.html" class="action action--promoslide">В каталог &#10142;</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="advantages">
-        <div class="container-fluid">
-          <div class="advantages__slider-wrap">
-            <article class="advantages__item">
-              <div class="advantages__item-wrap">
-                <i class="fas fa-truck"></i>
-                <div class="advantages__item-content">
-                  <h3 class="advantages__item-title">Бесплатная доставка </h3>
-                  <p class="advantages__item-descr">
-                    Для стоимости заказа выше 150р
-                  </p>
-                </div>
-              </div>
-            </article>
-            <article class="advantages__item">
-              <div class="advantages__item-wrap">
-                <i class="fab fa-ups"></i>
-                <div class="advantages__item-content">
-                  <h3 class="advantages__item-title">Гарантии качества</h3>
-                  <p class="advantages__item-descr">
-                    Проверяем каждую партию товара
-                  </p>
-                </div>
-              </div>
-            </article>
-            <article class="advantages__item">
-              <div class="advantages__item-wrap">
-                <i class="fas fa-shield-alt"></i>
-                <div class="advantages__item-content">
-                  <h3 class="advantages__item-title">100% защищенная оплата</h3>
-                  <p class="advantages__item-descr">
-                    Мы обеспечиваем безопасную оплату!
-                  </p>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-      <section class="categories">
-        <div class="container-fluid">
-          <div class="section-title">
-            <h2 class="section-title__text section-title__text--categories">
-              категории товаров
-            </h2>
-          </div>
-          <div class="categories__list">
-            <a href="category-page.html" class="categories__item">
-              <div class="categories__item-media">
-                <div class="categories__item-img-wrap">
-                  <img src="../img/content/categories/cat1.jpg" alt="category">
-                </div>
-              </div>
-              <h3 class="categories__item-title">
-                <span>сухие строительные смеси</span>
-              </h3>
-            </a>
-            <a href="category-page.html" class="categories__item">
-              <div class="categories__item-media">
-                <div class="categories__item-img-wrap">
-                  <img src="../img/content/categories/cat2.jpg" alt="category">
-                </div>
-              </div>
-              <h3 class="categories__item-title">
-                <span>лакокрасочные материалы</span>
-              </h3>
-            </a>
-            <a href="category-page.html" class="categories__item">
-              <div class="categories__item-media">
-                <div class="categories__item-img-wrap">
-                  <img src="../img/content/categories/cat3.jpg" alt="category">
-                </div>
-              </div>
-              <h3 class="categories__item-title">
-                <span>звукоизоляция</span>
-              </h3>
-            </a>
-            <a href="category-page.html" class="categories__item">
-              <div class="categories__item-media">
-                <div class="categories__item-img-wrap">
-                  <img src="../img/content/categories/cat4.jpg" alt="category">
-                </div>
-              </div>
-              <h3 class="categories__item-title">
-                <span>гипсокартонные системы</span>
-              </h3>
-            </a>
-            <a href="category-page.html" class="categories__item">
-              <div class="categories__item-media">
-                <div class="categories__item-img-wrap">
-                  <img src="../img/content/categories/cat5.jpg" alt="category">
-                </div>
-              </div>
-              <h3 class="categories__item-title">
-                <span>напольные покрытия</span>
-              </h3>
-            </a>
-            <a href="category-page.html" class="categories__item">
-              <div class="categories__item-media">
-                <div class="categories__item-img-wrap">
-                  <img src="../img/content/categories/cat6.jpg" alt="category">
-                </div>
-              </div>
-              <h3 class="categories__item-title">
-                <span>металлопрокат</span>
-              </h3>
-            </a>
-            <a href="category-page.html" class="categories__item">
-              <div class="categories__item-media">
-                <div class="categories__item-img-wrap">
-                  <img src="../img/content/categories/cat7.jpg" alt="category">
-                </div>
-              </div>
-              <h3 class="categories__item-title">
-                <span>изоляционные материалы</span>
-              </h3>
-            </a>
-            <a href="category-page.html" class="categories__item">
-              <div class="categories__item-media">
-                <div class="categories__item-img-wrap">
-                  <img src="../img/content/categories/cat8.jpg" alt="category">
-                </div>
-              </div>
-              <h3 class="categories__item-title">
-                <span>декоративные панели</span>
-              </h3>
-            </a>
-          </div>
-        </div>
-      </section>
-      <section class="products-list">
-        <div class="container-fluid container--bestsellers">
-          <div class="section-title">
-            <h2 class="section-title__text section-title__text--bestsellers">
-              лидеры продаж
-            </h2>
-          </div>
-          <div class="products-list__inner products-list__inner--bestsellers-slider">
-            <article class="product-card">
-              <div class="product-card__img-wrap">
-                <a href="product.html" class="product-card__link"></a>
-                <div class="product-card__marks">
-                  <div class="product-card__marks-group">
-                    <span class="product-card__new-mark">новинка</span>
-                    <span class="product-card__sale-mark">27% скидка</span>
-                  </div>
-                  <a href="#" class="product-card__add-to-cart">
-                  <i class="fas fa-shopping-cart"></i>
-                </a>
-                </div>
-                <span class="product-card__quick-view">
-                  быстрый просмотр
-                </span>
-                <img src="../img/content/products/product2.jpg" alt="product" class="product-card__img">
-              </div>
-              <div class="product-card__content">
-                <span class="product-card__category">сухие строительные смеси</span>
-                <a href="product.html" class="product-card__title excerpt-catalog-cart-title">
-                  Клей для утеплителя ilmax
-                </a>
-                <div class="product-card__price">
-                  <ins class="product-card__current-price">
-                    1350 р
-                  </ins>
-                  <del class="product-card__last-price">
-                    1620 р
-                  </del>
-                </div>
-                <div class="product-card__rating">
-                  <div class="product-card__stars-block">
-                    <div class="rating-mini">
-                      <span class="rating-mini__value">
-                        3.03
-                      </span>
-                      <span class="rating-mini__item rating-mini__item--active"></span>	
-                      <span class="rating-mini__item rating-mini__item--active"></span>	
-                      <span class="rating-mini__item rating-mini__item--active"></span>	
-                      <span class="rating-mini__item"></span>	
-                      <span class="rating-mini__item"></span>	
-                    </div>
-                  </div>
-                  <a href="#" class="product-card__reviews-link">
-                    <span>(6 отзывов)</span>
+                <div class="product-card__content">
+                  <a href="category-page.html" class="product-card__category">Всесезонные шины</a>
+                  <a href="product.html" class="product-card__title">
+                    Всесезонная шина Goodyear Vector 4Seasons Gen-3 235/45R17 97Y
                   </a>
-                </div>
-              </div>
-            </article>
-            <article class="product-card">
-              <div class="product-card__img-wrap">
-                <a href="product.html" class="product-card__link"></a>
-                <div class="product-card__marks">
-                  <div class="product-card__marks-group">
-                    <span class="product-card__new-mark">новинка</span>
-                    <span class="product-card__sale-mark">27% скидка</span>
-                  </div>
-                  <a href="#" class="product-card__add-to-cart">
-                  <i class="fas fa-shopping-cart"></i>
-                </a>
-                </div>
-                <span class="product-card__quick-view">
-                  быстрый просмотр
-                </span>
-                <img src="../img/content/products/product1.jpg" alt="product" class="product-card__img">
-              </div>
-              <div class="product-card__content">
-                <a href="category-page.html" class="product-card__category">сухие строительные смеси</a>
-                <a href="product.html" class="product-card__title excerpt-catalog-cart-title">
-                  Клей плиточный Ceresit CM11
-                </a>
-                <div class="product-card__price">
-                  <ins class="product-card__current-price">
-                    380 р
-                  </ins>
-                  <del class="product-card__last-price">
-                    
-                  </del>
-                </div>
-                <div class="product-card__rating">
-                  <div class="product-card__stars-block">
-                    <div class="rating-mini">
-                      <span class="rating-mini__value">
-                        4.20
-                      </span>
-                      <span class="rating-mini__item rating-mini__item--active"></span>	
-                      <span class="rating-mini__item rating-mini__item--active"></span>	
-                      <span class="rating-mini__item rating-mini__item--active"></span>	
-                      <span class="rating-mini__item rating-mini__item--active"></span>	
-                      <span class="rating-mini__item"></span>	
-                    </div>
-                  </div>
-                  <a href="#" class="product-card__reviews-link">
-                    <span>(6 отзывов)</span>
-                  </a>
-                </div>
-              </div>
-            </article>
-            <article class="product-card product-card--new">
-              <div class="product-card__img-wrap">
-                <a href="product.html" class="product-card__link"></a>
-                <div class="product-card__marks">
-                  <div class="product-card__marks-group">
-                    <span class="product-card__new-mark">новинка</span>
-                    <span class="product-card__sale-mark">27% скидка</span>
-                  </div>
-                  <a href="#" class="product-card__add-to-cart">
-                  <i class="fas fa-shopping-cart"></i>
-                </a>
-                </div>
-                <span class="product-card__quick-view">
-                  быстрый просмотр
-                </span>
-                <img src="../img/content/products/product3.jpg" alt="product" class="product-card__img">
-              </div>
-              <div class="product-card__content">
-                <a href="category-page.html" class="product-card__category">звукоизоляция</a>
-                <a href="product.html" class="product-card__title excerpt-catalog-cart-title">
-                  Шуманет Эко Экологическая звукоизоляционная стеклоплита 1250*600*50 мм (уп.3м2)
-                </a>
-                <div class="product-card__price">
-                  <ins class="product-card__current-price">
-                    650 р
-                  </ins>
-                  <del class="product-card__last-price">
-                    
-                  </del>
-                </div>
-                <div class="product-card__rating">
-                  <div class="product-card__stars-block">
-                    <div class="rating-mini">
-                      <span class="rating-mini__value">
-                        3.20
-                      </span>
-                      <span class="rating-mini__item rating-mini__item--active"></span>	
-                      <span class="rating-mini__item rating-mini__item--active"></span>	
-                      <span class="rating-mini__item rating-mini__item--active"></span>	
-                      <span class="rating-mini__item"></span>	
-                      <span class="rating-mini__item"></span>	
-                    </div>
-                  </div>
-                  <a href="#" class="product-card__reviews-link">
-                    <span>(7 отзывов)</span>
-                  </a>
-                </div>
-              </div>
-            </article>
-            <article class="product-card">
-              <div class="product-card__img-wrap">
-                <a href="product.html" class="product-card__link"></a>
-                <div class="product-card__marks">
-                  <div class="product-card__marks-group">
-                    <span class="product-card__new-mark">новинка</span>
-                    <span class="product-card__sale-mark">27% скидка</span>
-                  </div>
-                  <a href="#" class="product-card__add-to-cart">
-                  <i class="fas fa-shopping-cart"></i>
-                </a>
-                </div>
-                <span class="product-card__quick-view">
-                  быстрый просмотр
-                </span>
-                <img src="../img/content/products/product4.jpg" alt="product" class="product-card__img">
-              </div>
-              <div class="product-card__content">
-                <a  href="category-page.html"  class="product-card__category">напольные покрытия</a>
-                <a href="product.html" class="product-card__title excerpt-catalog-cart-title">
-                  Плинтус напольный пластик Декопласт(2.5м) Бук ясный 109
-                </a>
-                <div class="product-card__price">
-                  <ins class="product-card__current-price">
-                    90 р
-                  </ins>
-                  <del class="product-card__last-price">
-                    110 р
-                  </del>
-                </div>
-                <div class="product-card__rating">
-                  <div class="product-card__stars-block">
-                    <div class="rating-mini">
-                      <span class="rating-mini__value">
-                        3.20
-                      </span>
-                      <span class="rating-mini__item rating-mini__item--active"></span>	
-                      <span class="rating-mini__item rating-mini__item--active"></span>	
-                      <span class="rating-mini__item rating-mini__item--active"></span>	
-                      <span class="rating-mini__item"></span>	
-                      <span class="rating-mini__item"></span>	
-                    </div>
-                  </div>
-                  <a href="#" class="product-card__reviews-link">
-                    <span>(7 отзывов)</span>
-                  </a>
-                </div>
-              </div>
-            </article>
-            <article class="product-card">
-              <div class="product-card__img-wrap">
-                <a href="product.html" class="product-card__link"></a>
-                <div class="product-card__marks">
-                  <div class="product-card__marks-group">
-                    <span class="product-card__new-mark">новинка</span>
-                    <span class="product-card__sale-mark">27% скидка</span>
-                  </div>
-                  <a href="#" class="product-card__add-to-cart">
-                  <i class="fas fa-shopping-cart"></i>
-                </a>
-                </div>
-                <span class="product-card__quick-view">
-                  быстрый просмотр
-                </span>
-                <img src="../img/content/products/product5.jpg" alt="product" class="product-card__img">
-              </div>
-              <div class="product-card__content">
-                <a href="category-page.html"  class="product-card__category">лакокрасочные материалы</a>
-                <a href="product.html" class="product-card__title excerpt-catalog-cart-title">
-                  Краска SNIEZKA УльтраБель белая, 5 л
-                </a>
-                <div class="product-card__price">
-                  <ins class="product-card__current-price">
-                    2500 р
-                  </ins>
-                  <del class="product-card__last-price">
-                    2850 р
-                  </del>
-                </div>
-                <div class="product-card__rating">
-                  <div class="product-card__stars-block">
-                    <div class="rating-mini">
-                      <span class="rating-mini__value">
-                        4.70
-                      </span>
-                      <span class="rating-mini__item rating-mini__item--active"></span>	
-                      <span class="rating-mini__item rating-mini__item--active"></span>	
-                      <span class="rating-mini__item rating-mini__item--active"></span>	
-                      <span class="rating-mini__item rating-mini__item--active"></span>	
-                      <span class="rating-mini__item rating-mini__item--active"></span>	
-                    </div>
-                  </div>
-                  <a href="#" class="product-card__reviews-link">
-                    <span>(5 отзывов)</span>
-                  </a>
-                </div>
-              </div>
-            </article>
-            <article class="product-card">
-              <div class="product-card__img-wrap">
-                <a href="product.html" class="product-card__link"></a>
-                <div class="product-card__marks">
-                  <div class="product-card__marks-group">
-                    <span class="product-card__new-mark">новинка</span>
-                    <span class="product-card__sale-mark">27% скидка</span>
-                  </div>
-                  <a href="#" class="product-card__add-to-cart">
-                  <i class="fas fa-shopping-cart"></i>
-                </a>
-                </div>
-                <span class="product-card__quick-view">
-                  быстрый просмотр
-                </span>
-                <img src="../img/content/products/product6.jpg" alt="product" class="product-card__img">
-              </div>
-              <div class="product-card__content">
-                <a href="category-page.html"  class="product-card__category">отделочные материалы</a>
-                <a href="product.html" class="product-card__title excerpt-catalog-cart-title">
-                  Грунтовка Ceresit CT17 SuperConcentrate
-                </a>
-                <div class="product-card__price">
-                  <ins class="product-card__current-price">
-                    2500 р
-                  </ins>
-                  <del class="product-card__last-price">
-                    2850 р
-                  </del>
-                </div>
-                <div class="product-card__rating">
-                  <div class="product-card__stars-block">
-                    <div class="rating-mini">
-                      <span class="rating-mini__value">
-                        4.70
-                      </span>
-                      <span class="rating-mini__item rating-mini__item--active"></span>	
-                      <span class="rating-mini__item rating-mini__item--active"></span>	
-                      <span class="rating-mini__item rating-mini__item--active"></span>	
-                      <span class="rating-mini__item rating-mini__item--active"></span>	
-                      <span class="rating-mini__item rating-mini__item--active"></span>	
-                    </div>
-                  </div>
-                  <a href="#" class="product-card__reviews-link">
-                    <span>(5 отзывов)</span>
-                  </a>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-      <section class="promo-block">
-        <div class="container-fluid">
-          <div class="promo-block__list">
-            <div class="bg-src promo-block__item promo-block__item--1" data-bg-src="../img/content/promo-banner/banner1.jpg">
-              
-            </div>
-            <div class="bg-src promo-block__item promo-block__item--2" data-bg-src="../img/content/promo-banner/banner2.jpg">
-              
-            </div>
-            <div class="bg-src promo-block__item promo-block__item--3" data-bg-src="../img/content/promo-banner/banner3.jpg">
-              
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="products-list">
-        <div class="container-fluid container--popular">
-          <div class="section-title">
-            <h2 class="section-title__text section-title__text--popular">
-              популярные товары
-            </h2>
-          </div>
-          <div class="products-list__inner products-list__inner--popular-slider">
-            <article class="product-card product-card--sale">
-              <div class="product-card__img-wrap">
-                <a href="product.html" class="product-card__link"></a>
-                <div class="product-card__marks">
-                  <div class="product-card__marks-group">
-                    <span class="product-card__new-mark">новинка</span>
-                    <span class="product-card__sale-mark">27% скидка</span>
-                  </div>
-                  <a href="#" class="product-card__add-to-cart">
-                  <i class="fas fa-shopping-cart"></i>
-                </a>
-                </div>
-                <span class="product-card__quick-view">
-                  быстрый просмотр
-                </span>
-                <img src="../img/content/products/product5.jpg" alt="product" class="product-card__img">
-              </div>
-              <div class="product-card__content">
-                <span class="product-card__category">лакокрасочные материалы</span>
-                <a href="product.html" class="product-card__title excerpt-catalog-cart-title">
-                  Краска SNIEZKA УльтраБель белая, 5 л
-                </a>
-                <div class="product-card__price">
-                  <ins class="product-card__current-price">
-                    2500 р
-                  </ins>
-                  <del class="product-card__last-price">
-                    3200 р
-                  </del>
-                </div>
-                <div class="product-card__rating">
-                  <div class="product-card__stars-block">
-                    <div class="rating-mini">
-                      <span class="rating-mini__value">
-                        3.03
-                      </span>
-                      <span class="rating-mini__item rating-mini__item--active"></span>	
-                      <span class="rating-mini__item rating-mini__item--active"></span>	
-                      <span class="rating-mini__item rating-mini__item--active"></span>	
-                      <span class="rating-mini__item"></span>	
-                      <span class="rating-mini__item"></span>	
-                    </div>
-                  </div>
-                  <a href="#" class="product-card__reviews-link">
-                    <span>(6 отзывов)</span>
-                  </a>
-                </div>
-              </div>
-            </article>
-            <article class="product-card product-card--sale">
-              <div class="product-card__img-wrap">
-                <a href="product.html" class="product-card__link"></a>
-                <div class="product-card__marks">
-                  <div class="product-card__marks-group">
-                    <span class="product-card__new-mark">новинка</span>
-                    <span class="product-card__sale-mark">27% скидка</span>
-                  </div>
-                  <a href="#" class="product-card__add-to-cart">
-                  <i class="fas fa-shopping-cart"></i>
-                </a>
-                </div>
-                <span class="product-card__quick-view">
-                  быстрый просмотр
-                </span>
-                <img src="../img/content/products/product1.jpg" alt="product" class="product-card__img">
-              </div>
-              <div class="product-card__content">
-                <a href="category-page.html" class="product-card__category">отделочные материалы</a>
-                <a href="product.html" class="product-card__title excerpt-catalog-cart-title">
-                  Грунтовка Ceresit CT17 SuperConcentrate
-                </a>
-                <div class="product-card__price">
-                  <ins class="product-card__current-price">
-                    1500 р
-                  </ins>
-                  <del class="product-card__last-price">
-                    1900 р
-                  </del>
-                </div>
-                <div class="product-card__rating">
-                  <div class="product-card__stars-block">
-                    <div class="rating-mini">
-                      <span class="rating-mini__value">
-                        4.20
-                      </span>
-                      <span class="rating-mini__item rating-mini__item--active"></span>	
-                      <span class="rating-mini__item rating-mini__item--active"></span>	
-                      <span class="rating-mini__item rating-mini__item--active"></span>	
-                      <span class="rating-mini__item rating-mini__item--active"></span>	
-                      <span class="rating-mini__item"></span>	
-                    </div>
-                  </div>
-                  <a href="#" class="product-card__reviews-link">
-                    <span>(6 отзывов)</span>
-                  </a>
-                </div>
-              </div>
-            </article>
-            <article class="product-card">
-              <div class="product-card__img-wrap">
-                <a href="product.html" class="product-card__link"></a>
-                <div class="product-card__marks">
-                  <div class="product-card__marks-group">
-                    <span class="product-card__new-mark">новинка</span>
-                    <span class="product-card__sale-mark">27% скидка</span>
-                  </div>
-                  <a href="#" class="product-card__add-to-cart">
-                  <i class="fas fa-shopping-cart"></i>
-                </a>
-                </div>
-                <span class="product-card__quick-view">
-                  быстрый просмотр
-                </span>
-                <img src="../img/content/products/product7.jpg" alt="product" class="product-card__img">
-              </div>
-              <div class="product-card__content">
-                <a href="category-page.html" class="product-card__category">декоративные панели</a>
-                <a href="product.html" class="product-card__title excerpt-catalog-cart-title">
-                  Панель МДФ Standart Plus (2600*200*7) венге каир  (8шт. в упак.)
-                </a>
-                <div class="product-card__price">
-                  <ins class="product-card__current-price">
-                    130 р
-                  </ins>
-                  <del class="product-card__last-price">
-                    
-                  </del>
-                </div>
-                <div class="product-card__rating">
-                  <div class="product-card__stars-block">
-                    <div class="rating-mini">
-                      <span class="rating-mini__value">
-                        3.20
-                      </span>
-                      <span class="rating-mini__item rating-mini__item--active"></span>	
-                      <span class="rating-mini__item rating-mini__item--active"></span>	
-                      <span class="rating-mini__item rating-mini__item--active"></span>	
-                      <span class="rating-mini__item"></span>	
-                      <span class="rating-mini__item"></span>	
-                    </div>
-                  </div>
-                  <a href="#" class="product-card__reviews-link">
-                    <span>(7 отзывов)</span>
-                  </a>
-                </div>
-              </div>
-            </article>
-            <article class="product-card">
-              <div class="product-card__img-wrap">
-                <a href="product.html" class="product-card__link"></a>
-                <div class="product-card__marks">
-                  <div class="product-card__marks-group">
-                    <span class="product-card__new-mark">новинка</span>
-                    <span class="product-card__sale-mark">27% скидка</span>
-                  </div>
-                  <a href="#" class="product-card__add-to-cart">
-                  <i class="fas fa-shopping-cart"></i>
-                </a>
-                </div>
-                <span class="product-card__quick-view">
-                  быстрый просмотр
-                </span>
-                <img src="../img/content/products/product8.jpg" alt="product" class="product-card__img">
-              </div>
-              <div class="product-card__content">
-                <a  href="category-page.html"  class="product-card__category">отделочные материалы</a>
-                <a href="product.html" class="product-card__title excerpt-catalog-cart-title">
-                  Каучуковая мастика КН-3 22 кг.
-                </a>
-                <div class="product-card__price">
-                  <ins class="product-card__current-price">
-                    1300 р
-                  </ins>
-                  <del class="product-card__last-price">
-                    
-                  </del>
-                </div>
-                <div class="product-card__rating">
-                  <div class="product-card__stars-block">
-                    <div class="rating-mini">
-                      <span class="rating-mini__value">
-                        3.20
-                      </span>
-                      <span class="rating-mini__item rating-mini__item--active"></span>	
-                      <span class="rating-mini__item rating-mini__item--active"></span>	
-                      <span class="rating-mini__item rating-mini__item--active"></span>	
-                      <span class="rating-mini__item"></span>	
-                      <span class="rating-mini__item"></span>	
-                    </div>
-                  </div>
-                  <a href="#" class="product-card__reviews-link">
-                    <span>(7 отзывов)</span>
-                  </a>
-                </div>
-              </div>
-            </article>
-            <article class="product-card product-card--sale">
-              <div class="product-card__img-wrap">
-                <a href="product.html" class="product-card__link"></a>
-                <div class="product-card__marks">
-                  <div class="product-card__marks-group">
-                    <span class="product-card__new-mark">новинка</span>
-                    <span class="product-card__sale-mark">27% скидка</span>
-                  </div>
-                  <a href="#" class="product-card__add-to-cart">
-                  <i class="fas fa-shopping-cart"></i>
-                </a>
-                </div>
-                <span class="product-card__quick-view">
-                  быстрый просмотр
-                </span>
-                <img src="../img/content/products/product9.jpg" alt="product" class="product-card__img">
-              </div>
-              <div class="product-card__content">
-                <a href="category-page.html"  class="product-card__category">напольные покрытия</a>
-                <a href="product.html" class="product-card__title excerpt-catalog-cart-title">
-                  Плитка Эстима технический керамогранит ST-03 30*30*8 (уп.1,53м2)
-                </a>
-                <div class="product-card__price">
-                  <ins class="product-card__current-price">
-                    390 р
-                  </ins>
-                  <del class="product-card__last-price">
-                    470 р
-                  </del>
-                </div>
-                <div class="product-card__rating">
-                  <div class="product-card__stars-block">
-                    <div class="rating-mini">
-                      <span class="rating-mini__value">
-                        4.70
-                      </span>
-                      <span class="rating-mini__item rating-mini__item--active"></span>	
-                      <span class="rating-mini__item rating-mini__item--active"></span>	
-                      <span class="rating-mini__item rating-mini__item--active"></span>	
-                      <span class="rating-mini__item rating-mini__item--active"></span>	
-                      <span class="rating-mini__item rating-mini__item--active"></span>	
-                    </div>
-                  </div>
-                  <a href="#" class="product-card__reviews-link">
-                    <span>(5 отзывов)</span>
-                  </a>
-                </div>
-              </div>
-            </article>
-            <article class="product-card">
-              <div class="product-card__img-wrap">
-                <a href="product.html" class="product-card__link"></a>
-                <div class="product-card__marks">
-                  <div class="product-card__marks-group">
-                    <span class="product-card__new-mark">новинка</span>
-                    <span class="product-card__sale-mark">27% скидка</span>
-                  </div>
-                  <a href="#" class="product-card__add-to-cart">
-                  <i class="fas fa-shopping-cart"></i>
-                </a>
-                </div>
-                <span class="product-card__quick-view">
-                  быстрый просмотр
-                </span>
-                <img src="../img/content/products/product6.jpg" alt="product" class="product-card__img">
-              </div>
-              <div class="product-card__content">
-                <a href="category-page.html"  class="product-card__category">отделочные материалы</a>
-                <a href="product.html" class="product-card__title excerpt-catalog-cart-title">
-                  Грунтовка Ceresit CT17 SuperConcentrate
-                </a>
-                <div class="product-card__price">
-                  <ins class="product-card__current-price">
-                    2500 р
-                  </ins>
-                  <del class="product-card__last-price">
-                    2850 р
-                  </del>
-                </div>
-                <div class="product-card__rating">
-                  <div class="product-card__stars-block">
-                    <div class="rating-mini">
-                      <span class="rating-mini__value">
-                        4.70
-                      </span>
-                      <span class="rating-mini__item rating-mini__item--active"></span>	
-                      <span class="rating-mini__item rating-mini__item--active"></span>	
-                      <span class="rating-mini__item rating-mini__item--active"></span>	
-                      <span class="rating-mini__item rating-mini__item--active"></span>	
-                      <span class="rating-mini__item rating-mini__item--active"></span>	
-                    </div>
-                  </div>
-                  <a href="#" class="product-card__reviews-link">
-                    <span>(5 отзывов)</span>
-                  </a>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-      <section class="adv-online bg-src" data-bg-src="../img/content/parallax1.jpg">
-        <div class="container-fluid container--adv-online">
-          <div class="adv-online__content">
-            <p class="adv-online__top">
-              Дешевле <span class="adv-online__discount-value">на 7%</span> при заказе на сайте
-            </p>
-            <p class="adv-online__middle">на все товары</p>
-            <p class="adv-online__bottom">
-              Бесплатная доставка при заказе свыше 1000 р
-            </p>
-            <a href="shop.html" class="adv-online__action-link">попробуй сейчас</a>
-          </div>
-        </div>
-      </section>
-      <section class="brands">
-        <div class="container-fluid container--brands">
-          <div class="section-title">
-            <h2 class="section-title__text section-title__text--brands">
-              наши клиенты
-            </h2>
-          </div>
-          <div class="brands__list">
-            <div class="brands__item">
-              <img src="../img/content/brands/1.jpg" alt="brand" class="brand__image">
-            </div>
-            <div class="brands__item">
-              <img src="../img/content/brands/2.jpg" alt="brand" class="brand__image">
-            </div>
-            <div class="brands__item">
-              <img src="../img/content/brands/3.jpg" alt="brand" class="brand__image">
-            </div>
-            <div class="brands__item">
-              <img src="../img/content/brands/4.jpg" alt="brand" class="brand__image">
-            </div>
-            <div class="brands__item">
-              <img src="../img/content/brands/5.jpg" alt="brand" class="brand__image">
-            </div>
-            <div class="brands__item">
-              <img src="../img/content/brands/6.jpg" alt="brand" class="brand__image">
-            </div>
-            <div class="brands__item">
-              <img src="../img/content/brands/7.jpg" alt="brand" class="brand__image">
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="blog-section">
-        <div class="container-fluid container--blog-section">
-          <div class="section-title">
-            <h2 class="section-title__text section-title__text--blog-section">
-              последние статьи
-            </h2>
-          </div>
-          <div class="blog-section__content">
-            <article class="blog-item wrap-1">
-              <a href="post.html" class="blog-item__image-wrap">
-                <div class="blog-item__date">
-                  <span class="blog-item__date-day">
-                    19
-                  </span>
-                  <span class="blog-item__date-month">
-                    jan
-                  </span>
-                </div>
-                <img src="../img/content/blog-main-page/post1.jpg" alt="blog" class="blog-item__image">
-              </a>
-              <div class="blog-item__content">
-                <h4 class="blog-item__title">
-                  Новые технологии при производстве
-                </h4>
-                <p class="blog-item__excerpt">
-                  Предлагаем красный кирпич, произведенный по иновационной технологии под контролем немецких специалистов, обладающий повышенными теплоизоляционными характеристиками
-                </p>
-                <a href="post.html" class="blog-item__read-more">подробнее... &#10141;</a>
-              </div>
-            </article>
-            <article class="blog-item wrap-2">
-              <a href="post.html" class="blog-item__image-wrap">
-                <div class="blog-item__date">
-                  <span class="blog-item__date-day">
-                    19
-                  </span>
-                  <span class="blog-item__date-month">
-                    jan
-                  </span>
-                </div>
-                <img src="../img/content/blog-main-page/post2.jpg" alt="blog" class="blog-item__image">
-              </a>
-              <div class="blog-item__content">
-                <h4 class="blog-item__title">
-                  Методика обшивки гипсокартоном
-                </h4>
-                <p class="blog-item__excerpt">
-                  Мы расскажем вам о современных подходах в обшивке гипсокартоном стен помещений
-                </p>
-                <a href="post.html" class="blog-item__read-more">подробнее... &#10141;</a>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="container-fluid container--footer">
-        <div class="footer__content">
-          <div class="footer__top">
-            <div class="footer__logo">
-              <a href="index.html" class="logo logo--footer">
-                <img src="../img/decor/logo-footer.png" alt="logotype" class="logo__img logo__img--footer">
-              </a>
-            </div>
-            <div class="footer__subscribe">
-              <div class="subscribe">
-                <div class="subscribe__text">
-                  <p class="subscribe__action">
-                    Подпишитесь на нашу рассылку
-                  </p>
-                  <p class="subscribe__description">
-                    Будьте в курсе новостей и эксклюзивных предложений
-                  </p>
-                </div>
-                <div class="subscribe__form-block">
-                  <form action="#" class="subscribe__form">
-                    <input type="email" required placeholder="Введите email"  class="subscribe__input">
-                    <button class="subscribe__submit-btn" type="submit">подписаться</button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="footer__middle">
-            <div class="footer__company-info">
-              <div class="company-info">
-                <div class="company-info__block">
-                  <h5 class="company-info__block-title">
-                    Контактная информация
-                  </h5>
-                  <ul class="company-info__list">
-                    <li class="company-info__item">
-                      <span class="company-info__item-name">телефон</span>
-                      <a href="tel:+000000000000" class="company-info__item-value">000 00 000-00-00</a>
-                    </li>
-                    <li class="company-info__item">
-                      <span class="company-info__item-name">Email</span>
-                      <a href="mailto:mail@company.com" class="company-info__item-value">
-                        mail@company.com
-                      </a>
-                    </li>
-                    <li class="company-info__item">
-                      <span class="company-info__item-name">Адрес:</span>
-                      <a href="#" class="company-info__item-value">весь мир</a>
-                    </li>
-                    <li class="company-info__item">
-                      <span class="company-info__item-name">Режим работы</span>
-                    </li>
-                    <li class="company-info__item">
-                      <span href="#" class="company-info__item-value">
-                        Пн - Вс / 9:00 - 19:00
-                      </span>
-                    </li>
-                  </ul>
-                </div>
-                <div class="company-info__block">
-                  <h5 class="company-info__block-title">
-                    мой кабинет
-                  </h5>
-                  <ul class="company-info__list">
-                    <li class="company-info__item">
-                      <a href="about-us.html" class="company-info__item-value">О нас</a>
-                    </li>
-                    <li class="company-info__item">
-                      <a href="main-policy.html" class="company-info__item-value">Договор публичной оферты</a>
-                    </li>
-                    <li class="company-info__item">
-                      <a href="delivery-policy.html" class="company-info__item-value">Доставка</a>
-                    </li>
-                    <li class="company-info__item">
-                      <a href="payment-policy.html" class="company-info__item-value">Оплата</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="company-info__block company-info__block--questions">
-                  <h5 class="company-info__block-title">
-                    Остались вопросы?
-                  </h5>
-                  <div class="company-info__phone-form-wrap">
-                    <form action="index.html" class="phone-form">
-                      <input type="text" class="phone-form__input" name="phone-form-name" required placeholder="Ваше имя ... *">
-                      <input type="tel" class="phone-form__input" name="phone-form-tel-number" required placeholder="Номер телефона... *">
-                      <button class="phone-form__submit-btn" type="submit">отправить</button>
-                      <p class="phone-form__description">
-                        Наши специалисты свяжуться с Вами в ближайшее время и ответят на Ваши вопросы
-                      </p>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="footer__bottom">
-            <div class="footer__bottom-item">
-              <img src="../img/decor/visa-mastercard-small.png" alt="payment" class="footer__bottom-payment-img">
-            </div>
-            <div class="footer__bottom-item">
-              <div class="footer__copyright">
-                <p class="footer__copyright-text">Магазин &copy; 2021. Все права защищены</p>
-              </div>
-            </div>
-            <div class="footer__bottom-item">
-              <div class="social">
-                <a href="#" class="social__link">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="#" class="social__link">
-                  <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#" class="social__link">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer__mobile-nav-wrap">
-        <div class="container-fluid">
-          <ul class="footer__mobile-nav">
-            <li class="footer__mobile-nav-item">
-              <a href="index.html" class="footer__mobile-nav-link">
-                <span class="footer__mobile-nav-link-icon">
-                  <i class="fas fa-home"></i>
-                </span>
-                <span class="footer__mobile-nav-text">
-                  Главная
-                </span>
-              </a>
-            </li>
-            <li class="footer__mobile-nav-item">
-              <a href="shop.html" class="footer__mobile-nav-link">
-                <span class="footer__mobile-nav-link-icon">
-                  <i class="fal fa-receipt"></i>
-                </span>
-                <span class="footer__mobile-nav-text">
-                  Каталог
-                </span>
-              </a>
-            </li>
-            <li class="footer__mobile-nav-item">
-              <a href="#" class="footer__mobile-nav-link">
-                <span class="footer__mobile-nav-link-icon">
-                  <i class="fas fa-user"></i>
-                </span>
-                <span class="footer__mobile-nav-text">
-                  Личный кабинет
-                </span>
-              </a>
-            </li>
-            <li class="footer__mobile-nav-item footer__mobile-nav-item--cart">
-              <a href="#" class="footer__mobile-nav-link footer__mobile-nav-link--cart">
-                <span class="footer__mobile-nav-link-icon">
-                  <i class="fal fa-shopping-basket"></i>
-                </span>
-                <span class="footer__mobile-nav-text">Корзина</span>
-              </a>
-              <div class="cart cart--footer">
-                <div class="cart__content-header">
-                  <span class="cart__total-header-counts">2 товара</span>
-                  <a href="cart.html" class="cart__total-header-counts">корзина</a>
-                </div>
-                <div class="cart__items-list">
-                  <div class="cart__item">
-                    <div class="cart__item-descr">
-                      <h5 class="cart__item-name">Шпатлевка полимерная финишная KNAUF Rotband Pasta Profi белая 18 кг</h5>
-                      <div class="cart__item-price-block">
-                        <span class="cart__item-count">1</span>
-                        <i class="fa fa-times" aria-hidden="true"></i>
-                        <span class="cart__item-price">1800 р</span>
-                      </div>
-                    </div>
-                    <figure>
-                      <img src="../img/content/thumb-products/product30.jpg" alt="item" class="cart__item-image">
-                      <button class="cart__item-drop"></button>
-                    </figure>
-                  </div>
-                  <div class="cart__item">
-                    <div class="cart__item-descr">
-                      <h5 class="cart__item-name">Шпатлевка гипсовая старт-финиш CERESIT CT 126 белая 20 кг</h5>
-                      <div class="cart__item-price-block">
-                        <span class="cart__item-count">1</span>
-                        <i class="fa fa-times" aria-hidden="true"></i>
-                        <span class="cart__item-price">1700 р</span>
-                      </div>
-                    </div>
-                    <figure>
-                      <img src="../img/content/thumb-products/product31.jpg" alt="item" class="cart__item-image">
-                      <button class="cart__item-drop"></button>
-                    </figure>
-                  </div>
-                </div>
-                <div class="cart__total">
-                  <span class="cart__total-name">Итого:</span>
-                  <span class="cart__total-value">3700 р</span>
-                </div>
-                <a href="cart.html" class="action action--cart">оформить</a>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </footer>
-  <div class="product-quickview__wrap">
-      <div class="product-quickview__overlay"></div>
-      <div class="product-quickview__icon-close-wrap">
-        <span class="product-quickview__icon-close">
-        </span>
-      </div>
-      <div class="container-fluid container--quickview">
-        <div class="product-quickview__content">
-          <div class="product">
-            <div class="row product__top">
-              <div class="col-md-6 product-sliders-wrap">
-                <div class="row product__sliders">
-                  <div class="col-lg-12 product__main-slider--quickview">
-                    <div class="product__main-slider-item">
-                      <img src="../img/content/product-card/product_1.jpg" id="zoom1" alt="ламинат Egger" class="product__main-slider-img zoom__img">
-                    </div>
-                    <div class="product__main-slider-item">
-                      <img src="../img/content/product-card/product_2.jpg" id="zoom2" alt="ламинат Egger" class="product__main-slider-img zoom__img">
-                    </div>
-                    <div class="product__main-slider-item">
-                      <img src="../img/content/product-card/product_3.jpg" id="zoom3" alt="ламинат Egger" class="product__main-slider-img  zoom__img">
-                    </div>
-                    <div class="product__main-slider-item">
-                      <img src="../img/content/product-card/product_4.jpg" id="zoom4" alt="ламинат Egger" class="product__main-slider-img  zoom__img">
-                    </div>
-                    <div class="product__main-slider-item">
-                      <img src="../img/content/product-card/product_5.jpg" id="zoom5" alt="ламинат Egger" class="product__main-slider-img  zoom__img">
-                    </div>
-                  </div>
-                  <div class="col-lg-12 product__thumb-slider--quickview">
-                    <div class="product__thumb-slider-item">
-                      <img src="../img/content/product-card/product_1sm.jpg" alt="ламинат Egger" class="product__thumb-slider-img">
-                    </div>
-                    <div class="product__thumb-slider-item">
-                      <img src="../img/content/product-card/product_2sm.jpg" alt="ламинат Egger" class="product__thumb-slider-img">
-                    </div>
-                    <div class="product__thumb-slider-item">
-                      <img src="../img/content/product-card/product_3sm.jpg" alt="ламинат Egger" class="product__thumb-slider-img">
-                    </div>
-                    <div class="product__thumb-slider-item">
-                      <img src="../img/content/product-card/product_4sm.jpg" alt="ламинат Egger" class="product__thumb-slider-img">
-                    </div>
-                    <div class="product__thumb-slider-item">
-                      <img src="../img/content/product-card/product_5sm.jpg" alt="ламинат Egger" class="product__thumb-slider-img">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 product__details-wrap">
-                <div class="product__details">
-                  <div class="breadcrumbs breadcrumbs--product">
-                    <ul class="breadcrumbs__list">
-                      <li class="breadcrumbs__item">
-                        <a href="index.html" class="breadcrumbs__link">
-                          <i class="fas fa-home"></i>
-                        </a>
-                      </li>
-                      <li class="breadcrumbs__item">
-                        <a href="shop.html" class="breadcrumbs__link">
-                          Товары
-                        </a>
-                      </li>
-                      <li class="breadcrumbs__item">
-                        <a href="product.html" class="breadcrumbs__link">
-                          Детали
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <a href="product.html" class="product__title">
-                    Ламинат EGGER коллекция CLASSIC 8-32 дуб нарва
-                  </a>
-                  <div class="product__meta">
-                    <p class="product__number">
-                      <span class="product__number-text">
-                        Артикул:
-                      </span>
-                      <span class="product__number-value">
-                        12345678
-                      </span>
-                    </p>
-                    <p class="product__producer">
-                      <span class="product__producer-text">
-                        Бренд:
-                      </span>
-                      <span class="product__producer-value">
-                        Quick-step
-                      </span>
-                    </p>
-                  </div>
-                  <div class="product__price">
-                    <span class="product__price-value">850</span>
-                    <span class="product__price__currency">р</span>
-                  </div>
-                  <div class="product__rating">
-                    <div class="product__stars-block">
+                  <div class="product-card__rating">
+                    <div class="product-card__stars-block">
                       <div class="rating-mini">
                         <span class="rating-mini__value">
                           3.03
@@ -1358,148 +1144,599 @@
                         <span class="rating-mini__item"></span>	
                       </div>
                     </div>
-                    <a href="#" class="product__reviews-link">
-                      <span>(6 отзывов)</span>
+                  </div>
+                  <div class="product-card__price">
+                    <del class="product-card__last-price">
+                      8200 р
+                    </del>
+                    <ins class="product-card__current-price">
+                      6000 р
+                    </ins>
+                  </div>
+                  <div class="product-card__popup">
+                    <a href="#" class="product-card__add-to-cart">
+                      в корзину
                     </a>
                   </div>
-                  <p class="product__short-descr">
-                    Коллекция Classic 8/32 EGGER без фаски – самый доступный ламинат, не уступающий в качестве немецким коллекциям. Востребованные декоры, классический вид пола без фаски, умеренная цена – основные факторы, склоняющие множество покупателей к этой коллекции.
-                  </p>
-                  <div class="product__paremeters">
-                    <div class="product__variation product__variation--color">
-                      <span class="product__variation-text">
-                        Цвет:
-                      </span>
-                      <div class="select-box">
-                        <select name="color" class="select-box__options">
-                          <option value="" selected="selected">Выберите</option>
-                          <option value="white">Белый</option>
-                          <option value="black">Черный</option>
-                          <option value="brown">Коричневый</option>
-                          <option value="red">Красный</option>
-                          <option value="green">Зеленый</option>
-                          <option value="yellow">Желтый</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="product__variation product__variation--width">
-                      <span class="product__variation-text">
-                        Ширина полотна:
-                      </span>
-                      <div class="select-box">
-                        <select name="size" class="select-box__options">
-                          <option value="" selected="selected">Выберите</option>
-                          <option value="s">120 мм</option>
-                          <option value="m">140 мм</option>
-                          <option value="l">180 мм</option>
-                          <option value="xl">200 мм</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product__count-block">
-                    <div class="product__variation product__variation--count">
-                      <span class="product__variation-text">
-                        Количество:
-                      </span>
-                      <div class="count-box">
-                        <div class="count-box__input-group">
-                          <button class="count-box__minus"></button>
-                          <input type="number" class="count-box__value" min="1" max="1000000" value="1">
-                          <button class="count-box__plus"></button>
+                </div>
+              </article>
+              <div class="discounts__slider-wrap">
+                <div class="discounts__slider owl-carousel">
+                  <article class="product-card product-card--sale">
+                    <div class="product-card__img-wrap bg-src" data-bg-src="../img/content/products/product1.jpeg">
+                      <a href="product.html" class="product-card__link"></a>
+                      <div class="product-card__marks">
+                        <div class="product-card__marks-group">
+                          <span class="product-card__new-mark">новинка</span>
+                          <span class="product-card__sale-mark">27% скидка</span>
                         </div>
                       </div>
+                      <span class="product-card__quick-view">
+                        <i class="fas fa-eye"></i>
+                      </span>
                     </div>
-                    <button class="product__count-block-add-to-basket">
-                      <i class="far fa-shopping-cart"></i>
-                      <span>в корзину</span>
-                    </button>
+                    <div class="product-card__content">
+                      <a href="category-page.html" class="product-card__category">Всесезонные шины</a>
+                      <a href="product.html" class="product-card__title excerpt-catalog-cart-title">
+                        Всесезонная шина Goodyear Vector 4Seasons
+                      </a>
+                      <div class="product-card__rating">
+                        <div class="product-card__stars-block">
+                          <div class="rating-mini">
+                            <span class="rating-mini__value">
+                              3.03
+                            </span>
+                            <span class="rating-mini__item rating-mini__item--active"></span>	
+                            <span class="rating-mini__item rating-mini__item--active"></span>	
+                            <span class="rating-mini__item rating-mini__item--active"></span>	
+                            <span class="rating-mini__item"></span>	
+                            <span class="rating-mini__item"></span>	
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-card__price">
+                        <del class="product-card__last-price">
+                          7200 р
+                        </del>
+                        <ins class="product-card__current-price">
+                          6000 р
+                        </ins>
+                      </div>
+                      <div class="product-card__popup">
+                        <a href="#" class="product-card__add-to-cart">
+                          в корзину
+                        </a>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="product-card product-card--sale">
+                    <div class="product-card__img-wrap bg-src" data-bg-src="../img/content/products/product3.jpeg">
+                      <a href="product.html" class="product-card__link"></a>
+                      <div class="product-card__marks">
+                        <div class="product-card__marks-group">
+                          <span class="product-card__new-mark">новинка</span>
+                          <span class="product-card__sale-mark">27% скидка</span>
+                        </div>
+                      </div>
+                      <span class="product-card__quick-view">
+                        <i class="fas fa-eye"></i>
+                      </span>
+                    </div>
+                    <div class="product-card__content">
+                      <a href="category-page.html" class="product-card__category">Зимние шины</a>
+                      <a href="product.html" class="product-card__title excerpt-catalog-cart-title">
+                        Зимняя шина Nokian Nordman RS2 185/65R15 92R
+                      </a>
+                      <div class="product-card__rating">
+                        <div class="product-card__stars-block">
+                          <div class="rating-mini">
+                            <span class="rating-mini__value">
+                              4.95
+                            </span>
+                            <span class="rating-mini__item rating-mini__item--active"></span>	
+                            <span class="rating-mini__item rating-mini__item--active"></span>	
+                            <span class="rating-mini__item rating-mini__item--active"></span>	
+                            <span class="rating-mini__item rating-mini__item--active"></span>	
+                            <span class="rating-mini__item rating-mini__item--active"></span>	
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-card__price">
+                        <del class="product-card__last-price">
+                          6350 р
+                        </del>
+                        <ins class="product-card__current-price">
+                          5580 р
+                        </ins>
+                      </div>
+                      <div class="product-card__popup">
+                        <a href="#" class="product-card__add-to-cart">
+                          в корзину
+                        </a>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="product-card product-card--sale">
+                    <div class="product-card__img-wrap bg-src" data-bg-src="../img/content/products/product12.jpeg">
+                      <a href="product.html" class="product-card__link"></a>
+                      <div class="product-card__marks">
+                        <div class="product-card__marks-group">
+                          <span class="product-card__new-mark">новинка</span>
+                          <span class="product-card__sale-mark">45% скидка</span>
+                        </div>
+                      </div>
+                      <span class="product-card__quick-view">
+                        <i class="fas fa-eye"></i>
+                      </span>
+                    </div>
+                    <div class="product-card__content">
+                      <a href="category-page.html" class="product-card__category">Штампованные диски</a>
+                      <a href="product.html" class="product-card__title excerpt-catalog-cart-title">
+                        Штампованный диск Magnetto 14016 AM 14x5" 5x100мм DIA 57.1мм ET 35мм Black
+                      </a>
+                      <div class="product-card__rating">
+                        <div class="product-card__stars-block">
+                          <div class="rating-mini">
+                            <span class="rating-mini__value">
+                              4.45
+                            </span>
+                            <span class="rating-mini__item rating-mini__item--active"></span>	
+                            <span class="rating-mini__item rating-mini__item--active"></span>	
+                            <span class="rating-mini__item rating-mini__item--active"></span>	
+                            <span class="rating-mini__item rating-mini__item--active"></span>	
+                            <span class="rating-mini__item"></span>	
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-card__price">
+                        <del class="product-card__last-price">
+                          4000 р
+                        </del>
+                        <ins class="product-card__current-price">
+                          7590 р
+                        </ins>
+                      </div>
+                      <div class="product-card__popup">
+                        <a href="#" class="product-card__add-to-cart">
+                          в корзину
+                        </a>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="product-card product-card--sale">
+                    <div class="product-card__img-wrap bg-src" data-bg-src="../img/content/products/product11.jpeg">
+                      <a href="product.html" class="product-card__link"></a>
+                      <div class="product-card__marks">
+                        <div class="product-card__marks-group">
+                          <span class="product-card__new-mark">новинка</span>
+                          <span class="product-card__sale-mark">33% скидка</span>
+                        </div>
+                      </div>
+                      <span class="product-card__quick-view">
+                        <i class="fas fa-eye"></i>
+                      </span>
+                    </div>
+                    <div class="product-card__content">
+                      <a href="category-page.html" class="product-card__category">Литые диски</a>
+                      <a href="product.html" class="product-card__title excerpt-catalog-cart-title">
+                        Литой диск iFree Слайдер 14x5.5" 4x108мм DIA 63.3мм ET 43мм HighWay
+                      </a>
+                      <div class="product-card__rating">
+                        <div class="product-card__stars-block">
+                          <div class="rating-mini">
+                            <span class="rating-mini__value">
+                              4.45
+                            </span>
+                            <span class="rating-mini__item rating-mini__item--active"></span>	
+                            <span class="rating-mini__item rating-mini__item--active"></span>	
+                            <span class="rating-mini__item rating-mini__item--active"></span>	
+                            <span class="rating-mini__item rating-mini__item--active"></span>	
+                            <span class="rating-mini__item"></span>	
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-card__price">
+                        <del class="product-card__last-price">
+                          5850 р
+                        </del>
+                        <ins class="product-card__current-price">
+                          4200 р
+                        </ins>
+                      </div>
+                      <div class="product-card__popup">
+                        <a href="#" class="product-card__add-to-cart">
+                          в корзину
+                        </a>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="product-card product-card--sale">
+                    <div class="product-card__img-wrap bg-src" data-bg-src="../img/content/products/product2.jpeg">
+                      <a href="product.html" class="product-card__link"></a>
+                      <div class="product-card__marks">
+                        <div class="product-card__marks-group">
+                          <span class="product-card__new-mark">новинка</span>
+                          <span class="product-card__sale-mark">33% скидка</span>
+                        </div>
+                      </div>
+                      <span class="product-card__quick-view">
+                        <i class="fas fa-eye"></i>
+                      </span>
+                    </div>
+                    <div class="product-card__content">
+                      <a href="category-page.html" class="product-card__category">Летние шины</a>
+                      <a href="product.html" class="product-card__title excerpt-catalog-cart-title">
+                        Летняя шина Cordiant Sport 3 195/65R15 91V
+                      </a>
+                      <div class="product-card__rating">
+                        <div class="product-card__stars-block">
+                          <div class="rating-mini">
+                            <span class="rating-mini__value">
+                              4.45
+                            </span>
+                            <span class="rating-mini__item rating-mini__item--active"></span>	
+                            <span class="rating-mini__item rating-mini__item--active"></span>	
+                            <span class="rating-mini__item rating-mini__item--active"></span>	
+                            <span class="rating-mini__item rating-mini__item--active"></span>	
+                            <span class="rating-mini__item"></span>	
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-card__price">
+                        <del class="product-card__last-price">
+                          5850 р
+                        </del>
+                        <ins class="product-card__current-price">
+                          4200 р
+                        </ins>
+                      </div>
+                      <div class="product-card__popup">
+                        <a href="#" class="product-card__add-to-cart">
+                          в корзину
+                        </a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="blog-section">
+          <div class="container">
+            <div class="section-title section-title--horizontal">
+              <h2 class="section-title__text">
+                <strong>Последние </strong>статьи
+              </h2>
+              <p class="section-title__description">
+                О правильном выборе шин и дисков
+              </p>
+            </div>
+            <div class="blog-section__list-wrap">
+              <div class="blog-section__slider">
+                <div class="blog-section__item">
+                  <div class="blog-section__item-inner">
+                    <div class="blog-section__item-img-block bg-src" data-bg-src="../img/content/posts/post1.jpg"></div>
+                    <div class="blog-section__item-info">
+                      <a href="post.html" class="blog-section__item-title">
+                        <h4 class="blog-section__item-text blog-item__excerpt">
+                          Особенности бортирования колес с датчиками давления
+                        </h4>
+                      </a>
+                      <div class="blog-section__item-meta">
+                        <a href="blog.html" class="blog-section__item-category">Шиномонтаж</a>
+                        <span class="blog-section__item-date">/ май 2021г</span>
+                      </div>
+                      <p class="blog-section__item-short-text blog-item__excerpt">
+                        Оборудование TPMS – полезная опция, которой комплектуются современные автомобили. TPMS контролирует давление в шинах и сигнализирует об изменении параметра на бортовой компьютер.
+                      </p>
+                      <a href="post.html" class="blog-section__item-read-more">Подробнее...</a>
+                    </div>
                   </div>
-                  <div class="product__social-block">
-                    <div class="social social--product-page">
-                      <a href="#" class="social__link social__link--product-page">
-                        <i class="fab fa-facebook-f"></i>
+                </div>
+                <div class="blog-section__item">
+                  <div class="blog-section__item-inner">
+                    <div class="blog-section__item-img-block bg-src" data-bg-src="../img/content/posts/post1.jpg"></div>
+                    <div class="blog-section__item-info">
+                      <a href="post.html" class="blog-section__item-title">
+                        <h4 class="blog-section__item-text blog-item__excerpt">
+                          Особенности бортирования колес с датчиками давления
+                        </h4>
                       </a>
-                      <a href="#" class="social__link social__link--product-page">
-                        <i class="fab fa-twitter"></i>
+                      <div class="blog-section__item-meta">
+                        <a href="blog.html" class="blog-section__item-category">Шиномонтаж</a>
+                        <span class="blog-section__item-date">/ май 2021г</span>
+                      </div>
+                      <p class="blog-section__item-short-text blog-item__excerpt">
+                        Оборудование TPMS – полезная опция, которой комплектуются современные автомобили. TPMS контролирует давление в шинах и сигнализирует об изменении параметра на бортовой компьютер.
+                      </p>
+                      <a href="post.html" class="blog-section__item-read-more">Подробнее...</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="blog-section__item">
+                  <div class="blog-section__item-inner">
+                    <div class="blog-section__item-img-block bg-src" data-bg-src="../img/content/posts/post1.jpg"></div>
+                    <div class="blog-section__item-info">
+                      <a href="post.html" class="blog-section__item-title">
+                        <h4 class="blog-section__item-text blog-item__excerpt">
+                          Особенности бортирования колес с датчиками давления
+                        </h4>
                       </a>
-                      <a href="#" class="social__link social__link--product-page">
-                        <i class="fab fa-linkedin-in"></i>
+                      <div class="blog-section__item-meta">
+                        <a href="blog.html" class="blog-section__item-category">Шиномонтаж</a>
+                        <span class="blog-section__item-date">/ май 2021г</span>
+                      </div>
+                      <p class="blog-section__item-short-text blog-item__excerpt">
+                        Оборудование TPMS – полезная опция, которой комплектуются современные автомобили. TPMS контролирует давление в шинах и сигнализирует об изменении параметра на бортовой компьютер.
+                      </p>
+                      <a href="post.html" class="blog-section__item-read-more">Подробнее...</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="blog-section__item">
+                  <div class="blog-section__item-inner">
+                    <div class="blog-section__item-img-block bg-src" data-bg-src="../img/content/posts/post1.jpg"></div>
+                    <div class="blog-section__item-info">
+                      <a href="post.html" class="blog-section__item-title">
+                        <h4 class="blog-section__item-text blog-item__excerpt">
+                          Особенности бортирования колес с датчиками давления
+                        </h4>
                       </a>
+                      <div class="blog-section__item-meta">
+                        <a href="blog.html" class="blog-section__item-category">Шиномонтаж</a>
+                        <span class="blog-section__item-date">/ май 2021г</span>
+                      </div>
+                      <p class="blog-section__item-short-text blog-item__excerpt">
+                        Оборудование TPMS – полезная опция, которой комплектуются современные автомобили. TPMS контролирует давление в шинах и сигнализирует об изменении параметра на бортовой компьютер.
+                      </p>
+                      <a href="post.html" class="blog-section__item-read-more">Подробнее...</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="blog-section__item">
+                  <div class="blog-section__item-inner">
+                    <div class="blog-section__item-img-block bg-src" data-bg-src="../img/content/posts/post1.jpg"></div>
+                    <div class="blog-section__item-info">
+                      <a href="post.html" class="blog-section__item-title">
+                        <h4 class="blog-section__item-text blog-item__excerpt">
+                          Особенности бортирования колес с датчиками давления
+                        </h4>
+                      </a>
+                      <div class="blog-section__item-meta">
+                        <a href="blog.html" class="blog-section__item-category">Шиномонтаж</a>
+                        <span class="blog-section__item-date">/ май 2021г</span>
+                      </div>
+                      <p class="blog-section__item-short-text blog-item__excerpt">
+                        Оборудование TPMS – полезная опция, которой комплектуются современные автомобили. TPMS контролирует давление в шинах и сигнализирует об изменении параметра на бортовой компьютер.
+                      </p>
+                      <a href="post.html" class="blog-section__item-read-more">Подробнее...</a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container-fluid container--footer">
+          <div class="footer__content">
+            <div class="footer__top">
+              <div class="footer__logo">
+                <a href="index.html" class="logo logo--footer">
+                  <img src="../img/decor/logo-footer.png" alt="logotype" class="logo__img logo__img--footer">
+                </a>
+              </div>
+              <div class="footer__subscribe">
+                <div class="subscribe">
+                  <div class="subscribe__text">
+                    <p class="subscribe__action">
+                      Подпишитесь на нашу рассылку
+                    </p>
+                    <p class="subscribe__description">
+                      Будьте в курсе новостей и эксклюзивных предложений
+                    </p>
+                  </div>
+                  <div class="subscribe__form-block">
+                    <form action="#" class="subscribe__form">
+                      <input type="email" required placeholder="Введите email"  class="subscribe__input">
+                      <button class="subscribe__submit-btn" type="submit">подписаться</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__middle">
+              <div class="footer__company-info">
+                <div class="company-info">
+                  <div class="company-info__block">
+                    <h5 class="company-info__block-title">
+                      Контактная информация
+                    </h5>
+                    <ul class="company-info__list">
+                      <li class="company-info__item">
+                        <span class="company-info__item-name">телефон</span>
+                        <a href="tel:+000000000000" class="company-info__item-value">000 00 000-00-00</a>
+                      </li>
+                      <li class="company-info__item">
+                        <span class="company-info__item-name">Email</span>
+                        <a href="mailto:mail@company.com" class="company-info__item-value">
+                          mail@company.com
+                        </a>
+                      </li>
+                      <li class="company-info__item">
+                        <span class="company-info__item-name">Адрес:</span>
+                        <a href="#" class="company-info__item-value">весь мир</a>
+                      </li>
+                      <li class="company-info__item">
+                        <span class="company-info__item-name">Режим работы</span>
+                      </li>
+                      <li class="company-info__item">
+                        <span href="#" class="company-info__item-value">
+                          Пн - Вс / 9:00 - 19:00
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="company-info__block">
+                    <h5 class="company-info__block-title">
+                      мой кабинет
+                    </h5>
+                    <ul class="company-info__list">
+                      <li class="company-info__item">
+                        <a href="about-us.html" class="company-info__item-value">О нас</a>
+                      </li>
+                      <li class="company-info__item">
+                        <a href="main-policy.html" class="company-info__item-value">Договор публичной оферты</a>
+                      </li>
+                      <li class="company-info__item">
+                        <a href="delivery-policy.html" class="company-info__item-value">Доставка</a>
+                      </li>
+                      <li class="company-info__item">
+                        <a href="payment-policy.html" class="company-info__item-value">Оплата</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="company-info__block company-info__block--questions">
+                    <h5 class="company-info__block-title">
+                      Остались вопросы?
+                    </h5>
+                    <div class="company-info__phone-form-wrap">
+                      <form action="index.html" class="phone-form">
+                        <input type="text" class="phone-form__input" name="phone-form-name" required placeholder="Ваше имя ... *">
+                        <input type="tel" class="phone-form__input" name="phone-form-tel-number" required placeholder="Номер телефона... *">
+                        <button class="phone-form__submit-btn" type="submit">отправить</button>
+                        <p class="phone-form__description">
+                          Наши специалисты свяжуться с Вами в ближайшее время и ответят на Ваши вопросы
+                        </p>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__bottom">
+              <div class="footer__bottom-item">
+                <img src="../img/decor/visa-mastercard-small.png" alt="payment" class="footer__bottom-payment-img">
+              </div>
+              <div class="footer__bottom-item">
+                <div class="footer__copyright">
+                  <p class="footer__copyright-text">Магазин &copy; 2021. Все права защищены</p>
+                </div>
+              </div>
+              <div class="footer__bottom-item">
+                <div class="social">
+                  <a href="#" class="social__link">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="#" class="social__link">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#" class="social__link">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="product-quickview__wrap">
+        <div class="product-quickview__overlay"></div>
+        <div class="product-quickview__icon-close-wrap">
+          <span class="product-quickview__icon-close">
+          </span>
         </div>
       </div>
     </div>
-  </div>
-  <div class="mobile-nav-wrap">
-    <div class="mobile-nav-overlay"></div>
-    <div class="mobile-nav__icon-close-wrap">
-      <span class="mobile-nav__icon-close">
-      </span>
-    </div>
-    <div class="mobile-nav">
-      <div class="header__srch-wdg">
-        <div class="header__srch-wdg-inner">
-          <form action="#" class="header__srch-form">
-            <input type="text" placeholder="Поиск..." class="header__srch-input">
-            <button class="header__srch-btn" type="submit">
-              <i class="fas fa-search"></i>
-            </button>
+    <div class="mobile-nav-wrap">
+      <div class="mobile-nav-overlay mobile-nav-under"></div>
+      <div class="mobile-nav">
+        <div class="mobile-nav__icon-close-wrap mobile-nav-close">
+          <span class="mobile-nav__icon-close">
+          </span>
+        </div>
+        <div class="mobile-nav__calling">
+          <a href="tel:+000000000000" class="mobile-nav__call-link">
+            <i class="fas fa-phone"></i>
+            <span class="mobile-nav__call-action">Позвоните нам</span>
+            <span class="mobile-nav__call-number">+000-00-000-00-00</span>
+          </a>
+        </div>
+        <div class="mobile-nav__search-container">
+          <form action="#" class="mobile-nav__form">
+            <div class="mobile-nav__search-box">
+              <input placeholder="Искать продукт..." type="text" class="mobile-nav__search-field">
+              <button type="submit" class="mobile-nav__search-submit-btn">Поиск</button> 
+            </div>
           </form>
         </div>
-      </div>
-      <ul class="mobile-nav__list">
-        <li class="mobile-nav__item">
-          <a href="index.html" class="mobile-nav__link mobile-nav__link--active">главная</a>
-        </li>
-        <li class="mobile-nav__item">
-          <a href="shop.html" class="mobile-nav__link mobile-nav__link--subtitle sublist-title">
+        <ul class="mobile-nav__list">
+          <li class="mobile-nav__item">
+            <a href="index.html" class="mobile-nav__link mobile-nav__link--active">Главная</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="shop.html" class="mobile-nav__link mobile-nav__link--subtitle sublist-title">
             <span class="mobile-nav__sublist-icon hidden-items-control"></span>
-            каталог</a>
-          <ul class="mobile-nav__sub1-list hidden-items">
-            <li class="mobile-nav__sub1-item">
-              <a href="category-page.html" class="mobile-nav__link mobile-nav__link--sub-nav">Cухие строительные смеси</a>
-            </li>
-            <li class="mobile-nav__sub1-item">
-              <a href="category-page.html" class="mobile-nav__link mobile-nav__link--sub-nav">Лакокрасочные материалы</a>
-            </li>
-            <li class="mobile-nav__sub1-item">
-              <a href="category-page.html" class="mobile-nav__link mobile-nav__link--sub-nav">Звукозоляция</a>
-            </li>
-            <li class="mobile-nav__sub1-item">
-              <a href="category-page.html" class="mobile-nav__link mobile-nav__link--sub-nav">Напольные покрытия</a>
-            </li>
-            <li class="mobile-nav__sub1-item">
-              <a href="category-page.html" class="mobile-nav__link mobile-nav__link--sub-nav">Металлопрокат</a>
-            </li>
-            <li class="mobile-nav__sub1-item">
-              <a href="category-page.html" class="mobile-nav__link mobile-nav__link--sub-nav">Изоляционные материалы</a>
-            </li>
-            <li class="mobile-nav__sub1-item">
-              <a href="category-page.html" class="mobile-nav__link mobile-nav__link--sub-nav">Декоративные панели</a>
-            </li>
-          </ul>
-        </li>
-        <li class="mobile-nav__item">
-          <a href="about-us.html" class="mobile-nav__link">о нас</a>
-        </li>
-        <li class="mobile-nav__item">
-          <a href="contacts-us.html" class="mobile-nav__link">контакты</a>
-        </li>
-        <li class="mobile-nav__item">
-          <a href="blog.html" class="mobile-nav__link">блог</a>
-        </li>
-      </ul>
+            Шины</a>
+            <ul class="mobile-nav__sub1-list hidden-items">
+              <li class="mobile-nav__sub1-item">
+                <a href="category-page.html" class="mobile-nav__link mobile-nav__link--sub-nav">Шины летние</a>
+              </li>
+              <li class="mobile-nav__sub1-item">
+                <a href="category-page.html" class="mobile-nav__link mobile-nav__link--sub-nav">Шины зимние</a>
+              </li>
+              <li class="mobile-nav__sub1-item">
+                <a href="category-page.html" class="mobile-nav__link mobile-nav__link--sub-nav">Шины всесезонные</a>
+              </li>
+            </ul>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="shop.html" class="mobile-nav__link mobile-nav__link--subtitle sublist-title">
+            <span class="mobile-nav__sublist-icon hidden-items-control"></span>
+            Диски</a>
+            <ul class="mobile-nav__sub1-list hidden-items">
+              <li class="mobile-nav__sub1-item">
+                <a href="category-page.html" class="mobile-nav__link mobile-nav__link--sub-nav">Диски литые</a>
+              </li>
+              <li class="mobile-nav__sub1-item">
+                <a href="category-page.html" class="mobile-nav__link mobile-nav__link--sub-nav">Диски штампованные</a>
+              </li>
+            </ul>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="about-us.html" class="mobile-nav__link">О нас</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="contacts-us.html" class="mobile-nav__link">Контакты</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="blog.html" class="mobile-nav__link">Блог</a>
+          </li>
+        </ul>
+        <a href="mailto:mail@yourcompany.com" class="mobile-nav__mailto">mail@yourcompany.com</a>
+        <div class="mobile-nav__social">
+          <div class="social">
+            <a href="#" class="social__link social__link--facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social__link social__link--twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social__link social__link--inst">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social__link social__link--vk">
+              <i class="fab fa-vk"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-zoom/1.6.1/jquery.zoom.min.js"></script>
-  <script src="js/vendors.min.js"></script>
-  <script src="js/script.min.js"></script>
-</body>
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <script src="js/vendors.min.js"></script>
+    <script src="js/script.min.js"></script>
+  </body>
 </html>

@@ -44,12 +44,32 @@ if (isMobile.any()) {
 	document.body.classList.add('_pc');
 }
 
+/* липкий header*/
+let header = document.querySelector(".header__bottom");
+if(header){
+	(function(){
+		window.onscroll = function() {stickyHeader()};
+		let sticky = header.offsetHeight+100;
+		console.log(sticky);		
+		function stickyHeader() {
+			if (window.pageYOffset > sticky) {
+				header.classList.add("sticky-header");
+			} else {
+				header.classList.remove("sticky-header");
+			}
+		}
+	})();
+}
+
+
+
+
 // Меню бургер
-const iconMenu = document.querySelector('.header__menu-icon-wrap');
+const iconMenu = document.querySelector('.header__menu-open-btn');
 const mobileNavBlock = document.querySelector('.header__nav-block');
 const menuBody = document.querySelector('.nav');
-const closeIcon = document.querySelector('.mobile-nav__icon-close-wrap');
-const navOverlay = document.querySelector('.mobile-nav-overlay');
+const closeIcon = document.querySelector('.mobile-nav-close');
+const navOverlay = document.querySelector('.mobile-nav-under');
 if (iconMenu) {
 	iconMenu.addEventListener("click", function (e) {
 		document.body.classList.add('_lock');
@@ -95,4 +115,26 @@ if(footerMenu&&(screenWidth<769)){
 		}
 		scrollPos = st;
  });
+}
+
+//появление корзины
+
+
+const iconCart = document.querySelector('.mini-cart__header');
+const closeCartBtn = document.querySelector('.mini-cart__icon-close');
+const navCartOverlay = document.querySelector('.mobile-nav-under-cart');
+if (iconCart) {
+	iconCart.addEventListener("click", function (e) {
+		document.body.classList.add('_lock-cart');
+	});
+}
+if (closeCartBtn) {
+	closeCartBtn.addEventListener("click", function (e) {
+		document.body.classList.remove('_lock-cart');
+	});
+}
+if(navCartOverlay){
+	navCartOverlay.addEventListener("click", function (e) {
+		document.body.classList.remove('_lock-cart');
+	});
 }

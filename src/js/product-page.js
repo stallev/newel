@@ -131,33 +131,7 @@ if($('.product__thumb-slider--quickview')){
   });
 }
 
-//панель product-info
 
-let productNavTabLinks = document.querySelectorAll('.product__info-nav-link');
-let productNavTabs = document.querySelectorAll('.product__info-content-item');
-
-if(productNavTabLinks&&productNavTabs){
-	productNavTabLinks.forEach(
-		element => {
-			element.addEventListener('click', function(e){
-				e.preventDefault();
-        productNavTabLinks.forEach(
-          NavTabLink =>{
-            NavTabLink.classList.remove('product__info-nav-link--active');
-          }
-        );
-        productNavTabs.forEach(
-          NavTab =>{
-            NavTab.classList.remove('product__info-content-item--active');
-          }
-        );
-				let activeNavTabID = e.target.getAttribute('data-tab-id');
-        e.target.classList.add('product__info-nav-link--active');
-				document.getElementById(activeNavTabID).classList.add('product__info-content-item--active');
-			})
-		}
-	)
-}
 
 //счетчик товаров
 let countBox = document.querySelectorAll('.count-box');

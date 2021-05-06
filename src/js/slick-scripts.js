@@ -8,8 +8,8 @@ if(bg__elements){
 }
 
 //слайдер в шапке на главной странице
-if($('.promo-slider__wrap')){
-  $('.promo-slider__wrap').slick({
+if($('.main-slider__list')){
+  $('.main-slider__list').slick({
     slidesToShow: 1,
     slidesToScroll: 1,               
     dots: true,
@@ -19,258 +19,138 @@ if($('.promo-slider__wrap')){
     cssEase: 'ease-out',
     arrows:false,
     infinite: true,
-    dotsClass: 'promo-slider__slick-dots'
+    dotsClass: 'main-slider__slick-dots'
   });
 }
-//мини-слайдер под слайдером в шапке главной страницы
-if($('.advantages__slider-wrap')){
-  $('.advantages__slider-wrap').slick({
+
+//слайдер на главной в сеции скидок
+if($('.discounts__sliders')){
+  $('.discounts__slider').slick({
     slidesToShow: 3,
-    slidesToScroll: 3,               
+    margin: 45,
+    slidesToScroll: 1,               
     dots: false,
-    arrows:false,
     infinite: true,
+    prevArrow:'<button class="discount-prev"><i class="far fa-angle-left"></i></button>',
+    nextArrow:'<button class="discount-next"><i class="far fa-angle-right"></i></button>',
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1199,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1
+          slidesToScroll: 2,
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 993,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2,
+          arrows: false,
+          dots: true,
+          dotsClass: 'main-slider__slick-dots',
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          arrows: false,
+          dots: true,
+          dotsClass: 'main-slider__slick-dots',
+        }
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          arrows: false,
+          dots: true,
+          dotsClass: 'main-slider__slick-dots',
+        }
+      },
+      {
+        breakpoint: 400,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 2,
+          arrows: false,
+          dots: true,
+          dotsClass: 'main-slider__slick-dots',
         }
       }
     ]
   })
-  .on('setPosition', function (event, slick) {
-    slick.$slides.css('height', slick.$slideTrack.height() + 'px');
-  });
+  //выравнивание слайдов по высоте
+  // .on('setPosition', function (event, slick) {
+  //   slick.$slides.css('height', slick.$slideTrack.height() + 'px');
+  // })
+  ;
 }
-//слайдер в секции "Лидеры продаж"
-if($('.products-list__inner--bestsellers-slider')){
-  $('.products-list__inner--bestsellers-slider').slick({
-    slidesToShow: 4,
+//слайдер на главной в секции блога
+if($('.blog-section__slider')){
+  $('.blog-section__slider').slick({
+    slidesToShow: 5,
     margin: 45,
+    arrows: true,
     slidesToScroll: 1,               
     dots: false,
-    //arrows:false,
     infinite: true,
-    dotsClass: 'bestseller-slider__slick-dots',
-    prevArrow:'<button class="bestseller-prev"><i class="far fa-angle-left"></i></button>',
-    nextArrow:'<button class="bestseller-next"><i class="far fa-angle-right"></i></button>',
+    prevArrow:'<button class="blog-section-prev"><i class="far fa-angle-left"></i></button>',
+    nextArrow:'<button class="blog-section-next"><i class="far fa-angle-right"></i></button>',
     responsive: [
       {
-        breakpoint: 993,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 2,
-          dots: true,
-        }
-      },
-      {
-        breakpoint: 769,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          dots: true,
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          dots: true,
-        }
-      }
-    ]
-  });
-}
-
-//слайдер "Популярные товары"
-if($('.products-list__inner--popular-slider')){
-  $('.products-list__inner--popular-slider').slick({
-    slidesToShow: 4,
-    margin: 45,
-    slidesToScroll: 1,               
-    dots: false,
-    prevArrow:'<button class="bestseller-prev"><i class="far fa-angle-left"></i></button>',
-    nextArrow:'<button class="bestseller-next"><i class="far fa-angle-right"></i></button>',
-    infinite: true,
-    dotsClass: 'bestseller-slider__slick-dots',
-    responsive: [
-      {
-        breakpoint: 993,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 2,
-          dots: true,
-        }
-      },
-      {
-        breakpoint: 769,
-        settings: {
-          slidesToShow: 3,
-          dots: true,
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          dots: true,
-        }
-      }
-    ]
-  });
-}
-
-//слайдер "наши клиенты"
-if($('.brands__list')){
-  $('.brands__list').slick({
-    slidesToShow: 6,
-    slidesToScroll: 1,               
-    dots: false,
-    arrows:false,
-    infinite: true,
-    autoplay: true,
-    autoplaySpeed: 10000,
-    dotsClass: 'bestseller-slider__slick-dots',
-    responsive: [
-      {
-        breakpoint: 993,
-        settings: {
-          slidesToShow: 5,
-          slidesToScroll: 3,
-          dots: true,
-        }
-      },
-      {
-        breakpoint: 769,
+        breakpoint: 1199,
         settings: {
           slidesToShow: 4,
-          slidesToScroll: 3,
-          dots: true,
-          infinite: true,
         }
       },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          dots: true,
-          infinite: true,
-        }
-      }
-    ]
-  });
-}
-
-//слайдер "посты блога"
-if($('.blog-section__content')){
-  $('.blog-section__content').slick({
-    slidesToShow: 2,
-    slidesToScroll: 1,               
-    dots: false,
-    arrows:false,
-    infinite: true,
-    dotsClass: 'bestseller-slider__slick-dots',
-    responsive: [
       {
         breakpoint: 993,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
+          arrows: false,
           dots: true,
+          dotsClass: 'main-slider__slick-dots',
         }
       },
       {
-        breakpoint: 769,
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          arrows: false,
+          dots: true,
+          dotsClass: 'main-slider__slick-dots',
+        }
+      },
+      {
+        breakpoint: 575,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          arrows: false,
           dots: true,
+          dotsClass: 'main-slider__slick-dots',
+        }
+      },
+      {
+        breakpoint: 400,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          dots: true,
+          dotsClass: 'main-slider__slick-dots',
         }
       }
     ]
   })
-  .on('setPosition', function (event, slick) {
-    slick.$slides.css('height', slick.$slideTrack.height() + 'px');
-});
-}
-
-//слайдер в сайдбаре
-if($('.aside-slider__list')){
-  $('.aside-slider__list').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,               
-    dots: false,
-    arrows:true,
-    infinite: true
-  });
-}
-
-//слайдер "Отзывы покупателей"
-if($('.testimonials__list')){
-  $('.testimonials__list').slick({
-    slidesToShow: 3,
-    margin: 45,
-    slidesToScroll: 1,               
-    dots: true,
-    arrows:false,
-    infinite: true,
-    dotsClass: 'bestseller-slider__slick-dots',
-    responsive: [
-      {
-        breakpoint: 993,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          dots: true,
-        }
-      },
-      {
-        breakpoint: 576,
-        settings: {
-          slidesToShow: 1,
-          dots: true,
-        }
-      }
-    ]
-  });
-}
-
-//слайдер "Похожие статьи"
-if($('.blog-posts-similar-slider')){
-  $('.blog-posts-similar-slider').slick({
-    slidesToShow: 3,
-    margin: 45,
-    slidesToScroll: 1,               
-    dots: true,
-    arrows:false,
-    infinite: true,
-    dotsClass: 'blog-posts-similar-slider__slick-dots',
-    responsive: [
-      {
-        breakpoint: 993,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          dots: true,
-        }
-      },
-      {
-        breakpoint: 576,
-        settings: {
-          slidesToShow: 1,
-          dots: true,
-        }
-      }
-    ]
-  });
+  //выравнивание слайдов по высоте
+  // .on('setPosition', function (event, slick) {
+  //   slick.$slides.css('height', slick.$slideTrack.height() + 'px');
+  // })
+  ;
 }

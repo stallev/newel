@@ -28,24 +28,12 @@
 		}
 		&__link{
 			display: block;
-			padding: 20px 4px;
-			font-size: 1.2rem;
+			padding: 15px 10px;
+			font-size: 1.3rem;
 			color: #fff;
-			font-weight: 700;
+			font-weight: 500;
 			transition: all .3s ease-in-out;
 			text-transform: uppercase;
-			&{
-				color: #000;
-			}
-			&:hover{
-				color: #26b;
-				&::before, &::after{
-					background-color: #26b;
-				}
-			}
-			&--active{
-				color: #26b;
-			}
 			&--subtitle{
 				position: relative;
 				padding-right: 12px;
@@ -58,7 +46,7 @@
 					width: 5px;
 					height: 1px;
 					transform: rotate(45deg);
-					background-color: #000;
+					background-color: $white;
 				}
 				&::before{
 					position: absolute;
@@ -69,19 +57,21 @@
 					width: 5px;
 					height: 1px;
 					transform: rotate(-45deg);
-					background-color: #000;
+					background-color: $white;
 				}
 			}
 			&--sub-nav{
+				display: block;
 				font-weight: 400;
-				padding: 12px;
+				padding: 6px 0;
 				font-size: 1.4rem;
-				text-transform: none;
+				transition: all .3s ease-in-out;
+				color: $content-color;
 			}
 		}
 		&__sub1-list{
 			position: absolute;
-			top: 50px;
+			top: 40px;
 			opacity: 0;
 			visibility: hidden;
 			background-color: #fff;
@@ -89,25 +79,37 @@
 			width: max-content;
 			padding: 15px 20px;
 			box-shadow:0 2px 35px rgba(0,0,0,0.1);
-			&::before{
-				position: absolute;
-				display: block;
-				content: '';
-				width: 0;
-				height: 0;
-				top: -11px;
-				left: 22px;
-				border-style: solid;
-				border-width: 0 10px 12px 10px;
-				border-color: transparent transparent #ffffff transparent;
+			z-index: 2;
+			& a{
+				color: $content-color;
 			}
 		}
   }
   
-  body._pc .nav__item:hover .nav__sub1-list {
+  .nav__item:hover .nav__sub1-list {
     border-top: 35px;
     opacity: 1;
     visibility: visible;
     pointer-events: all;
   }
+	.nav__item:hover{
+		& a.nav__link{
+			color: $yellow;
+			&::before, &::after{
+				background-color: $yellow;
+			}
+		}
+		& .nav__sub1-list{
+			color: $content-color;
+		}
+	}
+	a.nav__link--sub-nav{
+		color: $content-color;
+	}
+	.nav__sub1-item:hover a{
+		color: $yellow;
+	}
+	.nav__list .nav__item:first-of-type .nav__link{
+		padding-left: 0;
+	}
 }
