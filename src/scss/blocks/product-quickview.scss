@@ -136,6 +136,9 @@
   .quickview .product-quickview__content{
     height: 62vh;
   }
+  .product-quickview__content .product__main-slider-item{
+    min-height: 350px;
+  }
   .quickview .product__details-wrap{
     overflow-y: auto;
     height: 57vh;

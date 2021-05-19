@@ -3,16 +3,22 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 20px 0;
+  padding: 0 0 20px;
   &--horizontal{
     & .section-title__text{
       padding-bottom: 10px;
     }
   }
+  &--about{
+    padding: 0;
+    & h2{
+      padding-top: 0;
+    }
+  }
   &__text{
     position: relative;
     width: fit-content;
-    padding: 20px 10px;
+    padding: 10px 10px 20px;
     font-size: 2rem;
     font-weight: 500;
     text-transform: uppercase;
@@ -24,7 +30,7 @@
     margin-bottom: 15px;
     max-width: 600px;
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     line-height: 1.5;
     z-index: 3;
   }
@@ -49,7 +55,7 @@
         width: calc(100% - 40px);
         height: 1px;
         background-color: $brd-c;
-        top: 52%;
+        top: 42%;
         z-index: 2;
       }
       & .section-title__text,

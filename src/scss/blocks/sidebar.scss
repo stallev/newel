@@ -1,7 +1,6 @@
 .sidebar{
   transition: margin .4s ease-in;
   &--right{
-    padding-top: 23px;
   }
 }
 // стили для сайдбара на мобильных экранах
@@ -12,8 +11,7 @@
   right: 0;
   width: calc(100vw - 45px);
   max-width: 290px;
-  padding: 0 20px;
-  padding-top: 30px;
+  padding: 30px 20px 30px;
   transform: translateX(100%);
   overflow: scroll;
   background-color: #fff;
@@ -113,13 +111,16 @@ body.sidebar-active .sidebar__icon-close-wrap{
   .sidebar-toggle{
     display: none;
   }
+  
   .sidebar__content{
     position: relative;
     top: 0;
     bottom: 0;
     left: 0;
     width: 100%;
-    padding: 0 8px;
+    max-width: none;
+    padding: 30px 10px;
+    margin-left: 3%;
     transform: translateX(0);
     overflow: auto;
     background-color: #fff;

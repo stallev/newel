@@ -50,7 +50,6 @@ if(header){
 	(function(){
 		window.onscroll = function() {stickyHeader()};
 		let sticky = header.offsetHeight+100;
-		console.log(sticky);		
 		function stickyHeader() {
 			if (window.pageYOffset > sticky) {
 				header.classList.add("sticky-header");

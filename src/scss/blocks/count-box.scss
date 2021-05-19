@@ -1,3 +1,8 @@
+.shop-list{
+  & .count-box{
+    margin-bottom: 15px;
+  }
+}
 .count-box{
   display: flex;
   flex-direction: column;
@@ -62,5 +67,19 @@
     outline: 0;
     text-align: center;
     
+  }
+}
+.shop-list__item .count-box__input-group{
+  margin-bottom: 0;
+}
+@media only screen and (min-width: 767px){
+  .shop-list{
+    & .count-box{
+      margin-bottom: 0;
+    }
+  }
+  .count-box{
+    align-items: flex-start;
+    margin-bottom: 0;
   }
 }

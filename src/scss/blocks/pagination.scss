@@ -30,7 +30,7 @@
     font-size: 1.4rem;
     @include colorOnHover;
     &:hover{
-      border-color: #222;
+      border-color: $red;
     }
   }
   &__item--current a{
@@ -47,12 +47,16 @@
     text-align: center;
     background-color: #ededed;
     color: #ccc;
+    &:hover{
+      background-color: $red;
+      color: $white;
+    }
     & i{
       font-size: 2rem;
       font-weight: 100;
     }
     &--active{
-      background-color: rgb(17,17,17);
+      background-color: $content-color;
       color: #fff;
     }
     &--prev{

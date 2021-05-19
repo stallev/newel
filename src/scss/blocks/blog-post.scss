@@ -1,13 +1,17 @@
 //посты на странице блога в списке
 .blog-posts-list-content{
-  padding: 25px 0;
+  padding: 25px;
+  background-color: $white;
 }
 .blog-post{
   display: flex;
   flex-direction: column;
+  padding-bottom: 30px;
   margin-bottom: 30px;
-  padding-bottom: 40px;
-  border-bottom: 1px solid rgb(153, 153, 153);
+  border-bottom: 1px solid $brd-c;
+  &--single{
+    border-bottom: none;
+  }
   &__inner-link{
     display: block;
     margin-bottom: 20px;
@@ -15,45 +19,48 @@
   &__img-wrap{
     display: block;
     margin: 0;
+    overflow: hidden;
   }
   &__img{
     display: block;
     width: 100%;
+    border-radius: 5px;
   }
   &__meta{
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
     margin-bottom: 6px;
-    color: rgb(153, 153, 153);
-    font-size: 1.3rem;
+    color: $content-color;
+    font-size: 1.4rem;
     & a, & span{
       display: inline-block;
-      margin-right: 12px;
-      padding-right: 10px;
-      @include colorOnHover;
-      cursor: pointer;
+      margin-bottom: 8px;
     }
-    & span{
-      padding-left: 10px;
+    & a{
+      color: $red;
+      &:hover{
+        text-decoration: underline;
+      }
     }
   }
-  &__date{
-    border-left: 1px solid rgb(153, 153, 153);
-    border-right: 1px solid rgb(153, 153, 153);
-    padding-left: 10px;
+  &__meta-author{
+    margin-right: 10px;
   }
   &__title{
     display: block;
-    margin-bottom: 4px;
+    margin-bottom: 10px;
     @include colorOnHover;
-    color: rgb(34, 52, 74);
+    color: $content-color;
     line-height: 1.5;
     font-size: 2.4rem;
     font-weight: 700;
   }
   &__categories{
     margin-bottom: 10px;
-    color: rgb(153, 153, 153);
+    padding-bottom: 20px;
+    border-bottom: 1px solid $brd-c;
+    color: $content-color;
     font-size: 1.3rem;
     & a, & span{
       display: inline-block;
@@ -63,18 +70,19 @@
     }
   }
   &__excerpt{
-    margin-bottom: 1.6rem;
     line-height: 1.85;
     font-size: 1.4rem;
-    color: #664;
+    color: $content-color;
+    text-align: justify;
   }
   &__readmore{
     position: relative;
     display: inline-block;
+    margin-top: 25px;
     font-weight: 700;
     font-size: 1.4rem;
     line-height: 1.2;
-    color: #26b;
+    color: $red;
     text-transform: uppercase;
     text-align: center;
     transition: color .3s,border-color .3s,background-color .3s,box-shadow .3s;
@@ -87,7 +95,7 @@
       left: 0; 
       width: 0;
       height: 2px; 
-      background-color: #26b; 
+      background-color: $red; 
       content: "";
       transition: width 0.4s ease-out;
       @include absoluteXCenter;
@@ -101,7 +109,7 @@
       content: '\f178';
       right: -20px;
       font-size: 2.5rem;
-      color: #26b;
+      color: $red;
       @include absoluteYCenter;
       font-size: 1.4rem;
       font-family: 'Font Awesome 5 Pro';
@@ -257,7 +265,11 @@
   margin-bottom: 0;
   padding-bottom: 0;
   border-bottom: none;
-  & .blog-post__date{
+  & .blog-post__img-wrap,
+  & .blog-post__details{
+    width: 100%;
+  }
+  & .blog-post__date-value{
     border-left: none;
   }
   & .blog-post__title{
@@ -314,6 +326,14 @@
 }
 @media only screen and (min-width: 767px){
   .blog-post{
+    flex-direction: row;
+    &__img-wrap{
+      width: 40%;
+    }
+    &__details{
+      width: 60%;
+      padding-left: 3%;
+    }
     &__body-img{
       width: auto;
       max-width: 100%;

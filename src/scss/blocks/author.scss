@@ -90,7 +90,7 @@
     }
   }
   & .author__reply:hover{
-    color: #26b;
+    color: $red;
     text-decoration: underline;
     &::after{
       display: block;

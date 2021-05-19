@@ -12,7 +12,7 @@
 @mixin colorOnHover {
   transition: color .4s ease-in-out;
     &:hover{
-      color: #26b;
+      color: $red;
     }
 }
 @mixin absoluteYCenter {

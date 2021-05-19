@@ -171,7 +171,8 @@ $arrow_color: $gray !default;
 }
 
 //custom css
-.header__select-category{
+.header__select-category,
+.select-box__options{
   display: inline-block;
   height: 100%;
   font-size: 1.4rem;
@@ -183,7 +184,8 @@ $arrow_color: $gray !default;
 .nice-select.open .list{
   background-color: $white;
 }
-.header__select-category .option {
+.header__select-category .option,
+.select-box__options .option {
   cursor: pointer;
   font-weight: 400;
   line-height: 40px;
@@ -198,6 +200,7 @@ $arrow_color: $gray !default;
     background-color: #f6f6f6;
   }
 }
-.header__select-category .option.focus{
+.header__select-category .option.focus,
+.select-box__options .option.focus{
   background-color: #fff;
 }

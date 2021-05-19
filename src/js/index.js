@@ -2,7 +2,6 @@
 
 let productNavTabLinks = document.querySelectorAll('.products-list__part-nav-link');
 let productNavTabs = document.querySelectorAll('.products-list__part-item');
-
 if(productNavTabLinks&&productNavTabs){
 	productNavTabLinks.forEach(
 		element => {
@@ -17,6 +16,7 @@ if(productNavTabLinks&&productNavTabs){
         );
         productNavTabs.forEach(
           NavTab =>{
+            console.log("before remove products-list__part-item--active");
             NavTab.classList.remove('products-list__part-item--active');
           }
         );

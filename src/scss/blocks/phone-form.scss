@@ -39,12 +39,13 @@
     padding: 10px 15px;
     font-weight: 700;
     margin-bottom: 15px;
-    background-color: #26b;
+    background-color: $red;
+    color: $white;
     text-transform: uppercase;
-    color: #fff;
     transition: background-color .4s ease-in-out;
     &:hover{
-      background-color: rgb(59, 143, 245);
+      cursor: pointer;
+      background-color: #999;
     }
   }
 }

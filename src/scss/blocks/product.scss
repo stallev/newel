@@ -5,16 +5,28 @@
   flex-direction: column;
 }
 .product{
+  color: $content-color;
   &__bottom{
     padding-bottom: 30px;
   }
   &__main-slider{
     overflow-x: hidden;
   }
+  &__main-slider-item{
+    position: relative;
+    min-height: 300px;
+    margin-bottom: 20px;
+    cursor: crosshair;
+  }
   &__main-slider-img{
     display: block;
-    width: 100%;
-    margin-bottom: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 100%;
   }
   &__thumb-slider {
     & .slick-slide {
@@ -55,7 +67,7 @@
   }
   &__price{
     display: inline-block;
-    color: #d26e4b;
+    color: $red;
     font-size: 3rem;
     font-weight: 700;
     line-height: 1.2;
@@ -68,17 +80,21 @@
   }
   &__stars-block{
     margin-right: 9px;
+    & .rating-mini__item--active:before{
+      color: gold;
+    }
   }
   &__reviews-link{
     font-size: 1.6rem;
     left: 2px;
-    color: #ccc;
+    color: $content-color;
     @include colorOnHover
   }
   &__short-descr{
     margin-bottom: 20px;
     font-size: 1.4rem;
     line-height: 1.86;
+    text-align: justify;
   }
   &__paremeters{
     padding-bottom: 10px;
@@ -108,14 +124,13 @@
     padding: 15px 15px;
     width: fit-content;
     align-self: flex-end;
-    background-color: #26b;
+    background-color: $red;
     color: #fff;
     font-weight: 700;
     transition: color .3s,border-color .3s,background-color .3s,box-shadow .3s;
     text-transform: uppercase;
     &:hover{
-      border-color: #2977d8;
-      background-color: #2977d8;
+      background-color: #999;
     }
     & i{
       display: inline-block;
@@ -205,6 +220,83 @@
   &__info-add-review{
     padding-top: 30px;
   }
+}
+
+//стили для слайдера "Популярные товары" в карточке товара
+.products-list__inner--popular-slider .slick-slide {
+  margin-left: 27px;
+}
+
+.products-list__inner--popular-slider .slick-list {
+  margin-left: -27px;
+}
+.products-list__inner--popular-slider{
+  & .product-card{
+    margin-bottom: 80px;
+  }
+  padding-bottom: 50px;
+  & .main-slider__slick-dots{
+    bottom: 40px;
+  }
+}
+.products-list__inner--popular-slider .bestseller-slider{
+  &__slick-dots{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 0;
+    transform: translate(-50%,0);
+    left: 50%;
+    margin-right: -50%;
+    bottom: -40px;
+    & button{
+      display: block;
+      margin: 0 6px;
+      font-size: 0;
+      min-width: none;
+      width: 8px;
+      height: 8px;
+      background-color: #fff;
+      border: 1px solid lightgrey;
+      border-radius: 4px;
+      transition: background-color .2s ease-in-out;
+      &:hover{
+        background-color: grey;
+      }
+    }
+  }
+}
+.products-list__inner--popular-slider .bestseller-prev,
+.products-list__inner--popular-slider .bestseller-next{
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 30px;
+  top: 0; 
+  font-size: 2.9rem;
+  font-weight: 700;
+  color: #333;
+  border-radius: 0;
+  background-color: rgba(255,255,255,0);
+  transition: all .4s;
+  opacity: 1;
+  z-index: 10;
+  & i{
+    position: absolute;
+    top: 39%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.products-list__inner--popular-slider .bestseller-prev{
+  left: 0;
+  box-shadow:4px 0 7px -5px rgba(0,0,0,0)
+}
+.products-list__inner--popular-slider .bestseller-next{
+  right: 0;
+  box-shadow:-4px 0 7px -5px rgba(0,0,0,0)
 }
 
 //стили для поведения NavTab в описании продукта
@@ -353,6 +445,10 @@
 }
 @media only screen and (min-width: 575px){
   .product{
+    &__main-slider-item{
+      min-height: 320px;
+      margin-bottom: 20px;
+    }
     &__title{
       font-size: 2.6rem;
       line-height: 1.4;
@@ -374,6 +470,10 @@
     right: 15%;
   }
   .product{
+    &__main-slider-item{
+      min-height: 350px;
+      margin-bottom: 20px;
+    }
     &__variation--count{
       margin-bottom: 0;
       & .product__variation-text{
@@ -411,6 +511,10 @@
     right: 20%;
   }
   .product{
+    &__main-slider-item{
+      min-height: 450px;
+      margin-bottom: 20px;
+    }
     &__thumb-slider {
       & .slick-slide {
         margin-left: 20px;

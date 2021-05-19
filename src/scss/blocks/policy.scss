@@ -1,17 +1,18 @@
 .policy-item{
   padding-bottom: 25px;
+  color: $content-color;
 }
 .policy-item__text{
   margin-bottom: 5px;
   padding-left: 15px;
   line-height: 1.85;
-  font-family: "Open Sans",sans-serif;
+  font-family: $content-ff;
   font-size: 1.4rem;
   text-align: justify;
 }
 .policy-item ul li{
   line-height: 1.85;
-  font-family: "Open Sans",sans-serif;
+  font-family: $content-ff;
   font-size: 1.7rem;
   text-align: justify;
   list-style: none;
@@ -43,7 +44,7 @@ h4.policy-item__title{
     margin-bottom: 5px;
     padding-left: 15px;
     line-height: 1.85;
-    font-family: "Open Sans",sans-serif;
+    font-family: $content-ff;
     font-size: 1.7rem;
     text-align: justify;
   }

@@ -1,15 +1,16 @@
 .filter{
-  padding: 15px 0;
-  border-top: 3px solid #cdcdcd;
+  padding: 0;
   &__title{
-    padding: 14px 0 14px 2px;
-    font-size: 1.6rem;
-    font-weight: 700;
+    padding: 14px 20px 14px 2px;
+    border-bottom: 1px solid $brd-c;
+    font-size: 1.3rem;
+    font-weight: 500;
     text-transform: uppercase;
-    color: rgb(34, 34, 34);
+    color: $content-color;
+    cursor: pointer;
   }
   &__option-item{
-    border-bottom: 1px solid rgb(238, 238, 238);
+    border-bottom: none;
     &:last-of-type{
       border-bottom: none;
     }
@@ -22,10 +23,13 @@
     padding: 10px 0;
     font-size: 1.4rem;
     line-height: 1.8rem;
-    color:#63666A;
+    color: $content-color;
     transition: color .4s ease-in;
     &:hover{
-      color: #26b;
+      color: $red;
+    }
+    & input{
+      display: none;
     }
   }
   &__options-sub1list{
@@ -42,6 +46,24 @@
   }
   &__option-item--sublist{
     border-bottom: none;
+  }
+  &--apply-btn{
+    padding: 20px 0;
+  }
+  &__apply-button{
+    display: inline-block;
+    margin: 0 auto;
+    padding: 4px 15px 4px 15px;
+    background-color: $content-color;
+    color: $white;
+    border-radius: 20px;
+    transition: all .4s ease-in;
+    font-size: 1.4rem;
+    cursor: pointer;
+    &:hover{
+      background-color: $red;
+      color: #fff;
+    }
   }
 }
 @keyframes appearSublist-animation {
@@ -64,7 +86,7 @@
 .filter .filter__title-open-list{
   position: absolute;
   display: block;
-  top: 85%;
+  top: 90%;
   right: 31px;
   width: 1px;
   height: 1px;
@@ -94,13 +116,13 @@
     font-weight: 400;
     cursor: pointer;
     transition: transform .1s ease-in;
-    transform: rotate(90deg);
+    transform: rotate(0deg);
   }
 }
 
 .filter .filter__title-open-list.open-state{
   &::after{
-    transform: rotate(0deg);
+    transform: rotate(90deg);
   }
 }
 .filter__option-item .filter__option-link .hidden-items-control{
@@ -113,7 +135,7 @@
   &::before{
     position: absolute;
     top: -8px;
-    right: -23px;
+    right: -22px;
     content: '\f107';
     display: block;
     color: #222;
@@ -126,13 +148,14 @@
 .filter__option-item .filter__option-link .hidden-items-control.open-state{
   &::before{
     content: '\f106';
-    right: -20px;
+    right: -22px;
   }
 }
 
 //стили для чекбоксов в фильтре
 .filter{
-  &__options-list--chkbox a{
+  &__options-list--chkbox a,
+  &__options-list--chkbox label{
     display: flex;
     justify-content: space-between;
     padding-right: 10px;
@@ -149,7 +172,7 @@
     &::before{
       display: block;
       position: absolute;
-      top: 2px;
+      top: 0px;
       left: 2px;
       content: '';
       width: 15px;
@@ -165,7 +188,7 @@
   content: '\f14a';
   border: none;
   width: fit-content;
-  color: #222;
+  color: $red;
   font-size: 2rem;
   font-family: 'Font Awesome 5 Pro';
   font-weight: 400;
@@ -176,22 +199,24 @@
 .filter__price-filter{
   margin: 15px 7px;
 }
-.filter__price-control{
+.drag-filter-control{
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 0;
   &-name{
     display: inline-block;
-    padding: 10px;
     margin-right: 10px;
-    border: 2px solid #26b;
+    padding: 4px 20px;
+    background-color: $content-color;
+    text-transform: capitalize;
+    color: $white;
+    border-radius: 20px;
     transition: all .4s ease-in;
-    font-size: 1.2rem;
-    text-transform: uppercase;
+    font-size: 1.4rem;
     cursor: pointer;
     &:hover{
-      background-color: #26b;
+      background-color: $red;
       color: #fff;
     }
   }
@@ -201,11 +226,11 @@
     color: #222;
   }
 }
-.filter--price .filter__options-list{
+.drag-filter .filter__options-list{
   margin-top: 25px;
 }
-.filter__price-filter{
-  padding: 0 10px;
+.drag-filter{
+  padding: 0 3px;
 }
 .noUi-target{
   background: #ccc;
@@ -215,63 +240,37 @@
   height: 2px;
 }
 .noUi-connect{
-  background: #999;
+  background: $red;
+  height: 3px;
+}
+.noUi-handle.noUi-handle-lower{
+  right: 10px;
 }
 .noUi-handle::after,
 .noUi-handle::before{
   display: none;
 }
+.noUi-base, .noUi-connects{
+  height: 4px;
+  width: 100%;
+  transform: translateX(0px);
+}
 .noUi-horizontal .noUi-handle{
-  top: -10px;
+  top: -8px;
   box-shadow: none;
   outline: none;
-  width: 2.2rem;
-  height: 2.2rem;
-  background: #26b;
+  width: 1.8rem;
+  height: 1.8rem;
+  box-sizing: border-box;
+  border: 4px solid $red;
+  background: $white;
   cursor: pointer;
   border-radius: 50%;
 }
 .noUi-handle-lower{
-  left: 2px;
+  left: 8px;
 }
-// .noUi-tooltip{
-//   display: none;
-// }
-// .noUi-active .noUi-tooltip{
-//   display: block;
-// }
-// .noUi-handle-lower{
 
-// }
-// .noUi-horizontal .noUi-origin{
-// }
-// .noUi-connects{
-//   position: relative;
-//   background-color: #fff;
-//   border: none;
-//   height: 10px;
-// }
-// .noUi-connect{
-//   background: #999;
-//   margin-top: 8px;
-//   height: 3px;
-//   z-index: 10;
-// }
-// // .noUi-horizontal .noUi-handle {
-// //   width: 1.2rem;
-// //   height: 1.2rem;
-// //   background: #26b;
-// // }
-// .noUi-horizontal .noUi-handle{
-//   top: 3px;
-//   right: -10px;
-//   width: 14px;
-//   height: 14px;
-//   background-color: #26b;
-//   border-radius: 50%;
-//   border: none;
-//   box-shadow: none;
-// }
 
 @media only screen and (min-width: 991px){
   .filter__option-item .filter__option-link .hidden-items-control{

@@ -94,7 +94,6 @@ if($('.blog-section__slider')){
   $('.blog-section__slider').slick({
     slidesToShow: 5,
     margin: 45,
-    arrows: true,
     slidesToScroll: 1,               
     dots: false,
     infinite: true,
@@ -153,4 +152,65 @@ if($('.blog-section__slider')){
   //   slick.$slides.css('height', slick.$slideTrack.height() + 'px');
   // })
   ;
+}
+
+//слайдер "Похожие статьи"
+if($('.blog-posts-similar-slider')){
+  $('.blog-posts-similar-slider').slick({
+    slidesToShow: 3,
+    margin: 45,
+    slidesToScroll: 1,               
+    dots: true,
+    arrows:false,
+    infinite: true,
+    dotsClass: 'blog-posts-similar-slider__slick-dots',
+    responsive: [
+      {
+        breakpoint: 993,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          dots: true,
+        }
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          dots: true,
+        }
+      }
+    ]
+  });
+}
+
+
+//слайдер "Отзывы покупателей"
+if($('.testimonials__list')){
+  $('.testimonials__list').slick({
+    slidesToShow: 3,
+    margin: 45,
+    slidesToScroll: 1,               
+    dots: true,
+    arrows:false,
+    infinite: true,
+    dotsClass: 'bestseller-slider__slick-dots',
+    responsive: [
+      {
+        breakpoint: 993,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          dots: true,
+        }
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          dots: true,
+        }
+      }
+    ]
+  });
 }
