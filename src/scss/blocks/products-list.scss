@@ -33,11 +33,9 @@
     }
   }
 }
-.products-list__part-item{
-  display: none;
-}
-.products-list__part-item--active{
-  display: block;
+.products-list__part-nav-link.accordeon__item-nav-link--active{
+  color: $red;
+  text-decoration: underline;
 }
 
 //конец
