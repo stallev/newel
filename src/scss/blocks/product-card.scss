@@ -516,6 +516,7 @@ div.products-list--catalog-column .product-card{
     flex-direction: column;
   }
   .product-card.product-card--big{
+    padding-bottom: 3px;
     margin-bottom: 0;
     max-width: 480px;
     & .product-card__img-wrap{
