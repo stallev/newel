@@ -74,6 +74,47 @@
     
   }
 }
+.pagination.pagination--catalog{
+  & a.prev, & a.next{
+    display: block;
+    width: fit-content;
+    padding: 4px 9px;
+    text-align: center;
+    background-color: #ededed;
+    color: #ccc;
+    &:hover{
+      background-color: $red;
+      color: $white;
+    }
+    & i{
+      font-size: 2rem;
+      font-weight: 100;
+    }
+  }
+  & .prev{
+    margin-right: 25px;
+  }
+  & .next{
+    margin-left: 10px;
+  }
+  & .page-numbers{
+    display: block;
+    margin-right: 7px;
+    padding: 3px 7px;
+    display: inline-block;
+    border: 1px solid transparent;
+    color: #222;
+    font-size: 1.4rem;
+    @include colorOnHover;
+    &:hover{
+      border-color: $red;
+    }
+    & .current{
+      opacity: .5;
+      border-color: #222;
+    }
+  }
+}
 @media only screen and (min-width: 575px){
   .pagination{
     flex-direction: row;
