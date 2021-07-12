@@ -23,62 +23,100 @@ if($('.main-slider__list')){
   });
 }
 
-//слайдер на главной в сеции скидок
-if($('.discounts__sliders')){
-  $('.discounts__slider').slick({
-    slidesToShow: 3,
+
+//слайдер на главной в секции категорий
+if($('.categories__list')){
+  $('.categories__list').slick({
+    slidesToShow: 6,
     margin: 45,
-    slidesToScroll: 1,               
-    dots: false,
+    slidesToScroll: 2,               
+    dots: true,
     infinite: true,
     prevArrow:'<button class="discount-prev"><i class="far fa-angle-left"></i></button>',
     nextArrow:'<button class="discount-next"><i class="far fa-angle-right"></i></button>',
+    dotsClass: 'main-slider__slick-dots',
     responsive: [
       {
         breakpoint: 1199,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToShow: 5,
         }
       },
       {
         breakpoint: 993,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 2,
+          slidesToShow: 4,
           arrows: false,
-          dots: true,
-          dotsClass: 'main-slider__slick-dots',
         }
       },
       {
         breakpoint: 767,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          arrows: false,
-          dots: true,
-          dotsClass: 'main-slider__slick-dots',
+          slidesToShow: 3,
         }
       },
       {
         breakpoint: 575,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
-          arrows: false,
-          dots: true,
-          dotsClass: 'main-slider__slick-dots',
         }
       },
       {
         breakpoint: 400,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 2,
-          arrows: false,
+        }
+      }
+    ]
+  })
+  //выравнивание слайдов по высоте
+  // .on('setPosition', function (event, slick) {
+  //   slick.$slides.css('height', slick.$slideTrack.height() + 'px');
+  // })
+  ;
+}
+//слайдер на главной в секции скидок
+if($('.discounts__sliders')){
+  $('.discounts__slider').slick({
+    slidesToShow: 4,
+    margin: 45,
+    slidesToScroll: 1,               
+    dots: false,
+    arrows: true,
+    infinite: true,
+    prevArrow:'<button class="discount-prev"><i class="fas fa-chevron-left"></i></button>',
+    nextArrow:'<button class="discount-next"><i class="fas fa-chevron-right"></i></button>',
+    dotsClass: 'main-slider__slick-dots',
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3,
           dots: true,
-          dotsClass: 'main-slider__slick-dots',
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+          dots: true,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 400,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
         }
       }
     ]
@@ -92,20 +130,14 @@ if($('.discounts__sliders')){
 //слайдер на главной в секции блога
 if($('.blog-section__slider')){
   $('.blog-section__slider').slick({
-    slidesToShow: 5,
+    slidesToShow: 4,
     margin: 45,
     slidesToScroll: 1,               
     dots: false,
     infinite: true,
-    prevArrow:'<button class="blog-section-prev"><i class="far fa-angle-left"></i></button>',
-    nextArrow:'<button class="blog-section-next"><i class="far fa-angle-right"></i></button>',
+    prevArrow:'<button class="discount-prev"><i class="fas fa-chevron-left"></i></button>',
+    nextArrow:'<button class="discount-next"><i class="fas fa-chevron-right"></i></button>',
     responsive: [
-      {
-        breakpoint: 1199,
-        settings: {
-          slidesToShow: 4,
-        }
-      },
       {
         breakpoint: 993,
         settings: {

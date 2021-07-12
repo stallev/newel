@@ -98,6 +98,13 @@ if(hiddenItemsControls){
 		}
 	)
 }
+//меню категорий
+/*---categories slideToggle---*/
+$(".categories_title").on("click", function() {
+	$(this).toggleClass('active');
+	$('.categories_menu_toggle').slideToggle('medium');
+}); 
+
 
 //меню футер
 const footerMenu = document.querySelector('.footer__mobile-nav-wrap');

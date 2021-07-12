@@ -309,9 +309,9 @@ $paragraph-margin-bottom:   1rem !default;
 // scss-docs-start grid-breakpoints
 $grid-breakpoints: (
   xs: 0,
-  sm: 575px,
-  md: 767px,
-  lg: 991px,
+  sm: $dw-sm,
+  md: $dw-md,
+  lg: $dw-lg,
   xl: 1199px,
   xxl: 1399px
 ) !default;

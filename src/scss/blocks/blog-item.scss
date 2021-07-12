@@ -71,7 +71,7 @@
 .blog-section .slick-initialized .slick-slide{
   display: flex;
 }
-@media only screen and (min-width: 575px){
+@media only screen and (min-width: $dw-sm){
   .blog-item{
     flex-direction: row;
     justify-content: space-between;
@@ -87,7 +87,7 @@
     }
   }
 }
-@media only screen and (min-width: 767px){
+@media only screen and (min-width: $dw-md){
   .blog-item{
     height: 100%;
     &__excerpt{
@@ -98,4 +98,4 @@
     }
   }
 }
-@media only screen and (min-width: 991px){}
+@media only screen and (min-width: $dw-lg){}

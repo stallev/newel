@@ -1,8 +1,8 @@
-@import "bootstrap_components.scss";
-@import "toast_grid.scss";
+// @import "bootstrap_components.scss";
+// @import "toast_grid.scss";
 @import "mixins.scss";
-@import "placeholders.scss";
 @import "variables.scss";
+@import "placeholders.scss";
 @import "global/fonts.scss";
 @import "global/scaffolding.scss";
 @import "global/nouislider.scss";
@@ -28,6 +28,7 @@
 @import "blocks/breadcrumbs.scss";
 @import "blocks/catalog-sidebar.scss";
 @import "blocks/categories.scss";
+@import "blocks/categories-menu.scss";
 @import "blocks/checkout.scss";
 @import "blocks/company-info.scss";
 @import "blocks/contact-form.scss";
@@ -64,4 +65,5 @@
 @import "blocks/subscribe.scss";
 @import "blocks/team-item.scss";
 @import "blocks/testimonial.scss";
+@import "blocks/work-process.scss";
 @import "blocks/wdg.scss";

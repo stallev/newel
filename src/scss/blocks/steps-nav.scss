@@ -51,7 +51,7 @@
     }
   }
 }
-@media only screen and (min-width: 767px){
+@media only screen and (min-width: $dw-md){
   .steps-nav-wrap{
     padding-top: 50px;
     padding-bottom: 55px;
@@ -67,7 +67,7 @@
     }
   }
 }
-@media only screen and (min-width: 991px){
+@media only screen and (min-width: $dw-lg){
   .steps-nav-wrap{
     padding-top: 55px;
     padding-bottom: 75px;

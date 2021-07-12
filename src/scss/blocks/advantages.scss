@@ -33,7 +33,7 @@
 }
 
 
-@media only screen and (min-width: 767px){
+@media only screen and (min-width: $dw-md){
   .advantages{
     &__item{
       margin: 0 10px;

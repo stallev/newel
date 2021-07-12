@@ -50,7 +50,7 @@
     text-transform: uppercase;
     transition: all .4s ease-in-out;
     &:hover{
-      background-color: #222;
+      background-color: $content-color;
       border-color: #fff;
     }
   }

@@ -1,10 +1,11 @@
 .header{
+	margin-bottom: 20px;
 	background-color: $header-top-bg;
 	&__search-container{
 		display: none;
 	}
 	&__top{
-		background-color: $header-top-bg;
+		background-color: $white;
 	}
 	&__bottom{
 		display: none;
@@ -18,21 +19,22 @@
 		margin-left: auto;
 		padding: 4px 8px;
 		border-radius: 4px;
-		border: 1px solid $white;
-		color: $white;
+		border: 1px solid $content-color;
+		color: $content-color;
 		font-size: 1.7rem;
 		text-align: center;
 		cursor: pointer;
 		transition: all .3s ease;
 		&:hover{
-			color: $red;
-			border: 1px solid $red;
+			color: $primary-color;
+			border: 1px solid $primary-color;
 		}
 	}
 }
 
-@media only screen and (min-width: 991px){
+@media only screen and (min-width: $dw-lg){
 	.header{
+		margin-bottom: 30px;
 		&__menu-open-btn{
 			display: none;
 		}
@@ -51,13 +53,25 @@
 		}
 		&__search-submit-btn{
 			display: inline-block;
-			background: $yellow;
-			padding: 10px 15px;
+			background: $primary-color;
+			color: $white;
+			font-weight: 500;
+			padding: 10px 35px;
 			border-radius: 0 5px 5px 0;
+			font-size: 1.4rem;
+			cursor: pointer;
+			transition: all .3s ease-in;
+			&:hover{
+				background-color: $content-color;
+			}
 		}
 		&__select-block{
 			position: relative;
 			padding-right: 15px;
+			border-top: 2px solid $brd-c;
+			border-bottom: 2px solid $brd-c;
+			border-left: 2px solid $brd-c;
+			border-radius: 5px 0 0 5px;
 			&::before{
 				content: "";
 				width: 1px;
@@ -69,15 +83,17 @@
 				right: 0;
 			}
 		}
+		
 		&__search-field{
 			display: inline-block;
-			border: 0;
+			border-top: 2px solid $brd-c;
+			border-bottom: 2px solid $brd-c;
 			background: inherit;
-			height: 50px;
-			color: #222222;
+			height: 53px;
+			color: $content-color;
 			font-size: 1.4rem;
 			font-weight: 400;
-			padding: 0 105px 0 20px;
+			padding: 0 90px 0 20px;
 		}
 		&__form{
 			display: flex;

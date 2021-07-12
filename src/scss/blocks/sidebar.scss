@@ -29,7 +29,7 @@
   bottom: 0;
   visibility: hidden;
   opacity: 0;
-  background-color: #222;
+  background-color: $content-color;
   transition: visibility .4s,opacity .4s;
   z-index: 21;
 }
@@ -71,7 +71,7 @@ body.sidebar-active .sidebar__icon-close-wrap{
   display: block;
   padding: 10px;
   color: #ccc;
-  background-color: #222;
+  background-color: $content-color;
   font-size: 2rem;
 }
 //кнопка для закрытия меню н мобильных экранах
@@ -107,7 +107,7 @@ body.sidebar-active .sidebar__icon-close-wrap{
     transform: rotate(-45deg);
   }
 }
-@media only screen and (min-width: 991px){
+@media only screen and (min-width: $dw-lg){
   .sidebar-toggle{
     display: none;
   }

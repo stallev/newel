@@ -10,18 +10,18 @@
 //   width: 100%;
   
 // }
-@media only screen and (max-width: 449px){
-.products-list__wrap--catalog .col.product-card{
-    flex: 0 1 auto;
-    width: 100%;
-  }
-}
-@media only screen and (max-width: 767px){
-  .products-list__wrap--catalog .col.product-card{
-    flex: 0 1 auto;
-    width: 48%;
-  }
-}
+// @media only screen and (max-width: 449px){
+// .products-list__wrap--catalog .col.product-card{
+//     flex: 0 1 auto;
+//     width: 100%;
+//   }
+// }
+// @media only screen and (max-width: $dw-md){
+//   .products-list__wrap--catalog .col.product-card{
+//     flex: 0 1 auto;
+//     width: 48%;
+//   }
+// }
 .product-card{
   position: relative;
   display: flex;
@@ -30,6 +30,10 @@
   margin-bottom: 33px;
   background-color: $white;
   border-radius: 5px;
+  border: 2px solid $brd-c;
+  &:hover{
+    border-color: $primary-color;
+  }
   &--big{
     width: 100%;
     & .product-card__selling-block{
@@ -47,7 +51,8 @@
   }
   &__img-wrap{
     position: relative;
-    min-height: 200px;
+    min-height: 150px;
+    margin-bottom: 20px;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -124,22 +129,10 @@
   }
   &__new-mark{
     background-color: $dark-blue;
-    &::before{
-      background-image: url(../img/decor/icons/icon-new.png);
-    }
-    &::after{
-      background-image: url(../img/decor/icons/icon1-new.png);
-    }
   }
   &__sale-mark{
-    background-color: $red;
+    background-color: $primary-color;
     margin-left: 20px;
-    &::before{
-      background-image: url(../img/decor/icons/icon-sale.png);
-    }
-    &::after{
-      background-image: url(../img/decor/icons/icon1-sale.png);
-    }
   }
   
   &__quick-view{
@@ -151,7 +144,7 @@
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    background-color: $red;
+    background-color: $primary-color;
     color: #fff;
     text-align: center;
     text-transform: uppercase;
@@ -168,6 +161,7 @@
   &__content{
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 10px 2px;
   }
   &__info{
@@ -176,32 +170,35 @@
   }
   &__category{
     display: block;
+    text-align: center;
     font-size: 1.4rem;
     padding: 5px 0;
     transition: all .3s ease;
-    color: #222;
+    color: $content-color;
     &:hover{
-      color: $red;
+      color: $primary-color;
     }
   }
   &__title{
-    @include colorOnHover;
     height: 41px;
     display: inline-block;
     overflow: hidden;
     box-sizing: border-box;
-    margin-bottom: 4px;
+    margin-bottom: 5px;
+    text-align: center;
     font-size: 1.5rem;
     line-height: 1.4;
     font-weight: 500;
     transition: all .3s ease;
-    color: #222;
+    color: $content-color;
     &:hover{
-      color: $red;
+      color: $primary-color;
       text-decoration: underline;
     }
   }
   &__price{
+    display: flex;
+    flex-wrap: wrap;    
     font-weight: 500;
     & span{
       display: inline-block;
@@ -211,12 +208,12 @@
     margin-right: 10px;
     font-size: 1.7rem;
     text-decoration: none;
-    color: $red;
+    color: $primary-color;
   }
   &__last-price{
     margin-right: 5px;
     font-size: 1.3rem;
-    color: #222;
+    color: $content-color;
   }
   &__description{
     display: none;
@@ -230,6 +227,7 @@
     align-items: center;
     flex-wrap: wrap;
     padding: 0;
+    margin-bottom: 10px;
   }
   &__stars-block{
     margin-right: 9px;
@@ -245,6 +243,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    background-color: $white;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -254,6 +253,7 @@
     background-color: $white;
     opacity: 0;
     visibility: hidden;
+    z-index: 11;
   }
   &__add-to-cart{
     display: inline-block;
@@ -263,7 +263,7 @@
     text-transform: uppercase;
     border-radius: 5px;
     z-index: 3;
-    background-color: $red;
+    background-color: $primary-color;
     color: $white;
     opacity: 1;
     visibility: visible;
@@ -271,7 +271,8 @@
     transition: all .3s ease;
     &:hover{
       cursor: pointer;
-      background-color: #999;
+      background-color: $content-color;
+      color: $white;
     }
   }
   &__add-to-cart i{
@@ -287,7 +288,7 @@
     }
     &-value{
       font-weight: 500;
-      color: $red;
+      color: $primary-color;
     }
   }
   &__compare{
@@ -307,7 +308,7 @@
       left: 2px;
       content: '\f0c8';
       font-size: 2rem;
-      font-family: 'Font Awesome 5 Pro';
+      font-family: 'Font Awesome 5 Free';
       width: 15px;
       height: 15px;
       border-radius: 1px;
@@ -328,13 +329,13 @@
   content: '\f14a';
   border: none;
   width: fit-content;
-  color: $red;
+  color: $primary-color;
   font-size: 2rem;
-  font-family: 'Font Awesome 5 Pro';
+  font-family: 'Font Awesome 5 Free';
   font-weight: 400;
   cursor: pointer;
 } 
-.products-list__parts-list .product-card{
+.products-list__parts-list .product-card__wrap--main{
   display: none;
 }
 
@@ -379,12 +380,8 @@ div.products-list--catalog-column .product-card{
   }
 }
 @media only screen and (min-width: 450px){
-  .products-list__wrap--catalog .col.product-card{
-    width: 48%;
-    padding-bottom: 20px;
-  }
   .product-card{
-    width: 48%;
+    //width: 48%;
     &--big{
       width: 100%;
     }
@@ -408,7 +405,7 @@ div.products-list--catalog-column .product-card{
     }
   }
 }
-@media only screen and (min-width: 575px){
+@media only screen and (min-width: $dw-sm){
   
   //колоночный вид списка товаров
   div.products-list--catalog-column .product-card{
@@ -443,7 +440,7 @@ div.products-list--catalog-column .product-card{
     }
   }
 }
-@media only screen and (min-width: 767px){
+@media only screen and (min-width: $dw-md){
   
   //колоночный вид
   .products-list__wrap--catalog .products-list--catalog-column .product-card__short-descr{
@@ -466,9 +463,9 @@ div.products-list--catalog-column .product-card{
       border-left: 1px solid $brd-c;
     }
   }
-  .products-list__wrap--catalog .col.product-card{
-    width: 31%;
-  }
+  // .products-list__wrap--catalog .col.product-card{
+  //   width: 31%;
+  // }
   .discounts__content .product-card{
     margin-bottom: 68px;
   }
@@ -488,7 +485,7 @@ div.products-list--catalog-column .product-card{
     }
   }
   .product-card{
-    width: 31%;
+    //width: 31%;
     &__add-to-cart{
       width: fit-content;
       padding: 10px 15px;
@@ -504,9 +501,9 @@ div.products-list--catalog-column .product-card{
   }
 }
 
-@media only screen and (min-width: 991px){
+@media only screen and (min-width: $dw-lg){
   .product-card{
-    width: 23%;
+    //width: 23%;
   }
   .discounts__content .product-card{
     margin-bottom: 68px;
@@ -525,39 +522,39 @@ div.products-list--catalog-column .product-card{
     }
   }
   .products-list__wrap--catalog .col.product-card{
-    width: 31%;
+    //width: 31%;
   }
 }
-@media only screen and (min-width: 1199px){
+@media only screen and (min-width: $dw-xl){
   .product-card{
-    width: 18%;
+    ///width: 18%;
   }
   .products-list__wrap--catalog .col.product-card{
-    width: 23%;
+    //width: 23%;
   }
 }
 
 //количество отображаемых карточек товаров равно 4
-@media (min-width: 0px) and (max-width: 766px){
-  .products-list__parts-list .product-card:nth-of-type(-n+4){
+@media (min-width: 0px) and (max-width: $dw-md){
+  .products-list__parts-list .product-card__wrap--main:nth-of-type(-n+4){
     display: flex;
   }
 }
 //количество отображаемых карточек товаров равно 4
-@media (min-width: 767px) and (max-width: 990px){
-  .products-list__parts-list .product-card:nth-of-type(-n+3){
+@media (min-width: $dw-md) and (max-width: $dw-lg){
+  .products-list__parts-list .product-card__wrap--main:nth-of-type(-n+3){
     display: flex;
   }
 }
 //количество отображаемых карточек товаров равно 4
-@media (min-width: 991px) and (max-width: 1198px){
-  .products-list__parts-list .product-card:nth-of-type(-n+4){
+@media (min-width: $dw-lg) and (max-width: $dw-xl){
+  .products-list__parts-list .product-card__wrap--main:nth-of-type(-n+4){
     display: flex;
   }
 }
 //количество отображаемых карточек товаров равно 4
-@media (min-width: 1199px) and (max-width: 790000px){
-  .products-list__parts-list .product-card:nth-of-type(-n+5){
+@media (min-width: $dw-xl) and (max-width: 790000px){
+  .products-list__parts-list .product-card__wrap--main:nth-of-type(-n+4){
     display: flex;
   }
 }

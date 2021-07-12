@@ -1,21 +1,26 @@
 .main{
-  background-color: $section-bg;
   &__content-wrap{
     overflow: hidden;
   }
 }
-@media only screen and (min-width: 575px){
+.section--main-page{
+  margin-bottom: 20px;
+}
+@media only screen and (min-width: $dw-sm){
   .main{
   }
 }
-@media only screen and (min-width: 767px){
+@media only screen and (min-width: $dw-md){
   .main{
   }
 }
-@media only screen and (min-width: 991px){
+@media only screen and (min-width: $dw-lg){
   .main{
     &__content{
       overflow-x: hidden;
     }
+  }
+  .section--main-page{
+    margin-bottom: 30px;
   }
 }

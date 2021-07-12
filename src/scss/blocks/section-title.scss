@@ -35,12 +35,12 @@
     z-index: 3;
   }
 }
-@media only screen and (min-width: 767px){
+@media only screen and (min-width: $dw-md){
   .section-title{
     
   }
 }
-@media only screen and (min-width: 991px){
+@media only screen and (min-width: $dw-lg){
   .section-title{
     &--horizontal{
       position: relative;
@@ -69,6 +69,13 @@
         max-width: none;
         padding-top: 5px;
         padding-right: 20px;
+      }
+    }
+    &--blog{
+      background-color: $white;
+      & .section-title__text,
+      & .section-title__description{
+        background-color: $white;
       }
     }
   }

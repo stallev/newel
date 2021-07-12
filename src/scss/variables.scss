@@ -4,10 +4,13 @@ $tablet-width: 768px;
 $desctop-width: 1360px;
 
 $body-color: #fff;
-$content-color: #222;
+$content-color: #242424;
 $content-ff: "Rubik";
 
 //background colors
+$primary-color: #0063d1;
+
+
 $white: #fff;
 $light-grey: #f6fafb;
 $bg-grey: #f8f8f8;
@@ -40,6 +43,12 @@ $lh-lg36: 3.6rem;
 $lh-lg40: 4rem;
 $lh-slg60: 6rem;
 $lh-slg70: 7rem;
+
+$dw-sm: 576px;
+$dw-md: 768px;
+$dw-lg: 992px;
+$dw-xl: 1200px;
+$dw-xxl: 1400px;
 
 $tablet-side-padding: 40px;
 $toast-breakpoint-medium: 992px !default;

@@ -3,7 +3,6 @@
   background-color: $section-bg;
 }
 .main-slider{
-  margin-bottom: 30px;
   &__item{
     height: 300px;
     background-size: cover;
@@ -24,8 +23,13 @@
     color: $white;
   }
   &__item-title{
+    margin-bottom: 5px;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+  }
+  &__item-subtitle{
     margin-bottom: 15px;
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     text-transform: uppercase;
   }
   &__item-description{
@@ -36,12 +40,13 @@
   &__action-link{
     display: inline-block;
     width: fit-content;
-    padding: 5px 0 5px 15px;
-    border-radius: 4px 0 0 4px;
+    padding: 15px 35px;
+    border-radius: 5px;
+    text-align: center;
     font-size: 1.3rem;
     text-transform: uppercase;
     color: $white;
-    background-color: $yellow;
+    background-color: $primary-color;
     transition: all .3s ease;
     & span{
       display: inline-block;
@@ -49,19 +54,22 @@
       line-height: 24px;
     }
     &:hover{
-      background-color: $header-top-bg;
+      background-color: $content-color;
+      color: $white;
     }
   }
   &__slick-dots{
     position: absolute;
     display: flex;
     justify-content: center;
+    width: fit-content;
     margin: 0 auto;
     font-size: 0;
     transform: translate(-50%,0);
     left: 50%;
     margin-right: -50%;
     bottom: 15px;
+    z-index: 10;
     & button{
       display: block;
       margin: 0 6px;
@@ -73,12 +81,13 @@
       border: 1px solid lightgrey;
       border-radius: 50%;
       transition: background-color .2s ease-in-out;
+      z-index: 10;
       &:hover{
         background-color: grey;
       }
     }
     & .slick-active button {
-      background-color: $yellow;
+      background-color: $primary-color;
       width: 30px;
       border-color: $white;
       border-radius: 5px;
@@ -87,7 +96,7 @@
 }
 
 
-@media only screen and (min-width: 575px){
+@media only screen and (min-width: $dw-sm){
   .main-slider{
     &__item{
       
@@ -101,14 +110,22 @@
     }
   }
 }
-@media only screen and (min-width: 767px){
+@media only screen and (min-width: $dw-md){
   .main-slider{
     &__item{
       height: 300px;
     }
+    &__item-content{
+      width: 450px;
+    }
     &__item-title{
+      margin-bottom: 5px;
+      font-size: 2.8rem;
+    }
+    &__item-subtitle{
       margin-bottom: 20px;
-      font-size: 2.3rem;
+      font-size: 2.8rem;
+      text-transform: uppercase;
     }
     &__item-description{
       margin-bottom: 20px;
@@ -119,15 +136,23 @@
     }
   }
 }
-@media only screen and (min-width: 991px){
+@media only screen and (min-width: $dw-lg){
   .main-slider{
-    margin-bottom: 0;
     &__item{
       height: 300px;
     }
+    &__item-content{
+      width: 650px;
+    }
+    &__item-subtitle{
+      font-size: 33px;
+    }
+    &__item-title{
+      font-size: 33px;
+    }
   }
 }
-@media only screen and (min-width: 1199px){
+@media only screen and (min-width: $dw-xl){
   .main-slider{
     &__item{
       height: 350px;

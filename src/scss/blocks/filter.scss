@@ -98,7 +98,7 @@
     height: 2px;
     content: '';
     display: block;
-    background-color: #222;
+    background-color: $content-color;
     font-size: 3.1rem;
     font-weight: 400;
     cursor: pointer;
@@ -111,7 +111,7 @@
     height: 2px;
     content: '';
     display: block;
-    background-color: #222;
+    background-color: $content-color;
     font-size: 3.1rem;
     font-weight: 400;
     cursor: pointer;
@@ -138,7 +138,7 @@
     right: -22px;
     content: '\f107';
     display: block;
-    color: #222;
+    color: $content-color;
     font-size: 1.5rem;
     font-family: 'Font Awesome 5 Pro';
     font-weight: 400;
@@ -223,7 +223,7 @@
   &-range{
     display: inline-block;
     font-size: 1.4rem;
-    color: #222;
+    color: $content-color;
   }
 }
 .drag-filter .filter__options-list{
@@ -272,7 +272,7 @@
 }
 
 
-@media only screen and (min-width: 991px){
+@media only screen and (min-width: $dw-lg){
   .filter__option-item .filter__option-link .hidden-items-control{
     right: 30px;
   }

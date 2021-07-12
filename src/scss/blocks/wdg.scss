@@ -60,7 +60,7 @@
     display: block;
     width: 33px;
     height: 24px;
-    color: #222;
+    color: $content-color;
     font-size: 3.1rem;
     font-weight: 400;
     cursor: pointer;
@@ -90,7 +90,7 @@
     display: block;
     width: 33px;
     height: 24px;
-    color: #222;
+    color: $content-color;
     font-size: 1.5rem;
     font-family: 'Font Awesome 5 Pro';
     font-weight: 400;
@@ -204,7 +204,7 @@
   content: '\f14a';
   border: none;
   width: fit-content;
-  color: #222;
+  color: $content-color;
   font-size: 2rem;
   font-family: 'Font Awesome 5 Pro';
   font-weight: 400;
@@ -230,6 +230,6 @@
   &-range{
     display: inline-block;
     font-size: 1.4rem;
-    color: #222;
+    color: $content-color;
   }
 }

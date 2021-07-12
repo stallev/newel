@@ -30,11 +30,12 @@
     display: block;
     flex-shrink: 2;
     padding: 10px 10px;
-    background: #2c2c2c;
+    background: $white;
+    border-radius: 5px 0 0 5px;
     margin-right: 5px;
     margin-bottom: 10px;
     flex-grow: 2;
-    color: rgb(161, 161, 161);
+    color: $content-color;
     font-size: 1.4rem;
     text-align: center;
     outline: none;
@@ -43,7 +44,7 @@
     display: block;
     padding: 10px 15px;
     font-weight: 700;
-    background-color: $red;
+    background-color: $primary-color;
     color: $white;
     text-transform: uppercase;
     transition: background-color .4s ease-in-out;
@@ -62,7 +63,7 @@
     }
   }
 }
-@media only screen and (min-width: 575px){
+@media only screen and (min-width: $dw-sm){
   .subscribe{
     &__form-block{
       width: 450px;
@@ -70,7 +71,7 @@
     }
   }
 }
-@media only screen and (min-width: 991px){
+@media only screen and (min-width: $dw-lg){
   .subscribe{
     display: flex;
     justify-content: space-between;

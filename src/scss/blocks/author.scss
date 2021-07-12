@@ -20,7 +20,7 @@
     margin-bottom: .4rem;
     font-size: 1.4rem;
     font-weight: 700;
-    color: #222;
+    color: $content-color;
     @include colorOnHover;
   }
   &__time{
@@ -48,7 +48,7 @@
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.2;
-    color: #222;
+    color: $content-color;
   }
   & .author__wrap:first-of-type{
     border-top: none;
@@ -73,7 +73,7 @@
     position: relative;
     font-size: 1.5rem;
     font-weight: 700;
-    color: #222;
+    color: $content-color;
     text-transform: uppercase;
     transition: all .3s ease-in;
     &::after{
@@ -120,7 +120,7 @@
     margin: 0;
   }
 }
-@media only screen and (min-width: 767px){
+@media only screen and (min-width: $dw-md){
   .author{
     &__details-wrap{
       display: flex;

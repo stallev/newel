@@ -27,7 +27,7 @@
   bottom: 0;
   visibility: hidden;
   opacity: 0;
-  background-color: #222;
+  background-color: $content-color;
   transition: visibility .4s,opacity .4s;
   z-index: 99;
 }
@@ -111,7 +111,7 @@ body.sidebar-active .catalog-sidebar__overlay{
   font-size: 1.4rem;
   cursor: pointer;
 }
-@media only screen and (min-width: 575px){
+@media only screen and (min-width: $dw-sm){
   .catalog-sidebar__icon-close-wrap{
     position: fixed;
     top: 15px;
@@ -120,7 +120,7 @@ body.sidebar-active .catalog-sidebar__overlay{
     }
 }
 
-@media only screen and (min-width: 991px){
+@media only screen and (min-width: $dw-lg){
   .catalog-sidebar{
     padding-top: 72px;
     border-radius: 4px;

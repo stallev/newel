@@ -66,3 +66,19 @@
     }
   }
 }
+@mixin h4title {
+  font-family: $content-ff;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #000;
+  @media only screen and (min-width: $dw-sm){
+    font-size: 16px;
+  }
+  @media only screen and (min-width: $dw-md){
+    font-size: 16px;
+  }
+  @media only screen and (min-width: $dw-lg){
+    font-size: 16px;
+  }
+}

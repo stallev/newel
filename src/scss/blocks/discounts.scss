@@ -1,7 +1,7 @@
 .discounts{
   background-color: $section-bg;
   & .main-slider__slick-dots{
-    bottom: -15px;
+    bottom: 25px;
   }
   &__content{
     display: flex;
@@ -11,38 +11,7 @@
     padding-bottom: 60px;
   }
   &__slider{
-    &-slick-dots{
-      position: absolute;
-      display: flex;
-      justify-content: center;
-      margin: 0 auto;
-      font-size: 0;
-      transform: translate(-50%,0);
-      left: 50%;
-      margin-right: -50%;
-      bottom: 0px;
-      & button{
-        display: block;
-        margin: 0 6px;
-        font-size: 0;
-        min-width: none;
-        width: 11px;
-        height: 11px;
-        background-color: #fff;
-        border: 1px solid lightgrey;
-        border-radius: 50%;
-        transition: background-color .2s ease-in-out;
-        &:hover{
-          background-color: grey;
-        }
-      }
-      & .slick-active button {
-        background-color: $yellow;
-        width: 30px;
-        border-color: $white;
-        border-radius: 5px;
-      }
-    }
+    padding-bottom: 10px;
   }
 }
 .discount-prev,
@@ -63,15 +32,14 @@
   //   align-items: flex-end;
   // }
 }
-@media only screen and (min-width: 767px){
+@media only screen and (min-width: $dw-md){
   .discount-prev,
   .discount-next{
     display: none;
   }
 }
-@media only screen and (min-width: 991px){
+@media only screen and (min-width: $dw-lg){
   .discounts{
-    padding-bottom: 50px;
     &__slider-wrap{
       width: 48%;
       flex-grow: 2;
@@ -86,8 +54,9 @@
   .discount-next{
     position: absolute;
     top: -64px;
+    width: fit-content;
     font-size: 1.7rem;
-    color: #222;
+    color: $content-color;
   }
   .discount-prev{
     right: 20px;

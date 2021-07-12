@@ -18,7 +18,7 @@
   left: 0;
   right: 0;
   height: 100%;
-  background-color: #222;
+  background-color: $content-color;
   opacity: .2;
 }
 .mobile-nav{
@@ -44,7 +44,7 @@
 .catalog-sidebar__icon-close,
 .mobile-nav__icon-close,
 .mini-cart__icon-close{
-  @include closeBtn(#222);
+  @include closeBtn($content-color);
 }
 //стили мобильного меню
 .mobile-nav .header__srch-wdg-inner{
@@ -138,7 +138,7 @@
     box-sizing: border-box;
     flex-grow: 2;
     background: inherit;
-    color: #222222;
+    color: $content-color;
     font-size: 1.2rem;
     font-weight: 400;
     padding: 0 12px 0 12px;

@@ -65,7 +65,7 @@
     }
   }
 }
-@media only screen and (min-width: 575px){
+@media only screen and (min-width: $dw-sm){
   .main-products{
     &__item-info{
       padding-left: 30px;
@@ -80,7 +80,7 @@
     }
   }
 }
-@media only screen and (min-width: 767px){
+@media only screen and (min-width: $dw-md){
   .main-products{
     &__item-info{
       padding: 0 30px ;
@@ -93,7 +93,7 @@
     }
   }
 }
-@media only screen and (min-width: 991px){
+@media only screen and (min-width: $dw-lg){
   .main-products{
     &__list{
       display: flex;
@@ -120,7 +120,7 @@
     }
   }
 }
-@media only screen and (min-width: 1199px){
+@media only screen and (min-width: $dw-xl){
   .main-products{
     &__item{
     }

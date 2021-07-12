@@ -1,5 +1,5 @@
 .blog-section{
-  background-color: $section-bg;
+  //background-color: $section-bg;
   padding-bottom: 90px;
   &__item{
     border-radius: 5px;
@@ -117,13 +117,13 @@
     margin-left:-27px;
   }
 }
-@media only screen and (min-width: 991px){
+@media only screen and (min-width: $dw-lg){
   .blog-section-prev,
   .blog-section-next{
     position: absolute;
     top: -64px;
     font-size: 1.7rem;
-    color: #222;
+    color: $content-color;
   }
   .blog-section-prev{
     right: 20px;

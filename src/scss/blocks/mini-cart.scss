@@ -5,15 +5,14 @@
     display: block;
     margin: 0 auto;
     width: fit-content;
-    color: $content-color;
-    background: $yellow;
+    color: $white;
+    background: $primary-color;
     padding: 15px 16px;
     transition: all .3s ease-in;
     border-radius: 4px;
     cursor: pointer;
     &:hover{
-      background: $dark-blue;
-      color: $white;
+      background: $content-color;
     }
   }
   &__header-basket-icon{
@@ -41,10 +40,11 @@
     height: 20px;
     line-height: 20px;
     width: 20px;
+    border: 1px solid $white;
     border-radius: 50%;
     text-align: center;
-    color: $content-color;
-    background-color: $white;
+    color: inherit;
+    background-color: inherit;
   }
   &__content{
     position: fixed;

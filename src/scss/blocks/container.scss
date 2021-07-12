@@ -3,30 +3,28 @@
   padding: 0 30px;
   box-sizing: border-box;
   width: 100%;
-  max-width: 1430px;
+  max-width: 1200px;
 }
 .container--header-top{
   padding-top: 25px;
   padding-bottom: 25px;
 }
 
-@media only screen and (min-width: 575px){
+@media only screen and (min-width: $dw-sm){
   .container{
     //max-width: 1430px;
   }
 }
-@media only screen and (min-width: 767px){
+@media only screen and (min-width: $dw-md){
   div.container{
-    max-width: 1430px;
   }
 }
-@media only screen and (min-width: 991px){
+@media only screen and (min-width: $dw-lg){
   .container{
-    max-width: 1430px;
   }
 }
-@media only screen and (min-width: 1199px){
+@media only screen and (min-width: $dw-xl){
   .container{
-    max-width: 1430px;
+    
   }
 }

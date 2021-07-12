@@ -18,7 +18,7 @@
     font-size: 1.6rem;
     line-height: 1.3;
     font-weight: 700;
-    color: #222;
+    color: $content-color;
   }
   &__input-group{
     display: inline-flex;
@@ -33,7 +33,7 @@
     text-align: center;
     padding: 0 15px;
     border: 1px solid #ccc;
-    color: #222;
+    color: $content-color;
     background-color: transparent;
     outline: none;
     cursor: pointer;
@@ -46,7 +46,7 @@
     font-family: "Font Awesome 5 Pro";
     font-size: 1.3rem;
     font-weight: 700;
-    color: #222;
+    color: $content-color;
   }
   &__plus::before{
     position: absolute;
@@ -56,7 +56,7 @@
     font-family: "Font Awesome 5 Pro";
     font-size: 1.3rem;
     font-weight: 700;
-    color: #222;
+    color: $content-color;
   }
   &__value{
     display: block;
@@ -72,7 +72,7 @@
 .shop-list__item .count-box__input-group{
   margin-bottom: 0;
 }
-@media only screen and (min-width: 767px){
+@media only screen and (min-width: $dw-md){
   .shop-list{
     & .count-box{
       margin-bottom: 0;
