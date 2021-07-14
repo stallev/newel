@@ -3,10 +3,9 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
-    
+    <link rel="stylesheet" href="libs/fontawesome/all.min.css">
+    <link rel="stylesheet" href="libs/slick/slick.min.css">
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="shortcut icon" href="../img/decor/favicon.png" type="image/png" />
     <title>Оформление заказа</title>
@@ -30,8 +29,13 @@
                         <div class="header__select-block">
                           <select class="header__select-category" name="select" id="categori1">
                             <option selected value="1">Все категории</option>
-                            <option value="2">Шины</option>
-                            <option value="3">Диски</option>
+                            <option value="2">Электроника</option>
+                            <option value="3">Компьютеры и сети</option>
+                            <option value="4">Хранение данных</option>
+                            <option value="5">Мультимедиа периферия</option>
+                            <option value="6">Электропитание</option>
+                            <option value="7">Сетевое оборудование</option>
+                            <option value="8">Игры и программное обеспечение</option>
                           </select>
                         </div>
                         <div class="header__search-box">
@@ -43,15 +47,14 @@
                     <div class="header__cart-area">
                       <div class="mini-cart">
                         <span class="mini-cart__header">
-                          <i class="mini-cart__header-basket-icon fas fa-cart-arrow-down"></i>
-                          <span class="mini-cart__header-price">1200р
-                            <i class="fal fa-angle-down"></i>
-                          </span>
-                          <span class="mini-cart__count">2</span>
+                        <i class="mini-cart__header-basket-icon fas fa-cart-arrow-down"></i>
+                        <span class="mini-cart__header-price">13400р
+                        <i class="fal fa-angle-down"></i>
+                        </span>
+                        <span class="mini-cart__count">2</span>
                         </span>
                         <div class="mini-cart__content">
                           <div class="mobile-nav-overlay mobile-nav-under-cart"></div>
-                          
                           <div class="mini-cart__inner">
                             <div class="mini-cart__content-wrap">
                               <div class="mini-cart__content-header">
@@ -65,12 +68,12 @@
                               </div>
                               <div class="mini-cart__item">
                                 <div class="mini-cart__item-img">
-                                  <a href="product.html" class="mini-cart__item-link"><img src="img/content/products/product.jpg" alt=""></a>
+                                  <a href="product.html" class="mini-cart__item-link"><img src="img/content/products/1.jpeg" alt=""></a>
                                 </div>
                                 <div class="mini-cart__item-info">
-                                  <a class="mini-cart__item-name" href="product.html">Литой диск</a>
+                                  <a class="mini-cart__item-name" href="product.html">Xiaomi Redmi 9T 4GB/64GB без NFC</a>
                                   <p>Количество: <span>1</span> </p>
-                                  <span class="mini-cart__item-price"> 1200р</span>
+                                  <span class="mini-cart__item-price"> 6200р</span>
                                 </div>
                                 <div class="mini-cart__item-remove-btn">
                                   <span><i class="far fa-times-circle"></i></span>
@@ -78,12 +81,12 @@
                               </div>
                               <div class="mini-cart__item">
                                 <div class="mini-cart__item-img">
-                                  <a href="product.html" class="mini-cart__item-link"><img src="img/content/products/product.jpg" alt=""></a>
+                                  <a href="product.html" class="mini-cart__item-link"><img src="img/content/products/2-1.jpeg" alt=""></a>
                                 </div>
                                 <div class="mini-cart__item-info">
-                                  <a class="mini-cart__item-name" href="product.html">Литой диск</a>
+                                  <a class="mini-cart__item-name" href="product.html">Смартфон Samsung Galaxy A02</a>
                                   <p>Количество: <span>1</span> </p>
-                                  <span class="mini-cart__item-price"> 1200р</span>
+                                  <span class="mini-cart__item-price"> 7200р</span>
                                 </div>
                                 <div class="mini-cart__item-remove-btn">
                                   <span><i class="far fa-times-circle"></i></span>
@@ -92,13 +95,13 @@
                               <div class="mini-cart__summary">
                                 <div class="mini-cart__total">
                                   <span class="mini-cart__total-name">Итого:</span>
-                                  <span class="mini-cart__total-price">1200р</span>
+                                  <span class="mini-cart__total-price">6200р</span>
                                 </div>
                               </div>
                             </div>
                             <div class="mini-cart__footer">
                               <div class="mini-cart__submit">
-                                <a class="mini-cart__submit-link active" href="checkout.html">Оформить заказ</a>
+                                <a class="mini-cart__submit-link active" href="cart.html">Оформить заказ</a>
                               </div>
                             </div>
                           </div>
@@ -108,58 +111,191 @@
                   </div>
                 </div>
                 <span class="header__menu-open-btn">
-                  <i class="fal fa-bars"></i>
+                <i class="fas fa-bars"></i>
                 </span>
               </div>
             </div>
           </div>
           <div class="header__bottom">
             <div class="container">
-              <div class="row align-items-center">
-                <div class="col-lg-7">
-                  <div class="header__nav-wrap">
-                    <div class="nav">
-                      <ul class="nav__list">
-                        <li class="nav__item">
-                          <a href="index.html" class="nav__link nav__link--active">главная</a>
-                        </li>
-                        <li class="nav__item">
-                          <a href="shop-tires.html" class="nav__link nav__link--subtitle">шины</a>
-                          <ul class="nav__sub1-list">
-                            <li class="nav__sub1-item">
-                              <a href="shop-tires.html" class="nav__link--sub-nav">Шины летние</a>
+              <div class="row">
+                <div class="col-lg-3 col-md-12">
+                  <div class="categories_menu">
+                    <div class="categories_title">
+                      <h2 class="categori_toggle">
+                        ВСЕ КАТЕГОРИИ
+                      </h2>
+                      <i class="fas fa-bars"></i>
+                    </div>
+                    <div class="categories_menu_toggle" style="display: none;">
+                      <ul>
+                        <li class="menu_item_children">
+                          <a href="#">Электроника <i class="fa fa-angle-right"></i><span class="expand"></span></a>
+                          <ul class="categories_mega_menu">
+                            <li class="menu_item_children">
+                              <a href="shop.html">Мобильные телефоны и акксессуары<span class="expand"></span></a>
+                              <ul class="categorie_sub_menu">
+                                <li><a href="shop.html">Мобильные телефоны</a></li>
+                                <li><a href="shop.html">Наушники</a></li>
+                                <li><a href="shop.html">Фитнес-браслеты</a></li>
+                                <li><a href="shop.html">Умные часы</a></li>
+                                <li><a href="shop.html">Портативные зарядные устройства</a></li>
+                                <li><a href="shop.html">Карты памяти</a></li>
+                              </ul>
                             </li>
-                            <li class="nav__sub1-item">
-                              <a href="shop-tires.html" class="nav__link--sub-nav">Шины зимние</a>
+                            <li class="menu_item_children">
+                              <a href="shop.html">Телевидение и видео<span class="expand"></span></a>
+                              <ul class="categorie_sub_menu">
+                                <li><a href="shop.html">Телевизоры</a></li>
+                                <li><a href="shop.html">Спутниковые ресиверы</a></li>
+                                <li><a href="shop.html">Антены</a></li>
+                                <li><a href="shop.html">Видеокамеры</a></li>
+                              </ul>
                             </li>
-                            <li class="nav__sub1-item">
-                              <a href="shop-tires.html" class="nav__link--sub-nav">Шины всесезонные</a>
+                            <li class="menu_item_children">
+                              <a href="shop.html">Планшеты и электронные книги<span class="expand"></span></a>
+                              <ul class="categorie_sub_menu">
+                                <li><a href="shop.html">Планшеты</a></li>
+                                <li><a href="shop.html">Электронные книги </a></li>
+                                <li><a href="shop.html">Чехлы для планшетов</a></li>
+                                <li><a href="shop.html">Обложки для элетронных книг</a></li>
+                              </ul>
+                            </li>
+                            <li class="menu_item_children">
+                              <a href="shop.html">Аудиотехника<span class="expand"></span></a>
+                              <ul class="categorie_sub_menu">
+                                <li><a href="shop.html">МР3 плееры </a></li>
+                                <li><a href="shop.html">Умные колонки</a></li>
+                                <li><a href="shop.html">Микрофоны</a></li>
+                                <li><a href="shop.html">Мультимедиа акустика</a></li>
+                              </ul>
                             </li>
                           </ul>
                         </li>
-                        <li class="nav__item">
-                          <a href="shop-wheels.html" class="nav__link nav__link--subtitle">Диски</a>
-                          <ul class="nav__sub1-list">
-                            <li class="nav__sub1-item">
-                              <a href="shop-wheels.html" class="nav__link--sub-nav">Диски литые</a>
+                        <li class="menu_item_children">
+                          <a href="shop.html"> Компьютеры и сети <i class="fa fa-angle-right"></i><span class="expand"></span></a>
+                          <ul class="categories_mega_menu column_3">
+                            <li class="menu_item_children">
+                              <a href="#">Ноутбуки, компьютеры, мониторы<span class="expand"></span></a>
+                              <ul class="categorie_sub_menu">
+                                <li><a href="shop.html">Ноутбуки</a></li>
+                                <li><a href="shop.html">Игровые ноутбуки</a></li>
+                                <li><a href="shop.html"> Мониторы</a></li>
+                                <li><a href="shop.html">Профессиональные мониторы</a></li>
+                              </ul>
                             </li>
-                            <li class="nav__sub1-item">
-                              <a href="shop-wheels.html" class="nav__link--sub-nav">Диски штампованные</a>
+                            <li class="menu_item_children">
+                              <a href="shop.html">Принтеры и МФУ<span class="expand"></span></a>
+                              <ul class="categorie_sub_menu">
+                                <li><a href="shop.html">Принтеры</a></li>
+                                <li><a href="shop.html">МФУ</a></li>
+                                <li><a href="shop.html">Сканеры</a></li>
+                                <li><a href="shop.html">Кабели для принтеров</a></li>
+                              </ul>
+                            </li>
+                            <li class="menu_item_children">
+                              <a href="shop.html">Комплектующие<span class="expand"></span></a>
+                              <ul class="categorie_sub_menu">
+                                <li><a href="shop.html">Видеокарты</a></li>
+                                <li><a href="shop.html">Процессоры</a></li>
+                                <li><a href="shop.html">Материнские платы</a></li>
+                                <li><a href="shop.html">Оперативная память</a></li>
+                              </ul>
                             </li>
                           </ul>
                         </li>
-                        <li class="nav__item">
-                          <a href="about-us.html" class="nav__link">о нас</a>
-                        </li>
-                        <li class="nav__item">
-                          <a href="contacts-us.html" class="nav__link">контакты</a>
-                        </li>
-                        <li class="nav__item">
-                          <a href="blog.html" class="nav__link">блог</a>
-                        </li>
+                        <li><a href="shop.html"> Хранение данных</a></li>
+                        <li><a href="shop.html"> Мультимедиа периферия</a></li>
+                        <li><a href="shop.html">Электропитание</a></li>
+                        <li><a href="shop.html">Сетевое оборудование</a></li>
+                        <li><a href="shop.html"> Программное обеспечение</a></li>
                       </ul>
                     </div>
                   </div>
+                </div>
+                <div class="col-12 col-lg-9 main-nav-wrap">
+                  <nav class="navbar navbar-expand-lg navbar-dark">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="main_nav">
+                      <ul class="navbar-nav">
+                        <li class="nav-item"> <a class="nav-link" href="index.html">Главная </a> </li>
+                        <li class="nav-item"><a class="nav-link" href="shop.html"> Каталог </a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Блог</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about-us.html">О нас </a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacts-us.html">Контакты </a></li>
+                        <li class="nav-item dropdown has-megamenu">
+                          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> Mega menu  </a>
+                          <div class="dropdown-menu megamenu" role="menu">
+                            <div class="row g-3">
+                              <div class="col-lg-3 col-6">
+                                <div class="col-megamenu">
+                                  <h6 class="title">Title Menu One</h6>
+                                  <ul class="list-unstyled">
+                                    <li><a href="#">Custom Menu</a></li>
+                                    <li><a href="#">Custom Menu</a></li>
+                                    <li><a href="#">Custom Menu</a></li>
+                                    <li><a href="#">Custom Menu</a></li>
+                                    <li><a href="#">Custom Menu</a></li>
+                                    <li><a href="#">Custom Menu</a></li>
+                                  </ul>
+                                </div>
+                                <!-- col-megamenu.// -->
+                              </div>
+                              <!-- end col-3 -->
+                              <div class="col-lg-3 col-6">
+                                <div class="col-megamenu">
+                                  <h6 class="title">Title Menu Two</h6>
+                                  <ul class="list-unstyled">
+                                    <li><a href="#">Custom Menu</a></li>
+                                    <li><a href="#">Custom Menu</a></li>
+                                    <li><a href="#">Custom Menu</a></li>
+                                    <li><a href="#">Custom Menu</a></li>
+                                    <li><a href="#">Custom Menu</a></li>
+                                    <li><a href="#">Custom Menu</a></li>
+                                  </ul>
+                                </div>
+                                <!-- col-megamenu.// -->
+                              </div>
+                              <!-- end col-3 -->
+                              <div class="col-lg-3 col-6">
+                                <div class="col-megamenu">
+                                  <h6 class="title">Title Menu Three</h6>
+                                  <ul class="list-unstyled">
+                                    <li><a href="#">Custom Menu</a></li>
+                                    <li><a href="#">Custom Menu</a></li>
+                                    <li><a href="#">Custom Menu</a></li>
+                                    <li><a href="#">Custom Menu</a></li>
+                                    <li><a href="#">Custom Menu</a></li>
+                                    <li><a href="#">Custom Menu</a></li>
+                                  </ul>
+                                </div>
+                                <!-- col-megamenu.// -->
+                              </div>
+                              <div class="col-lg-3 col-6">
+                                <div class="col-megamenu">
+                                  <h6 class="title">Title Menu Four</h6>
+                                  <ul class="list-unstyled">
+                                    <li><a href="#">Custom Menu</a></li>
+                                    <li><a href="#">Custom Menu</a></li>
+                                    <li><a href="#">Custom Menu</a></li>
+                                    <li><a href="#">Custom Menu</a></li>
+                                    <li><a href="#">Custom Menu</a></li>
+                                    <li><a href="#">Custom Menu</a></li>
+                                  </ul>
+                                </div>
+                                <!-- col-megamenu.// -->
+                              </div>
+                              <!-- end col-3 -->
+                            </div>
+                            <!-- end row --> 
+                          </div>
+                          <!-- dropdown-mega-menu.// -->
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
                 </div>
               </div>
             </div>
@@ -272,7 +408,7 @@
                   <div class="checkout__item-goods-row">
                     <p>
                       <span class="checkout__item-goods-name">
-                        Всесезонная шина Goodyear Vector 4Seasons
+                        Смартфон Xiaomi Redmi 9T 4GB/64GB без NFC
                       </span>
                       <i class="fas fa-times"></i>
                       <span class="checkout__item-goods-count">1</span>
@@ -365,17 +501,17 @@
         </div>
       </main>
       <footer class="footer">
-        <div class="container">
-          <div class="footer__content">
-            <div class="footer__top">
-              <div class="footer__logo">
+        <div class="footer__content">
+          <div class="container">
+            <div class="row flex-column align-items-center flex-lg-row footer__top">
+              <div class="col-12 col-sm-8 col-lg-4 footer__logo">
                 <a href="index.html" class="logo logo--footer">
-                  <img src="../img/decor/logo-footer.png" alt="logotype" class="logo__img logo__img--footer">
+                <img src="../img/decor/logo.png" alt="logotype" class="logo__img logo__img--footer">
                 </a>
               </div>
-              <div class="footer__subscribe">
-                <div class="subscribe">
-                  <div class="subscribe__text">
+              <div class="col-12 col-sm-8 col-lg-8 footer__subscribe">
+                <div class="row flex-column align-items-center flex-md-row subscribe">
+                  <div class="col-12 col-sm-8 col-lg-4 subscribe__text">
                     <p class="subscribe__action">
                       Подпишитесь на нашу рассылку
                     </p>
@@ -383,7 +519,7 @@
                       Будьте в курсе новостей и эксклюзивных предложений
                     </p>
                   </div>
-                  <div class="subscribe__form-block">
+                  <div class="col-12 col-sm-8 col-lg-8 subscribe__form-block">
                     <form action="#" class="subscribe__form">
                       <input type="email" required placeholder="Введите email"  class="subscribe__input">
                       <button class="subscribe__submit-btn" type="submit">подписаться</button>
@@ -394,8 +530,8 @@
             </div>
             <div class="footer__middle">
               <div class="footer__company-info">
-                <div class="company-info">
-                  <div class="company-info__block">
+                <div class="row flex-column align-items-center align-items-md-start flex-sm-row company-info">
+                  <div class="col-12 col-sm-6 col-lg-4 company-info__block">
                     <h5 class="company-info__block-title">
                       Контактная информация
                     </h5>
@@ -407,7 +543,7 @@
                       <li class="company-info__item">
                         <span class="company-info__item-name">Email</span>
                         <a href="mailto:mail@company.com" class="company-info__item-value">
-                          mail@company.com
+                        mail@company.com
                         </a>
                       </li>
                       <li class="company-info__item">
@@ -419,12 +555,12 @@
                       </li>
                       <li class="company-info__item">
                         <span class="company-info__item-value">
-                          Пн - Вс / 9:00 - 19:00
+                        Пн - Вс / 9:00 - 19:00
                         </span>
                       </li>
                     </ul>
                   </div>
-                  <div class="company-info__block">
+                  <div class="col-12 col-sm-6 col-lg-4 company-info__block">
                     <h5 class="company-info__block-title">
                       мой кабинет
                     </h5>
@@ -443,7 +579,7 @@
                       </li>
                     </ul>
                   </div>
-                  <div class="company-info__block company-info__block--questions">
+                  <div class="col-12 col-sm-6 col-lg-4 company-info__block company-info__block--questions">
                     <h5 class="company-info__block-title">
                       Остались вопросы?
                     </h5>
@@ -461,6 +597,10 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="footer__bottom-wrap">
+          <div class="container">
             <div class="footer__bottom">
               <div class="footer__bottom-item">
                 <img src="../img/decor/visa-mastercard-small.png" alt="payment" class="footer__bottom-payment-img">
@@ -473,13 +613,13 @@
               <div class="footer__bottom-item">
                 <div class="social">
                   <a href="#" class="social__link">
-                    <i class="fab fa-facebook-f"></i>
+                  <i class="fab fa-facebook-f"></i>
                   </a>
                   <a href="#" class="social__link">
-                    <i class="fab fa-twitter"></i>
+                  <i class="fab fa-twitter"></i>
                   </a>
                   <a href="#" class="social__link">
-                    <i class="fab fa-linkedin-in"></i>
+                  <i class="fab fa-linkedin-in"></i>
                   </a>
                 </div>
               </div>
@@ -497,82 +637,60 @@
           <div class="product-quickview__content">
             <div class="product">
               <div class="row product__top">
-                <div class="col-md-6 product-sliders-wrap">
+                <div class="col-lg-5 col-md-5 col-sm-12 product-sliders-wrap">
                   <div class="row product__sliders">
                     <div class="col-lg-12 product__main-slider--quickview">
                       <div class="product__main-slider-item">
-                        <img src="../img/content/single-product/big/1.jpg" id="zoom1" alt="Всесезонная шина Goodyear Vector 4Seasons" class="product__main-slider-img zoom__img">
+                        <img src="../img/content/single-product/big/1.jpeg" id="zoom1" alt="Смартфон Xiaomi Redmi 9T 4GB/64GB без NFC" class="product__main-slider-img zoom__img">
                       </div>
                       <div class="product__main-slider-item">
-                        <img src="../img/content/single-product/big/2.jpg" id="zoom2" alt="Всесезонная шина Goodyear Vector 4Seasons" class="product__main-slider-img zoom__img">
+                        <img src="../img/content/single-product/big/2.jpeg" id="zoom2" alt="Смартфон Xiaomi Redmi 9T 4GB/64GB без NFC" class="product__main-slider-img zoom__img">
                       </div>
                       <div class="product__main-slider-item">
-                        <img src="../img/content/single-product/big/3.jpg" id="zoom3" alt="Всесезонная шина Goodyear Vector 4Seasons" class="product__main-slider-img  zoom__img">
+                        <img src="../img/content/single-product/big/3.jpeg" id="zoom3" alt="Смартфон Xiaomi Redmi 9T 4GB/64GB без NFC" class="product__main-slider-img  zoom__img">
                       </div>
                       <div class="product__main-slider-item">
-                        <img src="../img/content/single-product/big/4.jpg" id="zoom4" alt="Всесезонная шина Goodyear Vector 4Seasons" class="product__main-slider-img  zoom__img">
+                        <img src="../img/content/single-product/big/4.jpeg" id="zoom4" alt="Смартфон Xiaomi Redmi 9T 4GB/64GB без NFC" class="product__main-slider-img  zoom__img">
                       </div>
                       <div class="product__main-slider-item">
-                        <img src="../img/content/single-product/big/5.jpg" id="zoom5" alt="Всесезонная шина Goodyear Vector 4Seasons" class="product__main-slider-img  zoom__img">
+                        <img src="../img/content/single-product/big/5.jpeg" id="zoom5" alt="Смартфон Xiaomi Redmi 9T 4GB/64GB без NFC" class="product__main-slider-img  zoom__img">
                       </div>
                       <div class="product__main-slider-item">
-                        <img src="../img/content/single-product/big/4.jpg" id="zoom6" alt="Всесезонная шина Goodyear Vector 4Seasons" class="product__main-slider-img  zoom__img">
+                        <img src="../img/content/single-product/big/4.jpeg" id="zoom6" alt="Смартфон Xiaomi Redmi 9T 4GB/64GB без NFC" class="product__main-slider-img  zoom__img">
                       </div>
                     </div>
                     <div class="col-lg-12 product__thumb-slider--quickview">
                       <div class="product__thumb-slider-item">
-                        <img src="../img/content/single-product/1.jpg" alt="Всесезонная шина Goodyear Vector 4Seasons" class="product__thumb-slider-img">
+                        <img src="../img/content/single-product/1.jpeg" alt="Смартфон Xiaomi Redmi 9T 4GB/64GB без NFC" class="product__thumb-slider-img">
                       </div>
                       <div class="product__thumb-slider-item">
-                        <img src="../img/content/single-product/2.jpg" alt="Всесезонная шина Goodyear Vector 4Seasons" class="product__thumb-slider-img">
+                        <img src="../img/content/single-product/2.jpeg" alt="Смартфон Xiaomi Redmi 9T 4GB/64GB без NFC" class="product__thumb-slider-img">
                       </div>
                       <div class="product__thumb-slider-item">
-                        <img src="../img/content/single-product/3.jpg" alt="Всесезонная шина Goodyear Vector 4Seasons" class="product__thumb-slider-img">
+                        <img src="../img/content/single-product/3.jpeg" alt="Смартфон Xiaomi Redmi 9T 4GB/64GB без NFC" class="product__thumb-slider-img">
                       </div>
                       <div class="product__thumb-slider-item">
-                        <img src="../img/content/single-product/4.jpg" alt="Всесезонная шина Goodyear Vector 4Seasons" class="product__thumb-slider-img">
+                        <img src="../img/content/single-product/4.jpeg" alt="Смартфон Xiaomi Redmi 9T 4GB/64GB без NFC" class="product__thumb-slider-img">
                       </div>
                       <div class="product__thumb-slider-item">
-                        <img src="../img/content/single-product/5.jpg" alt="Всесезонная шина Goodyear Vector 4Seasons" class="product__thumb-slider-img">
+                        <img src="../img/content/single-product/5.jpeg" alt="Смартфон Xiaomi Redmi 9T 4GB/64GB без NFC" class="product__thumb-slider-img">
                       </div>
                       <div class="product__thumb-slider-item">
-                        <img src="../img/content/single-product/4.jpg" alt="Всесезонная шина Goodyear Vector 4Seasons" class="product__thumb-slider-img">
+                        <img src="../img/content/single-product/4.jpeg" alt="Смартфон Xiaomi Redmi 9T 4GB/64GB без NFC" class="product__thumb-slider-img">
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6 product__details-wrap">
+                <div class="col-lg-7 col-md-7 col-sm-12 product__details-wrap">
                   <div class="product__details">
                     <h1 class="product__title">
-                      Всесезонная шина Goodyear Vector 4Seasons Gen-3 185/60R15 88V
+                      Смартфон Xiaomi Redmi 9T 4GB/64GB без NFC
                     </h1>
-                    <div class="product__meta">
-                      <p class="product__number">
-                        <span class="product__number-text">
-                          Артикул:
-                        </span>
-                        <span class="product__number-value">
-                          12345678
-                        </span>
-                      </p>
-                      <p class="product__producer">
-                        <span class="product__producer-text">
-                          Бренд:
-                        </span>
-                        <span class="product__producer-value">
-                          Goodyear
-                        </span>
-                      </p>
-                    </div>
-                    <div class="product__price">
-                      <span class="product__price-value">6000</span>
-                      <span class="product__price__currency">р</span>
-                    </div>
                     <div class="product__rating">
                       <div class="product__stars-block">
                         <div class="rating-mini">
                           <span class="rating-mini__value">
-                            4.03
+                          4.03
                           </span>
                           <span class="rating-mini__item rating-mini__item--active"></span>	
                           <span class="rating-mini__item rating-mini__item--active"></span>	
@@ -582,87 +700,73 @@
                         </div>
                       </div>
                       <a href="#" class="product__reviews-link">
-                        <span>(6 отзывов)</span>
+                      <span>(6 отзывов)</span>
                       </a>
                     </div>
-                    <p class="product__short-descr">Goodyear Vector 4Seasons Gen-3 – всесезонные шины с направленным симметричным протекторным рисунком, которые производитель вывел на европейский рынок в 2020 году. Их ключевыми характеристиками называются хорошая тяга и отличные ходовые качества при любых погодных условиях в течение всего года, низкое сопротивление качению и износостойкость.</p>
-                    <div class="product__paremeters">
-                      <div class="product__variation product__variation--color">
-                        <span class="product__variation-text">
-                          Высота профиля:
-                        </span>
-                        <div class="select-box">
-                          <select name="color" class="select-box__options select-box__options--h">
-                            <option value="" selected="selected">Выберите</option>
-                            <option value="155">155 мм</option>
-                            <option value="165">165 мм</option>
-                            <option value="175">175 мм</option>
-                            <option value="185">185 мм</option>
-                            <option value="195">195 мм</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="product__variation product__variation--width">
-                        <span class="product__variation-text">
-                          Ширина профиля:
-                        </span>
-                        <div class="select-box">
-                          <select name="size" class="select-box__options select-box__options--w">
-                            <option value="" selected="selected">Выберите</option>
-                            <option value="40">40 мм</option>
-                            <option value="45">45 мм</option>
-                            <option value="50">50 мм</option>
-                            <option value="55">55 мм</option>
-                            <option value="60">60 мм</option>
-                            <option value="75">75 мм</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="product__variation product__variation--diameter">
-                        <span class="product__variation-text">
-                          Диаметр:
-                        </span>
-                        <div class="select-box">
-                          <select name="size" class="select-box__options select-box__options--d">
-                            <option value="" selected="selected">Выберите</option>
-                            <option value="13">13''</option>
-                            <option value="14">14''</option>
-                            <option value="15">15''</option>
-                            <option value="16">16''</option>
-                            <option value="17">17''</option>
-                            <option value="18">18''</option>
-                          </select>
-                        </div>
-                      </div>
+                    <div class="product__price">
+                      <span class="product__price-value">6000</span>
+                      <span class="product__price__currency">р</span>
                     </div>
-                    <div class="product__count-block">
-                      <div class="product__variation product__variation--count">
-                        <span class="product__variation-text">
-                          Количество:
-                        </span>
-                        <div class="count-box">
-                          <div class="count-box__input-group">
-                            <button class="count-box__minus"></button>
-                            <input type="number" class="count-box__value" min="1" max="1000000" value="1">
-                            <button class="count-box__plus"></button>
+                    <p class="product__short-descr">Сегодня сложно представить жизнь без смартфона. Ими обзавелись даже люди из предыдущих поколений, и они есть у каждого из нас. Этот девайс уже давно намного большее, чем телефон для связи.</p>
+                    <form action="product.html" class="product__form">
+                      <div class="product__paremeters">
+                        <div class="product__variation product__variation--color">
+                          <span class="product__variation-text">
+                          Размер ОЗУ:
+                          </span>
+                          <div class="select-box">
+                            <select name="color" class="select-box__options select-box__options--h">
+                              <option value="" selected="selected">Выберите</option>
+                              <option value="155">3GB</option>
+                              <option value="165">4GB</option>
+                              <option value="175">6GB</option>
+                            </select>
                           </div>
                         </div>
+                        <div class="product__variation product__variation--width">
+                          <span class="product__variation-text">
+                          Цвет:
+                          </span>
+                          <div class="select-box">
+                            <select name="size" class="select-box__options select-box__options--w">
+                              <option value="" selected="selected">Выберите</option>
+                              <option value="40">Черный</option>
+                              <option value="45">Синий</option>
+                              <option value="50">Угольно-серый</option>
+                              <option value="55">Розовый</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="product__count-block">
+                          <div class="product__variation product__variation--count">
+                            <span class="product__variation-text">
+                            Количество:
+                            </span>
+                            <div class="count-box">
+                              <div class="count-box__input-group">
+                                <button class="count-box__minus"></button>
+                                <input type="number" class="count-box__value" min="1" max="1000000" value="1">
+                                <button class="count-box__plus"></button>
+                              </div>
+                            </div>
+                          </div>
+                          <button type="submit" class="product__count-block-add-to-basket">
+                          <i class="far fa-shopping-cart"></i>
+                          <span>в корзину</span>
+                          </button>
+                        </div>
                       </div>
-                      <button class="product__count-block-add-to-basket">
-                        <i class="far fa-shopping-cart"></i>
-                        <span>в корзину</span>
-                      </button>
-                    </div>
+                    </form>
                     <div class="product__social-block">
                       <div class="social social--product-page">
                         <a href="#" class="social__link social__link--product-page">
-                          <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-facebook-f"></i>
                         </a>
                         <a href="#" class="social__link social__link--product-page">
-                          <i class="fab fa-twitter"></i>
+                        <i class="fab fa-twitter"></i>
                         </a>
                         <a href="#" class="social__link social__link--product-page">
-                          <i class="fab fa-linkedin-in"></i>
+                        <i class="fab fa-linkedin-in"></i>
                         </a>
                       </div>
                     </div>
@@ -683,9 +787,9 @@
         </div>
         <div class="mobile-nav__calling">
           <a href="tel:+000000000000" class="mobile-nav__call-link">
-            <i class="fas fa-phone"></i>
-            <span class="mobile-nav__call-action">Позвоните нам</span>
-            <span class="mobile-nav__call-number">+000-00-000-00-00</span>
+          <i class="fas fa-phone"></i>
+          <span class="mobile-nav__call-action">Позвоните нам</span>
+          <span class="mobile-nav__call-number">+000-00-000-00-00</span>
           </a>
         </div>
         <div class="mobile-nav__search-container">
@@ -743,23 +847,24 @@
         <div class="mobile-nav__social">
           <div class="social">
             <a href="#" class="social__link social__link--facebook">
-              <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-facebook-f"></i>
             </a>
             <a href="#" class="social__link social__link--twitter">
-              <i class="fab fa-twitter"></i>
+            <i class="fab fa-twitter"></i>
             </a>
             <a href="#" class="social__link social__link--inst">
-              <i class="fab fa-instagram"></i>
+            <i class="fab fa-instagram"></i>
             </a>
             <a href="#" class="social__link social__link--vk">
-              <i class="fab fa-vk"></i>
+            <i class="fab fa-vk"></i>
             </a>
           </div>
         </div>
       </div>
     </div>
-    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <script src="libs/jquery/jquery-2.2.4.js"></script>
+    <script src="libs/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="libs/slick/slick.min.js"></script>
     <script src="js/vendors.min.js"></script>
     <script src="js/script.min.js"></script>
   </body>

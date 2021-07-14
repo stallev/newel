@@ -91,14 +91,14 @@ document.addEventListener('DOMContentLoaded', ()=>{
   let priceFiltr = document.querySelector('.filter__price-filter');
   if(priceFiltr){
     noUiSlider.create(priceFiltr, {
-      start: [250, 60000],
+      start: [150, 80000],
       tooltips: false,
       step: 1,
       connect: true,
       padding: 10,
       range: {
-          'min': 250,
-          'max': 60000
+          'min': 150,
+          'max': 80000
       },
     });
     priceFiltr.noUiSlider.on('update', function (values, handle) {
@@ -111,21 +111,21 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
 //ползунок для фильтра по посадочному диаметру
 
-let input_sitw0 = document.querySelector('.filter__sitt-width-control-min');
-let input_sitw1 = document.querySelector('.filter__sitt-width-control-max');
+let input_sitw0 = document.querySelector('.filter__diag-width-control-min');
+let input_sitw1 = document.querySelector('.filter__diag-width-control-max');
 const inputs_sitw = [input_sitw0, input_sitw1];
 document.addEventListener('DOMContentLoaded', ()=>{
-  let sitt_widthFiltr = document.querySelector('.filter__sitt-width');
+  let sitt_widthFiltr = document.querySelector('.filter__diag-width');
   if(sitt_widthFiltr){
     noUiSlider.create(sitt_widthFiltr, {
-      start: [32.5, 138.5],
+      start: [3, 138.5],
       tooltips: false,
       step: 0.1,
       connect: true,
-      padding: 6,
+      padding: 0.1,
       range: {
-          'min': 32.5,
-          'max': 138.5
+          'min': 3,
+          'max': 7.2
       },
     });
     sitt_widthFiltr.noUiSlider.on('update', function (values, handle) {
@@ -183,14 +183,14 @@ document.addEventListener('DOMContentLoaded', ()=>{
   }
 });
 
-
 //изменяем представление карточек в каталоге с табличного на колоночный вид и обратно
 let productList = document.querySelector('.products-list--catalog');
 let productListViewControls = document.querySelector('.products-list__controls-change-grid');
 if(productList&&productListViewControls){
   let gridViewBtn = document.querySelector('.products-list__controls-to-grid');
   let columnViewBtn = document.querySelector('.products-list__controls-to-column');
-  let productCards = productList.querySelectorAll('.product-card');
+  let productCardsWraps = convertToArray(productList.querySelectorAll('.product-card__wrap--catalog'));
+  
   
   if(gridViewBtn){
     gridViewBtn.addEventListener('click', function(e){
@@ -198,12 +198,12 @@ if(productList&&productListViewControls){
       columnViewBtn.classList.remove('products-list__controls-to-column--active');
       productList.classList.remove('products-list--catalog-column');
       productList.classList.add('products-list--catalog-grid');
-      productCards.forEach(
+      productCardsWraps.forEach(
         card => {
-          card.classList.remove('product-card--one-view');
-          card.classList.remove('col-lg-12');
-          card.classList.add('col-sm-4');
-          card.classList.add('col-6');
+          card.classList.remove('product-card-wrap--one-view');
+          card.classList.remove('col-md-12');
+          card.classList.add('col-md-4');
+          card.classList.add('col-lg-3');
         }
       );
     });
@@ -212,12 +212,12 @@ if(productList&&productListViewControls){
       gridViewBtn.classList.remove('products-list__controls-to-grid--active');
       productList.classList.remove('products-list--catalog-grid');
       productList.classList.add('products-list--catalog-column');
-      productCards.forEach(
+      productCardsWraps.forEach(
         card => {
-          card.classList.remove('col-sm-4');
-          card.classList.remove('col-6');
-          card.classList.add('col-lg-12');
-          card.classList.add('product-card--one-view');
+          card.classList.remove('col-md-4');
+          card.classList.remove('col-lg-3');
+          card.classList.add('col-md-12');
+          card.classList.add('product-card-wrap--one-view');
         }
       );
     });

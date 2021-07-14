@@ -41,20 +41,20 @@
 .breadcrumbs--product .breadcrumbs__item::after{
   position: absolute;
   display: block;
-  content: '\f105';
+  content: '/';
   right: -10px;
-  top: 50%;
+  top: 40%;
   transform: translate(0, -50%);
   width: 10px;
   height: 10px;
   color: rgb(114, 114, 114);
-  font-size: 1rem;
-  font-family: 'Font Awesome 5 Pro';
+  font-size: 2rem;
+  font-family: 'Font Awesome 5 Free';
   font-weight: 400;
   cursor: pointer;
 }
 .breadcrumbs .breadcrumbs__item:last-of-type{
-  color: $red;
+  color: $primary-color;
 }
 .breadcrumbs .breadcrumbs__item:last-of-type::after,
 .breadcrumbs--product .breadcrumbs__item:last-of-type::after{

@@ -90,7 +90,7 @@
     }
   }
   & .author__reply:hover{
-    color: $red;
+    color: $primary-color;
     text-decoration: underline;
     &::after{
       display: block;

@@ -4,17 +4,18 @@
 }
 .main-slider{
   &__item{
-    height: 300px;
+    height: 360px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    box-shadow: inset 50vw 50vh 50vw 50vh rgba(0, 0, 0, 0.25);
+    box-shadow: inset 50vw 50vh 50vw 50vh rgba(0, 0, 0, 0.15);
   }
   &__item-inner{
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
+    padding-top: 40px;
   }
   &__item-content{
     display: flex;
@@ -81,7 +82,7 @@
       border: 1px solid lightgrey;
       border-radius: 50%;
       transition: background-color .2s ease-in-out;
-      z-index: 10;
+      z-index: 0;
       &:hover{
         background-color: grey;
       }
@@ -99,13 +100,13 @@
 @media only screen and (min-width: $dw-sm){
   .main-slider{
     &__item{
-      
+      height: 370px;
     }
-    &__item--inner{
-      
+    &__item-description{
+      font-size: 1.9rem;
     }
     &__item-content{
-      width: 350px;
+      width: 500px;
       padding-right: 70px; 
     }
   }
@@ -113,10 +114,13 @@
 @media only screen and (min-width: $dw-md){
   .main-slider{
     &__item{
-      height: 300px;
+      height: 400px;
+    }
+    &__item-inner{
+      padding-top: 70px;
     }
     &__item-content{
-      width: 450px;
+      width: 600px;
     }
     &__item-title{
       margin-bottom: 5px;
@@ -129,7 +133,7 @@
     }
     &__item-description{
       margin-bottom: 20px;
-      font-size: 1.6rem;
+      font-size: 2rem;
     }
     &__action-link{
       font-size: 1.5rem;
@@ -139,10 +143,17 @@
 @media only screen and (min-width: $dw-lg){
   .main-slider{
     &__item{
-      height: 300px;
+      height: 450px;
+    }
+    &__item-inner{
+      padding-top: 90px;
+      padding-bottom: 60px;
     }
     &__item-content{
-      width: 650px;
+      width: 700px;
+    }
+    &__item-description{
+      font-size: 2.2rem;
     }
     &__item-subtitle{
       font-size: 33px;

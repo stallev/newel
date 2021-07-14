@@ -30,7 +30,7 @@
     font-size: 1.4rem;
     @include colorOnHover;
     &:hover{
-      border-color: $red;
+      border-color: $primary-color;
     }
   }
   &__item--current a{
@@ -48,7 +48,7 @@
     background-color: #ededed;
     color: #ccc;
     &:hover{
-      background-color: $red;
+      background-color: $primary-color;
       color: $white;
     }
     & i{
@@ -83,7 +83,7 @@
     background-color: #ededed;
     color: #ccc;
     &:hover{
-      background-color: $red;
+      background-color: $primary-color;
       color: $white;
     }
     & i{
@@ -107,7 +107,7 @@
     font-size: 1.4rem;
     @include colorOnHover;
     &:hover{
-      border-color: $red;
+      border-color: $primary-color;
     }
     & .current{
       opacity: .5;

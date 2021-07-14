@@ -3,10 +3,8 @@ if($('.product__main-slider')){
     slidesToShow: 1,
     slidesToScroll: 1,               
     dots: false,
-    arrows:true,
+    arrows:false,
     infinite: true,
-    prevArrow:'<button class="slick-prev"></button>',
-    nextArrow:'<button class="slick-next"></button>',
     asNavFor: '.product__thumb-slider',
     responsive:[
       {
@@ -15,7 +13,6 @@ if($('.product__main-slider')){
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
-          dotsClass: 'main-slider-slick-dots',
         }
       }
     ]
@@ -24,12 +21,12 @@ if($('.product__main-slider')){
 
 if($('.product__thumb-slider')){
   $('.product__thumb-slider').slick({
-    slidesToShow: 5,
+    slidesToShow: 4,
     slidesToScroll: 1,               
     dots: false,
     infinite: true,
-    prevArrow:'<button class="thumb-slider-prev"><i class="far fa-angle-left"></i></button>',
-    nextArrow:'<button class="thumb-slider-next"><i class="far fa-angle-right"></i></button>',
+    prevArrow:'<button class="thumb-slider-prev"><i class="fas fa-chevron-left"></i></button>',
+    nextArrow:'<button class="thumb-slider-next"><i class="fas fa-chevron-right"></i></button>',
     asNavFor: '.product__main-slider',
     focusOnSelect: true,
     centerMode: false,
@@ -38,7 +35,7 @@ if($('.product__thumb-slider')){
       {
         breakpoint: 993,
         settings:{
-          slidesToShow: 4,
+          slidesToShow: 3,
           slidesToScroll: 1,
           dots: false,
           infinite: true,
@@ -48,23 +45,13 @@ if($('.product__thumb-slider')){
       {
         breakpoint: 769,
         settings:{
-          slidesToShow: 4,
+          slidesToShow: 2,
           slidesToScroll: 1,
           dots: false,
           infinite: true,
           vertical: false,
         }
       },
-      {
-        breakpoint: 577,
-        settings:{
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          dots: false,
-          infinite: true,
-          vertical: false,
-        }
-      }
     ]
   });
 }
@@ -76,8 +63,8 @@ if($('.products-list__inner--popular-slider')){
     margin: 45,
     slidesToScroll: 1,               
     dots: true,
-    prevArrow:'<button class="bestseller-prev"><i class="far fa-angle-left"></i></button>',
-    nextArrow:'<button class="bestseller-next"><i class="far fa-angle-right"></i></button>',
+    prevArrow:'<button class="bestseller-prev"><i class="fas fa-chevron-left"></i></button>',
+    nextArrow:'<button class="bestseller-next"><i class="fas fa-chevron-right"></i></button>',
     infinite: true,
     dotsClass: 'main-slider__slick-dots',
     responsive: [
@@ -149,8 +136,8 @@ if($('.product__thumb-slider--quickview')){
     slidesToScroll: 1,               
     dots: false,
     infinite: true,
-    prevArrow:'<button class="thumb-slider-prev"><i class="far fa-angle-left"></i></button>',
-    nextArrow:'<button class="thumb-slider-next"><i class="far fa-angle-right"></i></button>',
+    prevArrow:'<button class="thumb-slider-prev"><i class="fas fa-chevron-left"></i></button>',
+    nextArrow:'<button class="thumb-slider-next"><i class="fas fa-chevron-right"></i></button>',
     asNavFor: '.product__main-slider--quickview',
     focusOnSelect: true,
     centerMode: false,

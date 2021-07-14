@@ -24,7 +24,7 @@
     & a{
       transition: color .4s ease-in;
       &:hover{
-        color: #fff;
+        color: $primary-color;
       }
     }
     &--instagram{
@@ -37,13 +37,13 @@
     margin-right: 5px;
     font-weight: 700;
     text-transform: uppercase;
-    color: rgb(204, 204, 204);
+    color: $content-color;
   }
   &__item-value{
     display: inline-block;
     width: fit-content;
     font-weight: 400;
-    color: rgb(153, 153, 153);
+    color: $content-color;
   }
 }
 @media only screen and (min-width: 577px){

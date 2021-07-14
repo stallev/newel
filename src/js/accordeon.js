@@ -1,10 +1,10 @@
-let accordeonList = document.querySelectorAll('.accordeon');
+let accordeonList = convertToArray(document.querySelectorAll('.accordeon'));
 
 if(accordeonList){
   accordeonList.forEach(
     block => {
-      let accordeonTabLinks = block.querySelectorAll('.accordeon__item-nav-link');
-      let accordeonItemsContentList = block.querySelectorAll('.accordeon__item-content');
+      let accordeonTabLinks = convertToArray(block.querySelectorAll('.accordeon__item-nav-link'));
+      let accordeonItemsContentList = convertToArray(block.querySelectorAll('.accordeon__item-content'));
       if(accordeonTabLinks&&accordeonItemsContentList){
         accordeonTabLinks.forEach(
           link => {

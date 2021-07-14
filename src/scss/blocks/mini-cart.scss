@@ -87,6 +87,9 @@
     padding: 20px 0;
     border-bottom: 1px solid $brd-c;
   }
+  &__item-link img{
+    max-width: 56px;
+  }
   &__item-info{
     padding: 20px;
     & p{
@@ -121,7 +124,7 @@
       transition: all .3s ease-in;
     }
     &:hover i{
-      background-color: $yellow;
+      background-color: $content-color;
       color: $white;
     }
   }
@@ -142,11 +145,12 @@
     font-size: 1.6rem;
     text-align: center;
     color: $white;
-    background-color: $red;
+    background-color: $primary-color;
     transition: all .3s ease;
     border-radius: 3px;
     &:hover{
-      background-color: $yellow;
+      background-color: $content-color;
+      color: $white;
     }
   }
 }

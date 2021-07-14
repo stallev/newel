@@ -31,15 +31,15 @@ if($('.categories__list')){
     margin: 45,
     slidesToScroll: 2,               
     dots: true,
+    arrows: false,
     infinite: true,
-    prevArrow:'<button class="discount-prev"><i class="far fa-angle-left"></i></button>',
-    nextArrow:'<button class="discount-next"><i class="far fa-angle-right"></i></button>',
     dotsClass: 'main-slider__slick-dots',
     responsive: [
       {
         breakpoint: 1199,
         settings: {
           slidesToShow: 5,
+          slidesToScroll: 2, 
         }
       },
       {
@@ -53,18 +53,21 @@ if($('.categories__list')){
         breakpoint: 767,
         settings: {
           slidesToShow: 3,
+          arrows: false,
         }
       },
       {
         breakpoint: 575,
         settings: {
           slidesToShow: 2,
+          arrows: false,
         }
       },
       {
         breakpoint: 400,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
+          arrows: false,
         }
       }
     ]

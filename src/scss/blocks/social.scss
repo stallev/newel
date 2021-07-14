@@ -26,8 +26,8 @@
     }
     &:hover{
       color: $white;
-      background-color: $red;
-      border-color: $red;
+      background-color: $primary-color;
+      border-color: $primary-color;
     }
   }
 }
@@ -38,10 +38,10 @@
   }
 }
 .social__link--store:hover{
-  background-color: $red;
-  border-color: $red;
+  background-color: $primary-color;
+  border-color: $primary-color;
 }
 .social__link--team:hover{
-  background-color: $red;
-  border-color: $red;
+  background-color: $primary-color;
+  border-color: $primary-color;
 }

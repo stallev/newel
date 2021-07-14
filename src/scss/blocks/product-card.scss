@@ -30,9 +30,9 @@
   margin-bottom: 33px;
   background-color: $white;
   border-radius: 5px;
-  border: 2px solid $brd-c;
+  border: 2px solid transparent;
   &:hover{
-    border-color: $primary-color;
+    border: 2px solid $primary-color;
   }
   &--big{
     width: 100%;
@@ -74,7 +74,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: 2;
+    z-index: 8;
     &:focus{
       outline: none;
     }
@@ -198,7 +198,8 @@
   }
   &__price{
     display: flex;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
+    align-items: center;    
     font-weight: 500;
     & span{
       display: inline-block;
@@ -343,7 +344,7 @@
   opacity: 1;
   visibility: visible;
   pointer-events: all;
-  transform: translateY(100%);
+  //transform: translateY(100%);
 }
 .product-card--big .product-card__description{
   display: block;
@@ -351,14 +352,11 @@
   font-size: 1.4rem;
   line-height: 1.8;
 }
-.product-card.product-card--big:hover .product-card__selling-block{
-  transform: translateY(0);
-}
 .product-card:hover .product-card__quick-view{
   visibility: visible;
   opacity: 0.9;
   pointer-events: all;
-  z-index: 4;
+  z-index: 9;
   cursor: pointer;
 }
 .product-card.product-card--big:hover .product-card__quick-view{
@@ -374,7 +372,7 @@
 // .discounts__slider .product-card__img-wrap{
 //   height: calc(100% - 170px);
 // }
-div.products-list--catalog-column .product-card{
+div.products-list--catalog-column .product-card-wrap--one-view .product-card{
   &:hover .product-card__selling-block{
     transform: none;
   }
@@ -407,38 +405,7 @@ div.products-list--catalog-column .product-card{
 }
 @media only screen and (min-width: $dw-sm){
   
-  //колоночный вид списка товаров
-  div.products-list--catalog-column .product-card{
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
-    &__img-wrap {
-      justify-content: center;
-      min-width: 32%;
-    }
-    &__content{
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      margin-left: 30px;
-    }
-    &__info{
-      width: 70%;
-      padding-right: 20px;
-    }
-    &__description{
-      display: block;
-      font-size: 1.4rem;
-      line-height: 1.8;
-    }
-    &__selling-block{
-      position: static;
-      visibility: visible;
-      opacity: 1;
-      width: 30%;
-      padding-left: 20px;
-    }
-  }
+  
 }
 @media only screen and (min-width: $dw-md){
   
@@ -453,19 +420,53 @@ div.products-list--catalog-column .product-card{
   .products-list__wrap--catalog .products-list--catalog-column .col.product-card{
     width: 100%;
   }
-  div.products-list--catalog-column .product-card{
-    width: 100%;
-    margin-left: 20px;
-    &__availability{
-      margin-bottom: 10px;
+  //колоночный вид списка товаров
+  div.products-list--catalog-column .product-card-wrap--one-view .product-card{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    border-bottom: 1px solid $brd-c;
+    &:hover{
+      border-right-color: transparent;
+      border-top-color: transparent;
+      border-left-color: transparent;
+    }
+    &__img-wrap {
+      justify-content: center;
+      padding: 15px 0;
+      min-width: 32%;
+      height: auto;
+      margin-bottom: 0;
+      & img{
+        position: relative;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    &__content{
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-left: 30px;
+    }
+    &__info{
+      width: 70%;
+      padding-right: 20px;
+      border-right: 1px solid $brd-c;
+    }
+    &__description{
+      display: block;
+      font-size: 1.4rem;
+      line-height: 1.8;
     }
     &__selling-block{
-      border-left: 1px solid $brd-c;
+      position: static;
+      visibility: visible;
+      opacity: 1;
+      width: 30%;
+      padding-left: 20px;
     }
   }
-  // .products-list__wrap--catalog .col.product-card{
-  //   width: 31%;
-  // }
   .discounts__content .product-card{
     margin-bottom: 68px;
   }
@@ -489,11 +490,10 @@ div.products-list--catalog-column .product-card{
     &__add-to-cart{
       width: fit-content;
       padding: 10px 15px;
-      font-size: 1.2rem;
       text-transform: uppercase;
     }
     &__add-to-cart i{
-      display: none;
+      font-size: 1.8rem;
     }
   }
   .products-list--catalog-column .product-card{

@@ -97,7 +97,7 @@
     line-height: 2rem;
     transition: all .3s ease-in;
     &:hover{
-      color: $red;
+      color: $primary-color;
     }
   }
   //стили блока поиска
@@ -113,7 +113,7 @@
   }
   &__search-submit-btn{
     display: inline-block;
-    background: $red;
+    background: $primary-color;
     color: $white;
     padding: 5px 14px;
     border-radius: 0 5px 5px 0;
@@ -164,7 +164,7 @@
     text-transform: none;
     transition: color .3s ease-in;
     &:hover{
-      color: $red;
+      color: $primary-color;
     } 
     &--sub-nav{
       padding: 10px 5px 10px;
@@ -235,7 +235,7 @@
     text-transform: none;
     transition: color .3s ease-in;
     &:hover{
-      color: $red;
+      color: $primary-color;
     } 
   }
 }

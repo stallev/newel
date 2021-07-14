@@ -1,5 +1,4 @@
 .header{
-	margin-bottom: 20px;
 	background-color: $header-top-bg;
 	&__search-container{
 		display: none;
@@ -8,7 +7,7 @@
 		background-color: $white;
 	}
 	&__bottom{
-		display: none;
+		background-color: $white;
 	}
 	&__cart-area{
 		padding-left: 20px;
@@ -34,7 +33,6 @@
 
 @media only screen and (min-width: $dw-lg){
 	.header{
-		margin-bottom: 30px;
 		&__menu-open-btn{
 			display: none;
 		}
@@ -109,5 +107,5 @@
 	position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, .7);
+  background-color: rgba(255, 255, 255, 1);
 }
