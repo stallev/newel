@@ -98,6 +98,17 @@ if(hiddenItemsControls){
 		}
 	)
 }
+let hiddenItemsControlsOpen = document.querySelectorAll('.hidden-items-control.open-state');
+if(hiddenItemsControlsOpen){
+	hiddenItemsControlsOpen.forEach(
+		element => {
+			element.addEventListener('click', function(e){
+				e.preventDefault();
+				e.target.classList.remove('open-state');
+			})
+		}
+	)
+}
 //меню категорий
 /*---categories slideToggle---*/
 $(".categories_title").on("click", function() {

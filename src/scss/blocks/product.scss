@@ -266,11 +266,10 @@
 }
 .products-list__inner--popular-slider{
   & .product-card{
-    margin-bottom: 80px;
+    margin-bottom: 50px;
   }
-  padding-bottom: 50px;
   & .main-slider__slick-dots{
-    bottom: 40px;
+    bottom: 20px;
   }
 }
 .products-list__inner--popular-slider .bestseller-slider{

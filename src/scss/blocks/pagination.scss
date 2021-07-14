@@ -47,13 +47,14 @@
     text-align: center;
     background-color: #ededed;
     color: #ccc;
+    font-size: 2rem;
+    font-weight: 500;
     &:hover{
       background-color: $primary-color;
       color: $white;
     }
     & i{
-      font-size: 2rem;
-      font-weight: 100;
+      
     }
     &--active{
       background-color: $content-color;
